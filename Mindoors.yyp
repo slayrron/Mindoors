@@ -34,10 +34,14 @@
     "IDEVersion": "2023.8.1.102",
   },
   "resources": [
-    {"id":{"name":"RoomTest","path":"rooms/RoomTest/RoomTest.yy",},},
+    {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
+    {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
+    {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"id":{"name":"obj_pauser","path":"objects/obj_pauser/obj_pauser.yy",},},
+    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [
-    {"roomId":{"name":"RoomTest","path":"rooms/RoomTest/RoomTest.yy",},},
+    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [
