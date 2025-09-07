@@ -6,17 +6,27 @@ var up = keyboard_check(vk_up)
 x_speed = (right - left) * move_speed 
 y_speed = (down - up) * move_speed
 
-// Check wall collisions
-if place_meeting(x + x_speed, y, obj_wall) 
+// Vérifie qu'il n y'a pas de situation bloquante (ex dialogue)
+if instance_exists(obj_pauser)
 { 
-	x_speed = 0 
+	x_speed = 0	
+	y_speed = 0
 }
-if place_meeting(x, y + y_speed, obj_wall) 
+else
 {
-	y_speed = 0 
+	// Verifie qu'il n'y a pas de collisions avec les murs
+	if place_meeting(x + x_speed, y, obj_mur) 
+	{ 
+		x_speed = 0 
+	}
+	if place_meeting(x, y + y_speed, obj_mur) 
+	{
+		y_speed = 0 
+	}
 }
 
-// Change sprite
+
+// Change le sprite
 mask_index = sprite[DOWN] 
 
 if y_speed == 0 
@@ -37,6 +47,6 @@ if x_speed == 0
 
 sprite_index = sprite[face]
 		
-// Move Player
+// Bouge le joueur
 x = x + x_speed
 y = y + y_speed
