@@ -1,0 +1,1 @@
+draw_sprite(spr_fond_plaine, 0, x, y)

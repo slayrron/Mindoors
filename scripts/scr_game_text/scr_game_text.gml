@@ -18,5 +18,9 @@ function scr_game_text(_text_id) {
 		case "isha-non" :
 			create_text("Ah.. Hors de ma vu, Playair.")
 			break
+			
+		case "bouche incendie" :
+			create_text("Une bouche d'incendie.")
+			break
 	}
 }
