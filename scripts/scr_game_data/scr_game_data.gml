@@ -14,7 +14,7 @@ global.actionLibrary =
 		func: function(_user, _targets)
 		{
 			var _damage = _user.att
-			_targets[0].pv = max(0, _targets[0].pv - _damage)
+			BattleChangePV(_targets[0], -_damage, 0)
 		}
 		
 	}
@@ -40,7 +40,7 @@ global.party = [
 		ENDMax: 15,
 		END: 1,
 		skills : [],
-		sprites : {idle: spr_player_battle_idle, attack: spr_player_up}
+		sprites : {idle: spr_player_battle_idle, attack: spr_player_battle_idle, down: spr_equipe_battle_down}
 	}
 ]
 
