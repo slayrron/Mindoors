@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "dev",
-    "path": "folders/Objets/dev.yy",
+    "name": "Combat",
+    "path": "folders/Objets/Combat.yy",
   },
   "parentObjectId": {
     "name": "obj_battle_unit",

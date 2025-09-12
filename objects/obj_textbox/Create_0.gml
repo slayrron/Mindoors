@@ -28,4 +28,4 @@ options_number = 0
 
 setup = false 
 
-global.font_main = Font1
+global.font_main = fnM3x6
