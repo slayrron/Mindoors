@@ -13,18 +13,56 @@ current_user = noone
 current_action = -1
 current_targets = noone
 
+menu_option_pos = 0
+menu_options[0] = "ATT/Garde"
+menu_options[1] = "Action"
+menu_options[2] = "Objets"
+menu_options[3] = "Fuir"
+
+// Base
+option[0,0] = "La bataille fait rage..."
+
+// Attaque
+option[1,0] = "Attaque 1"
+option[1,1] = "Attaque 2"
+option[1,2] = "Attaque 3"
+option[1,3] = "Attaque 4"
+
+// Action
+option[2,0] = "Blabla"
+option[2,1] = "Regarder"
+
+// Objet
+option[3,0] = "Pomme"
+option[3,1] = "Poire"
+option[3,2] = "Patate"
+option[3,3] = "Pate"
+option[3,4] = "Pile"
+option[3,5] = "Pieuvre"
+option[3,6] = "Pion"
+option[3,7] = "Poivre"
+
+// Fuir
+option[4,0] = "Fuir"
+
+option_pos = 0
+options_number = 0
+menu_level = 0
+
+max_visible_options = 4
+scroll_push = 0
 
 // Equipe
 for (var i = 0; i < array_length(global.party); i++)
 {
-	party_units[i] = instance_create_depth(x+144+(i*30), y+112, depth-10, obj_battle_unit_equipe, global.party[i])
+	party_units[i] = instance_create_depth(x+144+(i*30), y+96, depth-10, obj_battle_unit_equipe, global.party[i])
 	array_push(units, party_units[i])
 }
 
 // Ennemies
 for (var i = 0; i < array_length(enemies); i++)
 {
-	enemy_units[i] = instance_create_depth(x+144+((power(-1,i) * ceil(i/2)*30)), y+60, depth-10, obj_battle_unit_enemies, enemies[i])
+	enemy_units[i] = instance_create_depth(x+144+((power(-1,i) * ceil(i/2)*30)), y+58, depth-10, obj_battle_unit_enemies, enemies[i])
 	array_push(units, enemy_units[i])
 }
 
@@ -54,7 +92,32 @@ function BattleStateSelectAction()
 		battle_state = BattleStateVictoryCheck
 		exit
 	}
-	BeginAction(_unit.id, global.actionLibrary.attack, _unit.id)
+	//BeginAction(_unit.id, global.actionLibrary.attack, _unit.id)
+	
+	//if unit in player controlled
+	if (_unit.object_index == obj_battle_unit_equipe)
+	{
+		var _action = global.actionLibrary.attack
+		//target
+			
+		//Parcours l'ensemble des adversaires et séléctionne uniquement ceux attackables
+		var _possible_targets = array_filter(obj_battle.enemy_units, function(_unit, _index)
+		{
+			return (_unit.pv > 0)
+		})
+		
+		var _target = _possible_targets[irandom(array_length(_possible_targets)-1)]
+
+		BeginAction(_unit.id, _action, _target)	
+	}
+	else
+	{
+		//if unit is AI controlled
+		var _enemyAction =_unit.AIscript()
+		if (_enemyAction != 1) {
+			BeginAction(_unit.id, _enemyAction[0], _enemyAction[1])
+		}
+	}
 }
 
 

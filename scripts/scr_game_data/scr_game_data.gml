@@ -13,7 +13,7 @@ global.actionLibrary =
 		effectOnTarget: MODE.ALWAYS,
 		func: function(_user, _targets)
 		{
-			var _damage = _user.att
+			var _damage = max(0, _user.att - _targets[0].def)
 			BattleChangePV(_targets[0], -_damage, 0)
 		}
 		
@@ -48,7 +48,7 @@ global.enemies =
 {
 	slime:
 	{
-		nom: "slime",
+		nom: "Slime",
 		sante: 10,
 		pvMax: 40,
 		pv: 40,
@@ -58,8 +58,22 @@ global.enemies =
 		agi: 1,
 		ENDMax: 10,
 		END: 10,
-		skills: [],
 		sprites: {idle: spr_slime, attack: spr_slime},
-		AIscript: function() {}
+		actions: [global.actionLibrary.attack],
+		AIscript: function()
+		{
+			//attack
+			var _action = actions[0]
+			
+			//target
+			
+			//Parcourt l'enesemble des adversaires et séléctionne uniquement ceux attackables
+			var _possible_targets = array_filter(obj_battle.party_units, function(_unit, _index)
+			{
+				return (_unit.pv > 0)
+			})
+			var _target = _possible_targets[irandom(array_length(_possible_targets)-1)]
+			return [_action, _target]
+		}
 	}
 }

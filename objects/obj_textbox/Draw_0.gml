@@ -35,7 +35,7 @@ if draw_char < text_longueur[page]
 //
 //
 // Si on appuie pour passer le texte
-if accept_key and draw_char > 1 
+if (accept_key and draw_char > 1)
 {
 	// Si toute la page actuelle est déjà affichée
 	if draw_char == text_longueur[page]
@@ -79,13 +79,13 @@ draw_sprite_ext(textbox_spr, textbox_img, textbox_x + text_x_offset[page], textb
 //
 //
 // Si on est arrivé à la fin de la dernière page
-if draw_char == text_longueur[page] and page == page_number - 1
+if (draw_char == text_longueur[page] and page == page_number - 1)
 { 
 	var option_space = 15 
 	var option_border = 4
 	
 	
-	// Sélection de la réponse avec les flêches haut et bas
+	// Sélection de la réponse (son indice) avec les flêches haut et bas
 	option_pos += keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up)
 	option_pos = clamp(option_pos, 0, options_number - 1)
 	
@@ -98,7 +98,7 @@ if draw_char == text_longueur[page] and page == page_number - 1
 		draw_sprite_ext(textbox_spr, textbox_img, txtb_x + 16, txtb_y - option_space*options_number + option_space*option, option_largeur / textbox_spr_l, (option_space - 1) / textbox_spr_h, 0, c_red, 1)
 		
 		// Dessine la flèche de sélection si on est sur le choix pointé
-		if option_pos == option 
+		if (option_pos == option)
 		{
 			draw_sprite(spr_fleche, 0, txtb_x, txtb_y - option_space * options_number + option_space * option)
 		}
