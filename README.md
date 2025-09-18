@@ -1,1 +1,2 @@
-d'abord, j'appelle a la destrcution de Gamous, puis de playair.
+# Mindoors
+Jeu RPG en pixelart, Mindoors propose une aventure alliant histoire, combat et choix.
