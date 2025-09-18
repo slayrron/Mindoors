@@ -13,8 +13,7 @@ global.actionLibrary =
 		effectOnTarget: MODE.ALWAYS,
 		func: function(_user, _targets)
 		{
-			//var _damage = max(0, _user.att - _targets[0].def)
-			var _damage = 5
+			var _damage = max(0, _user.att*0.2 - _targets[0].def)
 			BattleChangePV(_targets[0], -_damage, 0)
 		}
 	},
@@ -32,7 +31,7 @@ global.actionLibrary =
 		effectOnTarget: MODE.ALWAYS,
 		func: function(_user, _targets)
 		{
-			var _damage = max(0, _user.att/5 - _targets[0].def)
+			var _damage = max(0, _user.att*0.4 - _targets[0].def)
 			BattleChangePV(_targets[0], -_damage, 0)
 		}
 		
@@ -70,9 +69,9 @@ global.enemies =
 		nom: "Slime",
 		sante: 10,
 		pvMax: 40,
-		pv: 40,
+		pv: 15,
 		att: 10,
-		def: 3,
+		def: 1,
 		vit: 4,
 		agi: 1,
 		ENDMax: 10,

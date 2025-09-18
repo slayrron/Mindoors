@@ -70,6 +70,7 @@ function BattleStateSelectAction()
 			menu_player = instance_create_depth(x,y,-99999, obj_battle_menu_player)
 			menu_player.user = _unit
 			menu_player.option[1] = _unit.skills
+			menu_player.enemies = enemy_units
 		}
 		else
 		{
