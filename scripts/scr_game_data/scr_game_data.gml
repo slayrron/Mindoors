@@ -1,9 +1,9 @@
 global.actionLibrary = 
 {
-	attack:
+	coupDePoings:
 	{
-		nom: "Attaque",
-		description: "{0} attaque !",
+		nom: "Coup de poings",
+		description: "{0} inflige des coups de poings!",
 		subMenu: -1,
 		targetRequired: true,
 		targetEnemyByDefault: true,
@@ -13,7 +13,26 @@ global.actionLibrary =
 		effectOnTarget: MODE.ALWAYS,
 		func: function(_user, _targets)
 		{
-			var _damage = max(0, _user.att - _targets[0].def)
+			//var _damage = max(0, _user.att - _targets[0].def)
+			var _damage = 5
+			BattleChangePV(_targets[0], -_damage, 0)
+		}
+	},
+	tranche:
+	{
+		nom: "Tranche",
+		description: "{0} tranche sa cible !",
+		subMenu: -1,
+		ENDCost: 0,
+		targetRequired: true,
+		targetEnemyByDefault: true,
+		targetAll: MODE.NEVER,
+		userAnimation: "attack",
+		effectSprite: spr_hitmarker, 
+		effectOnTarget: MODE.ALWAYS,
+		func: function(_user, _targets)
+		{
+			var _damage = max(0, _user.att/5 - _targets[0].def)
 			BattleChangePV(_targets[0], -_damage, 0)
 		}
 		
@@ -39,7 +58,7 @@ global.party = [
 		agi: 10,
 		ENDMax: 15,
 		END: 1,
-		skills : [],
+		skills : [global.actionLibrary.coupDePoings, global.actionLibrary.tranche],
 		sprites : {idle: spr_player_battle_idle, attack: spr_player_battle_idle, down: spr_equipe_battle_down}
 	}
 ]
@@ -59,7 +78,7 @@ global.enemies =
 		ENDMax: 10,
 		END: 10,
 		sprites: {idle: spr_slime, attack: spr_slime},
-		actions: [global.actionLibrary.attack],
+		actions: [global.actionLibrary.tranche],
 		AIscript: function()
 		{
 			//attack
