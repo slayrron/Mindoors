@@ -1,5 +1,4 @@
-//Qwerty coded w=z
-var _accept_key = keyboard_check_pressed(ord("W"))
+var _accept_key = keyboard_check_pressed(ord("Z"))
 var _back_key = keyboard_check_pressed(ord("X"))
 
 // store number of option in current menu

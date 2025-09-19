@@ -1,5 +1,5 @@
-function new_battle(_enemies, _fond) {
-	instance_create_depth
+function new_battle(_enemies, _fond, enemy_obj) {
+	battle = instance_create_depth
 	(
 		camera_get_view_x(view_camera[0]),
 		camera_get_view_y(view_camera[0]),
@@ -7,6 +7,7 @@ function new_battle(_enemies, _fond) {
 		obj_battle,
 		{enemies: _enemies, creator: id, fond_combat: _fond}
 	)
+	battle.enemy_obj = enemy_obj
 }
 
 function BattleChangePV(_target, _amount, _AliveDeadOrEither = 0)

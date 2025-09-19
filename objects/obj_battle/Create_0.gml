@@ -13,6 +13,9 @@ current_user = noone
 current_action = -1
 current_targets = noone
 
+battle_over = false
+enemy_obj = {}
+
 
 menu_options[0] = "ATT/Garde"
 menu_options[1] = "Action"
@@ -62,7 +65,6 @@ function BattleStateSelectAction()
 			battle_state = BattleStateVictoryCheck
 			exit
 		}
-		//BeginAction(_unit.id, global.actionLibrary.attack, _unit.id)
 	
 		//if unit in player controlled
 		if (_unit.object_index == obj_battle_unit_equipe)
@@ -155,6 +157,28 @@ function BattleStatePerformAction()
 
 function BattleStateVictoryCheck()
 {
+	
+	enemies_alive = array_filter(enemy_units, function(_unit, _index)
+	{ return (_unit.pv > 0) })
+	if (array_length(enemies_alive) == 0)
+	{
+		battle_over = true
+		
+		// On update les pv de l'équipe
+		for (i = 0; i < array_length(party_units); i++)
+			global.party[i].pv = party_units[i].pv
+		return
+	}
+	
+	party_alive = array_filter(party_units, function(_unit, _index)
+	{ return (_unit.pv > 0) })
+	
+	if (array_length(party_alive) == 0) {
+		option[0,0] = {nom: "Echec..."} // TODO: Remplacer par animation + écran gameover
+		battle_over = true
+		return
+	}
+	
 	battle_state = BattleStateTurnProgression
 }
 
@@ -164,7 +188,7 @@ function BattleStateTurnProgression()
 	turn++
 	
 	//Loop turns
-	if (turn > array_length(unit_turn_order) -1)
+	if (turn > array_length(unit_turn_order) - 1)
 	{
 		turn = 0
 		round_count++

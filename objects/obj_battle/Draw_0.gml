@@ -90,3 +90,6 @@ for (var i = 0; i < array_length(party_units); i++)
 		draw_set_color(c_red)
 	draw_text(x+COLUMN_END,y+10+(i*12),string(_char.END) + "/" + string(_char.ENDMax))
 }
+
+if (battle_over)
+	draw_text(x+90, y+136, "Vous remportez la victoire !")
