@@ -1,8 +1,8 @@
-var accept_key = keyboard_check_pressed(vk_space)
+var accept_key = keyboard_check_pressed(ord("Z"))
 
 
-var textbox_x = camera_get_view_x(view_camera[0])
-var textbox_y = camera_get_view_y(view_camera[0]) + 144
+var textbox_x = camera_get_view_x(view_camera[0]) + x_offset
+var textbox_y = camera_get_view_y(view_camera[0]) + y_offset
 
 
 //setup       
@@ -25,7 +25,7 @@ if setup == false
 
 // Prend chaque (indice de) caractère un à un
 // pour donner un effet "animation machine à écrire"
-if draw_char < text_longueur[page]
+if (draw_char < text_longueur[page])
 {
 	draw_char = draw_char + text_speed
 	draw_char = clamp(draw_char, 0, text_longueur[page])
@@ -38,10 +38,10 @@ if draw_char < text_longueur[page]
 if (accept_key and draw_char > 1)
 {
 	// Si toute la page actuelle est déjà affichée
-	if draw_char == text_longueur[page]
+	if (draw_char == text_longueur[page])
 	{
 		// On passe à la prochaine page s'il en reste
-		if page < page_number - 1 
+		if (page < page_number - 1) 
 		{
 			page++ 
 			draw_char = 0
@@ -50,7 +50,7 @@ if (accept_key and draw_char > 1)
 		else 
 		{
 			
-			if options_number > 0 
+			if (options_number > 0)
 			{ 
 				create_textbox(option_link_id[option_pos])
 			}
@@ -65,10 +65,9 @@ if (accept_key and draw_char > 1)
 		draw_char = text_longueur[page]
 	}
 }
-		
 
 // Dessine la textbox 
-var txtb_x = textbox_x + text_x_offset[page]
+//var txtb_x = textbox_x + text_x_offset[page]
 var txtb_y = textbox_y
 textbox_spr_l = sprite_get_width(textbox_spr)
 textbox_spr_h = sprite_get_height(textbox_spr)

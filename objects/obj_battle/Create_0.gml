@@ -16,7 +16,6 @@ current_targets = noone
 battle_over = false
 enemy_obj = {}
 
-
 menu_options[0] = "ATT/Garde"
 menu_options[1] = "Action"
 menu_options[2] = "Objets"
@@ -66,12 +65,13 @@ function BattleStateSelectAction()
 			exit
 		}
 	
-		//if unit in player controlled
+		//Si controllé par le joueur 
 		if (_unit.object_index == obj_battle_unit_equipe)
 		{
 			menu_player = instance_create_depth(x,y,-99999, obj_battle_menu_player)
 			menu_player.user = _unit
 			menu_player.option[1] = _unit.skills
+			menu_player.option[2] = enemy_units[0].playerActions
 			menu_player.enemies = enemy_units
 		}
 		else
@@ -94,9 +94,14 @@ function BeginAction(_user, _action, _targets)
 	
 	if (!is_array(current_targets))
 		current_targets = [current_targets]
-	
+
 	battle_wait_time_remaining = battle_wait_time_frames
 	
+	if (current_action.type == TYPE.ACT)
+	{
+		create_textbox(current_action.lien, depth-10, 30, 130)
+	}
+
 	with (_user)
 	{
 		acting = true
@@ -112,47 +117,61 @@ function BeginAction(_user, _action, _targets)
 
 function BattleStatePerformAction()
 {
-	// if animation etc is still playing
-	if (current_user.acting)
+	
+	if (current_action.type == TYPE.ACT)
 	{
-		if (current_user.image_index >= current_user.image_number -1)
-		{
-			with (current_user)
-			{
-				sprite_index = sprites.idle;
-				image_index = 0;
-				acting = false;
-			}
-			
-			if (variable_struct_exists(current_action, "effectSprite"))
-			{
-				if (current_action.effectOnTarget == MODE.ALWAYS or ((current_action.effetOnTarget == MODE.VARIES) and (array_length(current_targets) <= 1)))
-				{
-					for (var i = 0; i < array_length(current_targets); i++)
-					{
-						instance_create_depth(current_targets[i].x,current_targets[i].y,current_targets[i].depth-1, obj_battle_effect, {sprite_index: current_action.effectSprite})
-					}
-				}
-				else
-				{
-					var _effet_sprite = current_action.effectSprite
-					if (variable_struct_exists(current_action, "effectSpriteNoTarget"))
-						_effect_sprite = current_action.effectSpriteNoTarget
-					instance_create_depth(x,y,depth-100, obj_battle_effect,{sprite_index: _effet_sprite})
-				}
-			}
-			current_action.func(current_user, current_targets)
-		}
-	}
-	else //wait for delay and then end the turn
-	{
-		if (!instance_exists(obj_battle_effect))
+		if (!instance_exists(obj_textbox))
 		{
 			battle_wait_time_remaining--
 			if (battle_wait_time_remaining == 0)
 				battle_state = BattleStateVictoryCheck
-		}	
+		}
 	}
+	else
+	{
+		// if animation etc is still playing
+		if (current_user.acting)
+		{
+			if (current_user.image_index >= current_user.image_number -1)
+			{
+				with (current_user)
+				{
+					sprite_index = sprites.idle;
+					image_index = 0;
+					acting = false;
+				}
+			
+				if (variable_struct_exists(current_action, "effectSprite"))
+				{
+					if (current_action.effectOnTarget == MODE.ALWAYS or ((current_action.effetOnTarget == MODE.VARIES) and (array_length(current_targets) <= 1)))
+					{
+						for (var i = 0; i < array_length(current_targets); i++)
+						{
+							instance_create_depth(current_targets[i].x,current_targets[i].y,current_targets[i].depth-1, obj_battle_effect, {sprite_index: current_action.effectSprite})
+						}
+					}
+					else
+					{
+						var _effet_sprite = current_action.effectSprite
+						if (variable_struct_exists(current_action, "effectSpriteNoTarget"))
+							_effect_sprite = current_action.effectSpriteNoTarget
+						instance_create_depth(x,y,depth-100, obj_battle_effect,{sprite_index: _effet_sprite})
+					}
+				}
+				current_action.func(current_user, current_targets)
+			}
+		}
+		else //wait for delay and then end the turn
+		{
+			if (!instance_exists(obj_battle_effect))
+			{
+				battle_wait_time_remaining--
+				if (battle_wait_time_remaining == 0)
+					battle_state = BattleStateVictoryCheck
+			}	
+		}
+	}
+	
 }
 
 function BattleStateVictoryCheck()

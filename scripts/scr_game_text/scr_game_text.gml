@@ -22,5 +22,10 @@ function scr_game_text(_text_id) {
 		case "bouche incendie" :
 			create_text("Une bouche d'incendie.")
 			break
+			
+		case "slime":
+			create_text("Vous essayez de faire ami-ami avec le slime")
+			create_text("Le slime n'a visibilement pas compris...")
+			break
 	}
 }

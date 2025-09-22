@@ -1,6 +1,5 @@
 draw_sprite(spr_fond_plaine, 0, x, y)
 
-
 var _unit_with_current_turn = unit_turn_order[turn].id
 
 draw_sprite_stretched(spr_battle_box, 0, x, y+130, 74, 60)

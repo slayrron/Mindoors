@@ -11,10 +11,12 @@ function create_option(_option, _link_id)
 	options_number++
 }
 
-function create_textbox(_text_id)
+function create_textbox(_text_id, _depth=-9999, _x=0, _y=144)
 {
-	with (instance_create_depth(0, 0, -9999, obj_textbox))
+	with (instance_create_depth(0, 0, _depth, obj_textbox))
 	{
 		scr_game_text(_text_id)
+		x_offset = _x
+		y_offset = _y
 	}
 }

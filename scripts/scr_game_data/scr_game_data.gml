@@ -1,10 +1,26 @@
-global.actionLibrary = 
+enum MODE
+{
+	NEVER = 0,
+	ALWAYS = 1,
+	VARIES = 2
+}
+
+enum TYPE
+{
+	ATT = 0,
+	ACT = 1,
+	OBJ = 2,
+}
+
+global.skillLibrary = 
 {
 	coupDePoings:
 	{
 		nom: "Coup de poings",
 		description: "{0} inflige des coups de poings!",
 		subMenu: -1,
+		ENDCost: 0,
+		type: TYPE.ATT,
 		targetRequired: true,
 		targetEnemyByDefault: true,
 		targetAll: MODE.NEVER,
@@ -23,6 +39,7 @@ global.actionLibrary =
 		description: "{0} tranche sa cible !",
 		subMenu: -1,
 		ENDCost: 0,
+		type: TYPE.ATT,
 		targetRequired: true,
 		targetEnemyByDefault: true,
 		targetAll: MODE.NEVER,
@@ -35,16 +52,54 @@ global.actionLibrary =
 			BattleChangePV(_targets[0], -_damage, 0)
 		}
 		
+	},
+	rire:
+	{
+		nom: "Rire",
+		description: "{0} rigole !",
+		subMenu: -1,
+		ENDCost: 0,
+		type: TYPE.ATT,
+		targetRequired: true,
+		targetEnemyByDefault: true,
+		targetAll: MODE.NEVER,
+		userAnimation: "attack",
+		effectSprite: spr_hitmarker,
+		effectOnTarget: MODE.ALWAYS,
+		func: function(_user, _targets)
+		{
+			BattleChangeStat(_targets[0], [0,-3,0,0,0], 0)
+		}
+	},
+	cris:
+	{
+		nom: "Cris",
+		description: "{0} rigole !",
+		subMenu: -1,
+		ENDCost: 0,
+		type: TYPE.ATT,
+		targetRequired: true,
+		targetEnemyByDefault: true,
+		targetAll: MODE.NEVER,
+		userAnimation: "attack",
+		effectSprite: spr_hitmarker,
+		effectOnTarget: MODE.ALWAYS,
+		func: function(_user, _targets)
+		{
+			//BattleChangeStat(_targets[0], [0,-3,0,0,0], 0)
+		}
+	},
+	
+}
+
+global.objetLibrary = 
+{
+	baie:
+	{
+		nom: "Baie",
+		description: "Une baie qui soigne 5PV"
 	}
 }
-
-enum MODE
-{
-	NEVER = 0,
-	ALWAYS = 1,
-	VARIES = 2
-}
-
 global.party = [
 	{
 		nom: "Player",
@@ -57,7 +112,7 @@ global.party = [
 		agi: 10,
 		ENDMax: 15,
 		END: 1,
-		skills : [global.actionLibrary.coupDePoings, global.actionLibrary.tranche],
+		skills : [global.skillLibrary.coupDePoings, global.skillLibrary.tranche, global.skillLibrary.rire],
 		sprites : {idle: spr_player_battle_idle, attack: spr_player_battle_idle, down: spr_equipe_battle_down}
 	}
 ]
@@ -77,11 +132,12 @@ global.enemies =
 		ENDMax: 10,
 		END: 10,
 		sprites: {idle: spr_slime, attack: spr_slime},
-		actions: [global.actionLibrary.tranche],
+		skills: [global.skillLibrary.tranche],
+		playerActions: [{nom: "Communiquer", type: TYPE.ACT, lien: "slime"}],
 		AIscript: function()
 		{
 			//attack
-			var _action = actions[0]
+			var _action = skills[0]
 			
 			//target
 			
