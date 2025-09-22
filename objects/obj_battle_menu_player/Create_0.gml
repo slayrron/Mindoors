@@ -32,6 +32,7 @@ scroll_push = 0
 selecting_target = false
 target_pos = 0
 enemies = []
+allies = []
 possible_targets = []
 action = ""
 target = ""

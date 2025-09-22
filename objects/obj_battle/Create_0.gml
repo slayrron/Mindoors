@@ -72,6 +72,8 @@ function BattleStateSelectAction()
 			menu_player.user = _unit
 			menu_player.option[1] = _unit.skills
 			menu_player.option[2] = enemy_units[0].playerActions
+			menu_player.option[3] = _unit.objets
+			menu_player.allies = party_units
 			menu_player.enemies = enemy_units
 		}
 		else
@@ -100,6 +102,16 @@ function BeginAction(_user, _action, _targets)
 	if (current_action.type == TYPE.ACT)
 	{
 		create_textbox(current_action.lien, depth-10, 30, 130)
+	}
+	
+	if (current_action.type == TYPE.OBJ)
+	{
+		var find_object = function(_obj, _index) {
+			return (_obj.nom == current_action.nom)
+		}
+		obj_index = array_find_index(global.party[0].objets, find_object)
+		array_delete(global.party[0].objets, obj_index, 1)
+		
 	}
 
 	with (_user)

@@ -97,7 +97,11 @@ global.objetLibrary =
 	baie:
 	{
 		nom: "Baie",
-		description: "Une baie qui soigne 5PV"
+		description: "Une baie qui soigne 5 PV",
+		type: TYPE.OBJ,
+		func: function(_user, _targets) {
+			BattleChangePV(_targets[0], 5, 0)
+		}
 	}
 }
 global.party = [
@@ -113,6 +117,7 @@ global.party = [
 		ENDMax: 15,
 		END: 1,
 		skills : [global.skillLibrary.coupDePoings, global.skillLibrary.tranche, global.skillLibrary.rire],
+		objets : [global.objetLibrary.baie],
 		sprites : {idle: spr_player_battle_idle, attack: spr_player_battle_idle, down: spr_equipe_battle_down}
 	}
 ]
