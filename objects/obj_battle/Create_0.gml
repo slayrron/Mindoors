@@ -37,7 +37,48 @@ for (var i = 0; i < array_length(enemies); i++)
 }
 
 // Get turn order
-unit_turn_order = array_shuffle(units);
+unit_turn_order = []
+
+// L'equipe avec le moins de perso commence d'office
+if (array_length(party_units) < array_length(enemy_units))
+{
+	unit_turn_order = array_concat(party_units, enemy_units)
+}
+else if (array_length(party_units) > array_length(enemy_units))
+{
+	unit_turn_order = array_concat(enemy_units, party_units)
+}
+else //Si la taille d'equipe est la même, on compare la somme des vitesses
+{
+	party_speed = 0
+	for (i = 0; i < array_length(party_units); i++)
+		party_speed += party_units[i].vit
+		
+	enemy_speed = 0
+	for (i = 0; i < array_length(enemy_units); i++)
+		enemy_speed += enemy_units[i].vit
+		
+	if (party_speed == enemy_speed)
+	{
+		unit_turn_order = array_concat(party_units, enemy_units);
+	}
+	else // L'equipe la plus rapide peut rejouer jusqu'a 3x d'affilée selon le rapport de vitesse
+	{
+		rapport = max(party_speed, enemy_speed) div min(party_speed, enemy_speed)
+		if (party_speed > enemy_speed)
+		{
+			for (i = 0; i < min(rapport,3); i++)
+				unit_turn_order = array_concat(unit_turn_order, party_units)
+			unit_turn_order = array_concat(unit_turn_order, enemy_units)
+		}
+		else
+		{
+			for (i = 0; i < min(rapport,3); i++)
+				unit_turn_order = array_concat(unit_turn_order, enemy_units)
+			unit_turn_order = array_concat(unit_turn_order, party_units)
+		}
+	}
+}
 
 // Get render order
 refresh_render_order = function() {
@@ -72,7 +113,7 @@ function BattleStateSelectAction()
 			menu_player.user = _unit
 			menu_player.option[1] = _unit.skills
 			menu_player.option[2] = enemy_units[0].playerActions
-			menu_player.option[3] = _unit.objets
+			menu_player.option[3] = party_units[0].objets
 			menu_player.allies = party_units
 			menu_player.enemies = enemy_units
 		}

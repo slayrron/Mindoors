@@ -8,3 +8,5 @@ menu_option_pos = 0
 elements = [[], global.party, global.party, global.party[0].objets, [{nom: "Quitter"}]]
 elm_number = array_length(elements[0])
 elm_pos = 0
+
+stat_name = ["Santé", "Attaque", "Défense", "Vitesse", "Agilité"]

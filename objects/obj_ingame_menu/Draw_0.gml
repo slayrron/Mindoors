@@ -36,6 +36,19 @@ if (menu_level > 0) {
 			draw_set_color(c_yellow)
 		draw_text(20, y+30+(16*i), elements[menu_level][i].nom)
 	}
+	draw_sprite_stretched(spr_battle_box, 0, 126, y+30, 108, 144)
+	draw_set_color(c_white)
+	if (menu_level == 1)
+	{
+		draw_text(130, y+30, "PV: " + string(elements[menu_level][elm_pos].pv) + "/" + string(elements[menu_level][elm_pos].pvMax))
+		draw_text(130, y+40, "END: " + string(elements[menu_level][elm_pos].END) + "/" + string(elements[menu_level][elm_pos].ENDMax))
+		
+		draw_text(130, y+70, "SANTE: " + string(elements[menu_level][elm_pos].sante))
+		draw_text(130, y+80, "ATTAQUE: " + string(elements[menu_level][elm_pos].att))
+		draw_text(130, y+90, "DEFENSE: " + string(elements[menu_level][elm_pos].def))
+		draw_text(130, y+100, "VITESSE: " + string(elements[menu_level][elm_pos].vit))
+		draw_text(130, y+110, "AGILITE: " + string(elements[menu_level][elm_pos].agi))
+	}
 }
 
 // On change de menu d'action

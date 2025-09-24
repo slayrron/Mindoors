@@ -124,11 +124,26 @@ global.party = [
 		vit: 13,
 		agi: 10,
 		ENDMax: 15,
-		END: 1,
+		END: 15,
 		skills : [global.skillLibrary.coupDePoings, global.skillLibrary.tranche, global.skillLibrary.rire],
 		objets : [global.objetLibrary.baie, global.objetLibrary.poisson],
 		sprites : {idle: spr_player_battle_idle, attack: spr_player_battle_idle, down: spr_equipe_battle_down}
-	}
+	},
+	{
+		nom: "Hubert",
+		sante: 10,
+		pvMax: 40,
+		pv: 40,
+		att: 8,
+		def: 0,
+		vit: 7,
+		agi: 10,
+		ENDMax: 22,
+		END: 22,
+		skills : [global.skillLibrary.coupDePoings],
+		sprites : {idle: spr_hubert_battle_idle, attack: spr_hubert_battle_idle, down: spr_equipe_battle_down}
+	},
+	
 ]
 
 global.enemies =
@@ -141,7 +156,7 @@ global.enemies =
 		pv: 8,
 		att: 10,
 		def: 1,
-		vit: 4,
+		vit: 6,
 		agi: 1,
 		ENDMax: 10,
 		END: 10,
