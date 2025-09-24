@@ -4,6 +4,7 @@ var accept_key = keyboard_check_pressed(ord("Z"))
 var textbox_x = camera_get_view_x(view_camera[0]) + x_offset
 var textbox_y = camera_get_view_y(view_camera[0]) + y_offset
 
+draw_set_color(c_white)
 
 //setup       
 if setup == false

@@ -1,0 +1,1 @@
+global.time_remaining = 0

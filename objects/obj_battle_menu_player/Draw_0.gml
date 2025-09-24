@@ -75,28 +75,10 @@ if (max_visible_options < options_number)
 // On change de menu d'action
 if (_accept_key) 
 {
-	if (menu_level != 0 and menu_level != 4) {}
-	else {
-		switch(menu_option_pos)
-		{
-			case 0:
-			menu_level = 1
-			break
-		
-			case 1:
-			menu_level = 2
-			break
-		
-			case 2:
-			menu_level = 3
-			break
-		
-			case 3:
-			menu_level = 4
-			break
-		}
+	if (menu_level == 0 or menu_level == 4)
+	{
+		menu_level = menu_option_pos + 1
 	}
-	
 }
 
 // Retour a la base

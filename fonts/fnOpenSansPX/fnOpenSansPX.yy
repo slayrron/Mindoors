@@ -119,8 +119,8 @@
   "lineHeight": 0,
   "maintainGms1Font": false,
   "parent": {
-    "name": "Fonts",
-    "path": "folders/Fonts.yy",
+    "name": "Polices",
+    "path": "folders/Polices.yy",
   },
   "pointRounding": 0,
   "ranges": [

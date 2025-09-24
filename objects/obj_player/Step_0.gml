@@ -25,7 +25,6 @@ else
 	}
 }
 
-
 // Change le sprite
 mask_index = sprite[DOWN] 
 
@@ -50,3 +49,8 @@ sprite_index = sprite[face]
 // Bouge le joueur
 x = x + x_speed
 y = y + y_speed
+
+if (keyboard_check_pressed(ord("X")) and !instance_exists(obj_ingame_menu) and global.time_remaining == 0) 
+{
+	instance_create_depth(camera_get_view_x(view_camera[0]),camera_get_view_y(view_camera[0]), -99999, obj_ingame_menu)
+}
