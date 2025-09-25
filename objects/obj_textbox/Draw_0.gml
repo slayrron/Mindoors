@@ -68,7 +68,7 @@ if (accept_key and draw_char > 1)
 }
 
 // Dessine la textbox 
-//var txtb_x = textbox_x + text_x_offset[page]
+var txtb_x = textbox_x + text_x_offset[page]
 var txtb_y = textbox_y
 textbox_spr_l = sprite_get_width(textbox_spr)
 textbox_spr_h = sprite_get_height(textbox_spr)

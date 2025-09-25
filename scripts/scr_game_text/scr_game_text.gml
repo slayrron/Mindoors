@@ -27,5 +27,18 @@ function scr_game_text(_text_id) {
 			create_text("Vous essayez de faire ami-ami avec le slime")
 			create_text("Le slime n'a visibilement pas compris...")
 			break
+			
+		case "livre":
+			create_text("C'est un vieux livre poussiereux. L'ouvrir ?")
+				create_option("Oui.", "ouvrons ça")
+				create_option("En vrai flemme.", "nouvrons pas")
+				break
+				
+		case "ouvrons ça" : 
+			create_text("Il était une fois... Le texte s'arrête ici.")
+			break
+		case "nouvrons pas" : 
+			create_text("Vous avez reposer le livre, l'esprit CHIIIIILL")
+			break
 	}
 }
