@@ -1,8 +1,8 @@
 instance_deactivate_all(true)
 
 units = []
-turn = 0
-unit_turn_order = []
+equipe = 0
+unit_pos = 0
 unit_render_order = []
 
 turn_count = 0
@@ -21,6 +21,8 @@ menu_options[1] = "Action"
 menu_options[2] = "Objets"
 menu_options[3] = "Fuir"
 
+t_actions = []
+
 
 // Equipe
 for (var i = 0; i < array_length(global.party); i++)
@@ -37,16 +39,16 @@ for (var i = 0; i < array_length(enemies); i++)
 }
 
 // Get turn order
-unit_turn_order = []
+team_turn_order = []
 
 // L'equipe avec le moins de perso commence d'office
 if (array_length(party_units) < array_length(enemy_units))
 {
-	unit_turn_order = array_concat(party_units, enemy_units)
+	team_turn_order = [party_units, enemy_units]
 }
 else if (array_length(party_units) > array_length(enemy_units))
 {
-	unit_turn_order = array_concat(enemy_units, party_units)
+	team_turn_order = [enemy_units, party_units]
 }
 else //Si la taille d'equipe est la même, on compare la somme des vitesses
 {
@@ -60,7 +62,7 @@ else //Si la taille d'equipe est la même, on compare la somme des vitesses
 		
 	if (party_speed == enemy_speed)
 	{
-		unit_turn_order = array_concat(party_units, enemy_units);
+		team_turn_order = [party_units, enemy_units]
 	}
 	else // L'equipe la plus rapide peut rejouer jusqu'a 3x d'affilée selon le rapport de vitesse
 	{
@@ -68,14 +70,14 @@ else //Si la taille d'equipe est la même, on compare la somme des vitesses
 		if (party_speed > enemy_speed)
 		{
 			for (i = 0; i < min(rapport,3); i++)
-				unit_turn_order = array_concat(unit_turn_order, party_units)
-			unit_turn_order = array_concat(unit_turn_order, enemy_units)
+				array_push(team_turn_order,party_units)
+			array_push(team_turn_order, enemy_units)
 		}
 		else
 		{
 			for (i = 0; i < min(rapport,3); i++)
-				unit_turn_order = array_concat(unit_turn_order, enemy_units)
-			unit_turn_order = array_concat(unit_turn_order, party_units)
+				array_push(team_turn_order, enemy_units)
+			array_push(team_turn_order, party_units)
 		}
 	}
 }
@@ -96,44 +98,62 @@ function BattleStateSelectAction()
 {
 	if (!instance_exists(obj_battle_menu_player)) 
 	{
-		// On prend le perso actuel
-		var _unit = unit_turn_order[turn];
+		// On prend l'equipe actuelle
+		var _team = team_turn_order[equipe];
 	
 		// Le perso est mort ou ne peut pas agir ?
-		if (!instance_exists(_unit)) or (_unit.pv <= 0)
+		/*if (!instance_exists(_unit)) or (_unit.pv <= 0)
 		{
 			battle_state = BattleStateVictoryCheck
 			exit
-		}
+		}*/
 	
-		//Si controllé par le joueur 
-		if (_unit.object_index == obj_battle_unit_equipe)
+		// Si controllé par le joueur 
+		if (_team[0].object_index == obj_battle_unit_equipe)
 		{
 			menu_player = instance_create_depth(x,y,-99999, obj_battle_menu_player)
-			menu_player.user = _unit
-			menu_player.option[1] = _unit.skills
-			menu_player.option[2] = enemy_units[0].playerActions
-			menu_player.option[3] = party_units[0].objets
-			menu_player.allies = party_units
+			menu_player.party = _team
 			menu_player.enemies = enemy_units
 		}
 		else
 		{
-			//if unit is AI controlled
-			var _enemyAction =_unit.AIscript()
-			if (_enemyAction != 1) {
-				BeginAction(_unit.id, _enemyAction[0], _enemyAction[1])
+			// if unit is AI controlled
+			enemies_actions = []
+			for (i = 0; i < array_length(enemy_units); i++)
+			{
+				if (instance_exists(enemy_units[i]) and (enemy_units[i].pv > 0))
+				{
+					var enemyAction = enemy_units[i].AIscript()
+					if (enemyAction != 1)
+						array_push(enemies_actions, [enemy_units[i].id, enemyAction[0], enemyAction[1]])
+				}
 			}
+			ScrollActions(enemies_actions)
 		}
 	}
 }
 
-
-function BeginAction(_user, _action, _targets) 
+// Sélectionne une par une toutes les actions de l'équipe active
+function ScrollActions(_team_actions)
 {
-	current_user = _user
-	current_action = _action
-	current_targets = _targets
+	t_actions = _team_actions
+	if (unit_pos >= array_length(_team_actions)) {
+		unit_pos = 0
+		battle_state = BattleStateTurnProgression
+	}
+	else
+	{
+		BeginAction(_team_actions[unit_pos])
+	}
+}
+
+
+function BeginAction(unit_action) 
+{
+	
+	current_user = unit_action[0]
+	current_action = unit_action[1]
+	current_targets = unit_action[2]
 	
 	if (!is_array(current_targets))
 		current_targets = [current_targets]
@@ -147,23 +167,23 @@ function BeginAction(_user, _action, _targets)
 	
 	if (current_action.type == TYPE.OBJ)
 	{
-		var find_object = function(_obj, _index) {
+		var find_object = function(_obj, _index)
+		{
 			return (_obj.nom == current_action.nom)
 		}
 		obj_index = array_find_index(global.party[0].objets, find_object)
 		array_delete(global.party[0].objets, obj_index, 1)
-		
 	}
 
-	with (_user)
+	with (unit_action[0])
 	{
 		acting = true
 		//play user animation if it is defined for that action and that user
-		if (!is_undefined(_action[$ "userAnimation"])) && (!is_undefined(_user.sprites[$ _action.userAnimation]))
+		/*if (!is_undefined(_team_actions[i][1][$ "userAnimation"])) && (!is_undefined(_team_actions[i][0].sprites[$ _team_actions[i][1].userAnimation]))
 		{
-			sprite_index = sprites[$ _action.userAnimation]
+			sprite_index = sprites[$ _team_actions[i][1].userAnimation]
 			image_index = 0
-		}
+		}*/
 	}
 	battle_state = BattleStatePerformAction
 }
@@ -224,12 +244,11 @@ function BattleStatePerformAction()
 			}	
 		}
 	}
-	
 }
 
 function BattleStateVictoryCheck()
 {
-	
+	unit_pos++
 	enemies_alive = array_filter(enemy_units, function(_unit, _index)
 	{ return (_unit.pv > 0) })
 	if (array_length(enemies_alive) == 0)
@@ -251,18 +270,19 @@ function BattleStateVictoryCheck()
 		return
 	}
 	
-	battle_state = BattleStateTurnProgression
+	// Si la battaile n'est pas terminées, on retourne s'il y a des potentielles actions restantes
+	ScrollActions(t_actions)
 }
 
 function BattleStateTurnProgression()
 {
 	turn_count++
-	turn++
+	equipe++
 	
 	//Loop turns
-	if (turn > array_length(unit_turn_order) - 1)
+	if (equipe > array_length(team_turn_order) - 1)
 	{
-		turn = 0
+		equipe = 0
 		round_count++
 	}
 	battle_state = BattleStateSelectAction

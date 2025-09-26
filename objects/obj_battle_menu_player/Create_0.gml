@@ -1,5 +1,11 @@
 active = true
-user = ""
+changing_char = false
+waiting = 0
+
+party = []
+party_member = 0
+party_actions = []
+enemies = []
 
 menu_option_pos = 0
 menu_options[0] = "ATT/Garde"
@@ -11,16 +17,19 @@ menu_options[3] = "Fuir"
 option[0,0] = {nom: "La bataille fait rage..."}
 
 // Attaque
-option[1,0] = {nom: "Attaque 1"}
+option[1] = {}
 
 // Action
-option[2,0] = {nom: "Blabla"}
+option[2] = {}
 
 // Objet
-option[3,0] = {nom: "Pomme"}
+option[3] = {}
 
 // Fuir
 option[4,0] = {nom: "Fuir"}
+
+// Stats
+option[5] = {}
 
 option_pos = 0
 options_number = 0
@@ -31,8 +40,6 @@ scroll_push = 0
 
 selecting_target = false
 target_pos = 0
-enemies = []
-allies = []
 possible_targets = []
 action = ""
 target = ""
@@ -40,6 +47,14 @@ target = ""
 function MenuSelectAction(_user, _action, _target) {
 	
 	active = false
-	with (obj_battle) BeginAction(_user, _action, _target)
-	with (obj_battle_menu_player) instance_destroy()
+	_party_actions[party_member] = [_user, _action, _target]
+	if (party_member != array_length(party) - 1) {
+		waiting = 10
+		changing_char = true
+	}
+	else
+	{
+		with (obj_battle) ScrollActions(other._party_actions)
+		with (obj_battle_menu_player) instance_destroy()
+	}
 }

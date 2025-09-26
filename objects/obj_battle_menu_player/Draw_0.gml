@@ -4,10 +4,12 @@ var _back_key = keyboard_check_pressed(ord("X"))
 // store number of option in current menu
 options_number = array_length(option[menu_level])
 
+// Détermine sur quel menu on se deplace
 if (menu_level == 0)
 {
 	menu_option_pos += keyboard_check_pressed(vk_right) - keyboard_check_pressed(vk_left)
-	menu_option_pos = clamp(menu_option_pos, 0, 3)
+	menu_option_pos += keyboard_check_pressed(vk_up)*4 -  keyboard_check_pressed(vk_down)*4
+	menu_option_pos = clamp(menu_option_pos, 0, 4)
 }
 else if (!selecting_target)
 {
@@ -22,8 +24,7 @@ else {
 	target_pos = clamp(target_pos, 0, options_number-1)
 }
 
-// Dessine le menu d'actions
-
+// Dessine le menu général d'actions (ATT,ACT,...)
 draw_set_font(fnM3x6)
 draw_set_halign(fa_left)
 draw_set_valign(fa_top)
@@ -36,6 +37,27 @@ for (var i = 0; i < 4; i++)
 	draw_text(x+10+(i*74),y+195, menu_options[i])	
 }
 
+// Bouton Statistiques
+draw_sprite_stretched(spr_battle_box, 0, x, y+4, 32, 16)
+draw_set_color(c_white)
+if (menu_option_pos == 4)
+	draw_set_color(c_yellow)
+draw_text(x+6,y+4, "Stats")
+
+if (menu_level == 5) {
+	targeted_char = option[menu_level, option_pos]
+	
+	draw_set_color(c_white)
+	draw_text(x+6, y+30, "PV: " + string(targeted_char.pv) + "/" + string(targeted_char.pvMax))
+	draw_text(x+6, y+40, "END: " + string(targeted_char.END) + "/" + string(targeted_char.ENDMax))
+		
+	draw_text(x+6, y+60, "ATTAQUE: " + string(targeted_char.att))
+	draw_text(x+6, y+70, "DEFENSE: " + string(targeted_char.def))
+	draw_text(x+6, y+80, "VITESSE: " + string(targeted_char.vit))
+	draw_text(x+6, y+90, "AGILITE: " + string(targeted_char.agi))
+}
+
+// Importe lorsqu'il y a plus de 4 options accessibles
 // Scrollpush = 0 quand pos < 4, scrollpush = 4 sinon
 scroll_push = clamp(option_pos - (max_visible_options-1), 0, 1) * max_visible_options
 
@@ -70,6 +92,10 @@ if (max_visible_options < options_number)
 	else 
 		draw_sprite(spr_up_arrow, 0, x+172, y+135) //vers le haut sinon
 }
+
+draw_set_halign(fa_left)
+draw_set_color(c_white)
+draw_text(x+25, y+130, party[party_member].nom)
 
 
 // On change de menu d'action
