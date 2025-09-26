@@ -34,6 +34,8 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Hubert","folderPath":"folders/Sprites/Personnages/Hubert.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Player","folderPath":"folders/Sprites/Personnages/Player.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile sets","folderPath":"folders/Tile sets.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"texture sol","folderPath":"folders/Sprites/texture sol.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"object déco","folderPath":"folders/Sprites/object déco.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
@@ -98,7 +100,7 @@
     {"id":{"name":"obj_pauser","path":"objects/obj_pauser/obj_pauser.yy",},},
     {"id":{"name":"obj_teleporter","path":"objects/obj_teleporter/obj_teleporter.yy",},},
     {"id":{"name":"spr_fleche","path":"sprites/spr_fleche/spr_fleche.yy",},},
-    {"id":{"name":"Sprite22","path":"sprites/Sprite22/Sprite22.yy",},},
+    {"id":{"name":"gros_livre","path":"sprites/gros_livre/gros_livre.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [

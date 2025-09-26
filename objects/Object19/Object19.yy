@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Sprite22",
-    "path": "sprites/Sprite22/Sprite22.yy",
+    "name": "gros_livre",
+    "path": "sprites/gros_livre/gros_livre.yy",
   },
   "spriteMaskId": null,
   "visible": true,

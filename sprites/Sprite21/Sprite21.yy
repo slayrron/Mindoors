@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "texture sol",
+    "path": "folders/Sprites/texture sol.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
