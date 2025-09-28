@@ -16,8 +16,8 @@
     "path": "folders/Tile sets.yy",
   },
   "spriteId": {
-    "name": "sol_centre_ville",
-    "path": "sprites/sol_centre_ville/sol_centre_ville.yy",
+    "name": "spr_sol_centre_ville",
+    "path": "sprites/spr_sol_centre_ville/spr_sol_centre_ville.yy",
   },
   "spriteNoExport": false,
   "textureGroupId": {

@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_trottoir",
-  "bbox_bottom": 63,
+  "bbox_bottom": 127,
   "bbox_left": 0,
   "bbox_right": 63,
   "bbox_top": 0,
@@ -17,7 +17,7 @@
   ],
   "gridX": 8,
   "gridY": 16,
-  "height": 64,
+  "height": 144,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8eb8c66e-4d0e-4dcc-a0b2-b9c0c167a234","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Texture Sol",
+    "path": "folders/Sprites/Texture Sol.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "sol_centre_ville",
+  "name": "spr_sol_centre_ville",
   "bbox_bottom": 47,
   "bbox_left": 0,
   "bbox_right": 48,
@@ -25,14 +25,14 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "texture sol",
-    "path": "folders/Sprites/texture sol.yy",
+    "name": "Texture Sol",
+    "path": "folders/Sprites/Texture Sol.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "sol_centre_ville",
+    "name": "spr_sol_centre_ville",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8513439f-70ea-45ee-9cd7-29ef414a46ea","path":"sprites/sol_centre_ville/sol_centre_ville.yy",},},},"Disabled":false,"id":"454526e2-17b8-4662-9a5e-3df27b585b95","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8513439f-70ea-45ee-9cd7-29ef414a46ea","path":"sprites/spr_sol_centre_ville/spr_sol_centre_ville.yy",},},},"Disabled":false,"id":"454526e2-17b8-4662-9a5e-3df27b585b95","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

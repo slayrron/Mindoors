@@ -16,8 +16,8 @@
     "path": "folders/Tile sets.yy",
   },
   "spriteId": {
-    "name": "roadroom2",
-    "path": "sprites/roadroom2/roadroom2.yy",
+    "name": "spr_roadroom2",
+    "path": "sprites/spr_roadroom2/spr_roadroom2.yy",
   },
   "spriteNoExport": false,
   "textureGroupId": {
