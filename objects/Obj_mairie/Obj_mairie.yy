@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Sprite24",
-    "path": "sprites/Sprite24/Sprite24.yy",
+    "name": "spr_mairie",
+    "path": "sprites/spr_mairie/spr_mairie.yy",
   },
   "spriteMaskId": null,
   "visible": true,
