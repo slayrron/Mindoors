@@ -1,7 +1,7 @@
 {
   "resourceType": "GMTileSet",
   "resourceVersion": "1.0",
-  "name": "TileSet4",
+  "name": "parterre_defleur",
   "autoTileSets": [],
   "macroPageTiles": {
     "SerialiseHeight": 0,
@@ -16,8 +16,8 @@
     "path": "folders/Tile sets/centre ville HUB.yy",
   },
   "spriteId": {
-    "name": "spr_roadroom2",
-    "path": "sprites/spr_roadroom2/spr_roadroom2.yy",
+    "name": "spr_par_terre_fleur_centre",
+    "path": "sprites/spr_par_terre_fleur_centre/spr_par_terre_fleur_centre.yy",
   },
   "spriteNoExport": false,
   "textureGroupId": {

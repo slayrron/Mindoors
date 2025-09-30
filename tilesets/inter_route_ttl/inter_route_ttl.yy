@@ -12,8 +12,8 @@
   "out_tilehborder": 2,
   "out_tilevborder": 2,
   "parent": {
-    "name": "Tile sets",
-    "path": "folders/Tile sets.yy",
+    "name": "centre ville HUB",
+    "path": "folders/Tile sets/centre ville HUB.yy",
   },
   "spriteId": {
     "name": "Spr_interoute",

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMTileSet",
   "resourceVersion": "1.0",
-  "name": "TileSet4",
+  "name": "TileSe_sol_hub",
   "autoTileSets": [],
   "macroPageTiles": {
     "SerialiseHeight": 0,
@@ -12,12 +12,12 @@
   "out_tilehborder": 2,
   "out_tilevborder": 2,
   "parent": {
-    "name": "centre ville HUB",
-    "path": "folders/Tile sets/centre ville HUB.yy",
+    "name": "Tile sets",
+    "path": "folders/Tile sets.yy",
   },
   "spriteId": {
-    "name": "spr_roadroom2",
-    "path": "sprites/spr_roadroom2/spr_roadroom2.yy",
+    "name": "Spr_sol_hub",
+    "path": "sprites/Spr_sol_hub/Spr_sol_hub.yy",
   },
   "spriteNoExport": false,
   "textureGroupId": {
