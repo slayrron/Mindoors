@@ -54,3 +54,6 @@ if (keyboard_check_pressed(ord("X")) and !instance_exists(obj_ingame_menu) and g
 {
 	instance_create_depth(camera_get_view_x(view_camera[0]),camera_get_view_y(view_camera[0]), -99999, obj_ingame_menu)
 }
+
+// Profondeur
+depth = -bbox_bottom
