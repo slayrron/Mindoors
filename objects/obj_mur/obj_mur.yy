@@ -2,12 +2,14 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_mur",
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Pieces",
-    "path": "folders/Objets/Pieces.yy",
+    "name": "dev Pieces",
+    "path": "folders/Objets/dev Pieces.yy",
   },
   "parentObjectId": null,
   "persistent": false,
