@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "dev Pieces",
-    "path": "folders/Objets/dev Pieces.yy",
+    "path": "folders/Objets/dev/dev Pieces.yy",
   },
   "parentObjectId": null,
   "persistent": false,

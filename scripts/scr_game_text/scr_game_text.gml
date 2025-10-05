@@ -3,29 +3,11 @@
 function scr_game_text(_text_id) {
 	
 	switch(_text_id)
-	{
-		case "isha" :  
-			create_text("Quoi ? Moi ? Grojo ?..")
-			create_text("Ah.. Grojo..")
-			create_text("Toi aussi il t'a blesser ?")
-				create_option("Oui, il m'a fait mal.", "isha-oui")
-				create_option("Qui est-il ?", "isha-non")
-			break 
-			
-		case "isha-oui" : 
-			create_text("Retrouve le..")
-			break
-		case "isha-non" :
-			create_text("Ah.. Hors de ma vu, Playair.")
-			break
-			
+	{	
+		
+		//-------------- OBJETS --------------------
 		case "bouche incendie" :
 			create_text("Une bouche d'incendie.")
-			break
-			
-		case "slime":
-			create_text("Vous essayez de faire ami-ami avec le slime")
-			create_text("Le slime n'a visibilement pas compris...")
 			break
 			
 		case "livre":
@@ -39,6 +21,26 @@ function scr_game_text(_text_id) {
 			break
 		case "nouvrons pas" : 
 			create_text("Vous avez reposer le livre, l'esprit CHIIIIILL")
+			break
+			
+		
+		//-------------- CINEMATIQUES ---------------
+		
+		case "ecole_intro":
+			create_text("Alors c'est aujourd'hui.. j'ai peur de voir les résultats..")
+			create_text("M'en parle pas ! Je l'avais déjà raté l'année dernière ce diplôme !..")
+			create_text("Mais aujourd’hui.. ")
+			create_text("C'est la honte, t'es nul et en plus t'es pauvre.. ridicule.")
+			create_text("AHAHAAAAA. Ce qui ne nous tue pas nous rend plus fort ! Pas vrai ?")
+			break
+			
+		case "ecole_start_quest":
+			create_text("Bon...par contre...c'est où ?")
+			
+		//-------------- COMBATS --------------------
+		case "cbt_slime":
+			create_text("Vous essayez de faire ami-ami avec le slime")
+			create_text("Le slime n'a visibilement pas compris...")
 			break
 	}
 }

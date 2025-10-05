@@ -1,15 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_mur",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-  ],
+  "name": "obj_barriere_vertical",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "dev Pieces",
-    "path": "folders/Objets/dev/dev Pieces.yy",
+    "name": "Objets",
+    "path": "folders/Objets.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -28,9 +26,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_mur",
-    "path": "sprites/spr_mur/spr_mur.yy",
+    "name": "spr_barriere_vertical",
+    "path": "sprites/spr_barriere_vertical/spr_barriere_vertical.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

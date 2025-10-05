@@ -1,15 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_mur",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-  ],
+  "name": "obj_nasada",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "dev Pieces",
-    "path": "folders/Objets/dev/dev Pieces.yy",
+    "name": "Persos",
+    "path": "folders/Objets/Persos.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -26,11 +24,11 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
-  "solid": false,
+  "solid": true,
   "spriteId": {
-    "name": "spr_mur",
-    "path": "sprites/spr_mur/spr_mur.yy",
+    "name": "spr_nasada_down",
+    "path": "sprites/spr_nasada_down/spr_nasada_down.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

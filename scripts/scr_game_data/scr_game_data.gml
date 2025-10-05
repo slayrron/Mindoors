@@ -162,7 +162,7 @@ global.enemies =
 		END: 10,
 		sprites: {idle: spr_slime, attack: spr_slime},
 		skills: [global.skillLibrary.tranche],
-		playerActions: [{nom: "Communiquer", type: TYPE.ACT, lien: "slime"}],
+		playerActions: [{nom: "Communiquer", type: TYPE.ACT, lien: "cbt_slime"}],
 		AIscript: function()
 		{
 			//attack
