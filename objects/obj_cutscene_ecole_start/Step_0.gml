@@ -27,27 +27,78 @@ if (current_state == cutsceneStates.Active)
 					obj_nasada.x -= 1.5
 				}
 			}
+			else 
+			{
+				obj_player.sprite_index = spr_player_down
+				current_step++
+			}
+		}
+		break;
+		
+		// Nasada se tourne vers l'école
+		case 2: 
+		{
+			if (counter < 15)
+			{
+				counter++
+			}
+			else 
+			{
+				counter = 0
+				obj_nasada.sprite_index = spr_nasada_up
+				current_step++
+			}
+		}
+		break;
+		
+		case 3:
+		{
+			if (counter < 60)
+			{
+				counter++
+			}
 			else
 			{
-				obj_nasada.sprite_index = spr_nasada_up
 				create_textbox("ecole_intro")
 				current_step++
 			}
 		}
 		break;
 		
-		case 2: {
+		// Contournement du joueur : 4-6
+		case 4:
+		{
 			if (!instance_exists(obj_textbox))
 			{
-				if (obj_nasada.y > 240)
+				if (obj_nasada.y > obj_player.bbox_bottom + 4)
 					obj_nasada.y -= 1.5
-				else
+				else 
+				{
+					obj_nasada.sprite_index = spr_nasada_left
 					current_step++
+				}
 			}
 		}
 		break;
 		
-		case 3:
+		case 5:
+			if (obj_nasada.x > obj_player.bbox_left - 18)
+				obj_nasada.x -= 1.5
+			else
+			{
+				obj_nasada.sprite_index = spr_nasada_up
+				current_step++
+			}
+		break;
+		
+		case 6:
+			if (obj_nasada.y > obj_player.bbox_top - 24)
+				obj_nasada.y -= 1.5
+			else	
+				current_step++
+		break;
+		
+		case 7:
 		{
 			current_state = cutsceneStates.Paused
 		}

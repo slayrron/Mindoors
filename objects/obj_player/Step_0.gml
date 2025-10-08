@@ -16,6 +16,26 @@ if instance_exists(obj_pauser)
 }
 else
 {
+	// Change le sprite
+	mask_index = sprite[DOWN] 
+
+	if (y_speed == 0)
+	{ 
+		if x_speed > 0 
+			face = RIGHT 
+		if x_speed < 0 
+			face = LEFT
+	}
+
+	if (x_speed == 0)
+	{ 
+		if y_speed > 0
+			face = DOWN 
+		if y_speed < 0
+			face = UP
+	}
+	sprite_index = sprite[face]
+	
 	// Verifie qu'il n'y a pas de collisions avec les murs
 	if place_meeting(x + x_speed, y, obj_mur) or place_meeting(x + x_speed, y, obj_interaction) 
 	{ 
@@ -26,33 +46,12 @@ else
 		y_speed = 0 
 	}
 }
-
-// Change le sprite
-mask_index = sprite[DOWN] 
-
-if y_speed == 0 
-{ 
-	if x_speed > 0 
-		face = RIGHT 
-	if x_speed < 0 
-		face = LEFT
-}
-
-if x_speed == 0 
-{ 
-	if y_speed > 0
-		face = DOWN 
-	if y_speed < 0
-		face = UP
-}
-
-sprite_index = sprite[face]
 		
 // Bouge le joueur
 x = x + x_speed
 y = y + y_speed
 
-// Interaction : uniquement possible si le joueur regarde la zone d'interaction
+// Interactions : uniquement possible quand le joueur regarde la zone d'interaction
 var interact_dist = 6;
 var rx1, ry1, rx2, ry2;
 

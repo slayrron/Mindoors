@@ -25,6 +25,9 @@ option_pos = 0
 options_number = 0 
 
 
-setup = false 
+setup = false
+
+set_defaults_for_text()
+last_free_space = 0
 
 global.font_main = fnM3x6

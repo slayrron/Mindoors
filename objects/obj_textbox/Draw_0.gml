@@ -19,8 +19,16 @@ if setup == false
 		// trouve combien de caracteres sont sur chaque page et garde ce nombre
 		text_longueur[p] = string_length(text[p])
 		
-		// position x pour la textbox
-		text_x_offset[p] = 44
+		// Perso à gauche
+		text_x_offset[p] = 80
+		portrait_x_offset[p] = 8
+		
+		// position x pour la textbox pas de perso
+		if (speaker_sprite[p] == noone)
+		{
+			text_x_offset[p] = 44
+		}
+		
 	}
 }
 
@@ -67,11 +75,20 @@ if (accept_key and draw_char > 1)
 	}
 }
 
-// Dessine la textbox 
+//---------- Dessine la textbox 
 var txtb_x = textbox_x + text_x_offset[page]
 var txtb_y = textbox_y
 textbox_spr_l = sprite_get_width(textbox_spr)
 textbox_spr_h = sprite_get_height(textbox_spr)
+
+//Dessine l'orateur
+if (speaker_sprite[page] != noone)
+{
+	sprite_index = speaker_sprite[page]
+	var _speaker_x = textbox_x + portrait_x_offset[page]
+	draw_sprite_ext(textbox_spr, textbox_img, textbox_x + portrait_x_offset[page], textbox_y, 64/textbox_spr_l, 64/textbox_spr_h, 0, c_white, 1)
+	draw_sprite_ext(sprite_index, image_index, _speaker_x, textbox_y, 1, 1, 0, c_white, 1)
+}
 draw_sprite_ext(textbox_spr, textbox_img, textbox_x + text_x_offset[page], textbox_y, textbox_largeur/textbox_spr_l, textbox_hauteur/textbox_spr_h, 0, c_white, 1)
 
 //---------- Gestion des choix -----------

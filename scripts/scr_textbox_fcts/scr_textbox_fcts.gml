@@ -1,6 +1,44 @@
+function set_defaults_for_text() {
+	line_break_pos[0, page_number] = 999
+	line_break_num[page_number] = 0
+	line_break_offset[page_number] = 0
+	
+	speaker_sprite[page_number] = noone
+}
+
+/// @param text
+/// @param [character]
 function create_text(_text) 
 {
+	set_defaults_for_text()
+	
 	text[page_number] = _text
+	
+	//get character
+	if (argument_count > 1) {
+		switch(argument[1])
+		{
+			case "nasada-straight":
+				speaker_sprite[page_number] = spr_nasada_straight
+			break
+			
+			case "nasada-stress":
+				speaker_sprite[page_number] = spr_nasada_stress
+			break
+				
+			case "rayan-straight":
+				speaker_sprite[page_number] = spr_rayan_straight
+			break
+				
+			case "rayan-happy":
+				speaker_sprite[page_number] = spr_rayan_happy
+			break
+			
+			case "hubert-judge":
+				speaker_sprite[page_number] = spr_hubert_judge
+			break
+		}
+	}
 	page_number++
 }
 

@@ -27,11 +27,11 @@ function scr_game_text(_text_id) {
 		//-------------- CINEMATIQUES ---------------
 		
 		case "ecole_intro":
-			create_text("Alors c'est aujourd'hui.. j'ai peur de voir les résultats..")
-			create_text("M'en parle pas ! Je l'avais déjà raté l'année dernière ce diplôme !..")
-			create_text("Mais aujourd’hui.. ")
-			create_text("C'est la honte, t'es nul et en plus t'es pauvre.. ridicule.")
-			create_text("AHAHAAAAA. Ce qui ne nous tue pas nous rend plus fort ! Pas vrai ?")
+			create_text("Alors c'est aujourd'hui.. j'ai peur de voir les résultats..", "nasada-stress")
+			create_text("M'en parle pas ! Je l'avais déjà raté l'année dernière ce diplôme !..", "rayan-straight")
+			create_text("Mais aujourd’hui.. ", "rayan-happy")
+			create_text("C'est la honte, t'es nul et en plus t'es pauvre.. ridicule.", "hubert-judge")
+			create_text("AHAHAAAAA. Ce qui ne nous tue pas nous rend plus fort ! Pas vrai ?", "rayan-happy")
 			break
 			
 		case "ecole_start_quest":
