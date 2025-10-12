@@ -1,17 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Object24",
+  "name": "Obj_Maire_Hub",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objets",
-    "path": "folders/Objets.yy",
+    "name": "Persos",
+    "path": "folders/Objets/Persos.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_interaction",
+    "path": "objects/obj_interaction/obj_interaction.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -28,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_barrier_park",
-    "path": "sprites/spr_barrier_park/spr_barrier_park.yy",
+    "name": "Maire",
+    "path": "sprites/Maire/Maire.yy",
   },
   "spriteMaskId": null,
   "visible": true,

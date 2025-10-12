@@ -2,7 +2,9 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "Object19",
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -10,8 +12,8 @@
     "path": "folders/Objets.yy",
   },
   "parentObjectId": {
-    "name": "obj_mur",
-    "path": "objects/obj_mur/obj_mur.yy",
+    "name": "obj_interaction",
+    "path": "objects/obj_interaction/obj_interaction.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

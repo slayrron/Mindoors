@@ -23,6 +23,10 @@ function scr_game_text(_text_id) {
 			create_text("Vous avez reposer le livre, l'esprit CHIIIIILL")
 			break
 			
+		case "Maire" :
+			create_text("Oh.. C'est toi ? Pourquoi tu me regardes comme ça ?")
+			break
+			
 		
 		//-------------- CINEMATIQUES ---------------
 		
@@ -44,3 +48,4 @@ function scr_game_text(_text_id) {
 			break
 	}
 }
+
