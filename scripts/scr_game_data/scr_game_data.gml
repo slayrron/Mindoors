@@ -194,6 +194,7 @@ global.quests =
 	bacheliers:
 	{
 		nom: "Bacheliers",
+		description: "C'est le grand jour ! Avez vous le bac ? Tes amis et toi allez être fixés aujourd'hui...",
 		etapes : ["Trouver les feuilles des résultats", "Vérifier les résultats", "Récupérer son bac"],
 		objectif : 0,
 		EXP: 0,

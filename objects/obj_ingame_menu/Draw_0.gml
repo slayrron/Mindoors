@@ -43,6 +43,10 @@ if (menu_level > 0) {
 	}
 	draw_sprite_stretched(spr_battle_box, 0, x+126, y+30, 108, 144)
 	draw_set_color(c_white)
+	if (menu_level == 1)
+	{
+		draw_text(x+130, y+30, global.party[0].quetes[elm_pos].description)
+	}
 	if (menu_level == 2)
 	{
 		draw_text(x+130, y+30, "PV: " + string(elements[menu_level][elm_pos].pv) + "/" + string(elements[menu_level][elm_pos].pvMax))

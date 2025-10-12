@@ -167,8 +167,10 @@
     {"id":{"name":"TileSet_SHOP_HUB","path":"tilesets/TileSet_SHOP_HUB/TileSet_SHOP_HUB.yy",},},
     {"id":{"name":"spr_fleche","path":"sprites/spr_fleche/spr_fleche.yy",},},
     {"id":{"name":"gros_livre","path":"sprites/gros_livre/gros_livre.yy",},},
+    {"id":{"name":"rm_ecole","path":"rooms/rm_ecole/rm_ecole.yy",},},
   ],
   "RoomOrderNodes": [
+    {"roomId":{"name":"rm_ecole","path":"rooms/rm_ecole/rm_ecole.yy",},},
     {"roomId":{"name":"rm_centre_ville","path":"rooms/rm_centre_ville/rm_centre_ville.yy",},},
     {"roomId":{"name":"rm_MarieHub","path":"rooms/rm_MarieHub/rm_MarieHub.yy",},},
   ],
