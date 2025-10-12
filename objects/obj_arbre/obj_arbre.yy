@@ -1,18 +1,18 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_teleporter",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-  ],
+  "name": "obj_arbre",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Pieces",
-    "path": "folders/Objets/dev/Pieces.yy",
+    "name": "Objets déco",
+    "path": "folders/Objets/Objets déco.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_mur",
+    "path": "objects/obj_mur/obj_mur.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_teleporter",
-    "path": "sprites/spr_teleporter/spr_teleporter.yy",
+    "name": "spr_arbre",
+    "path": "sprites/spr_arbre/spr_arbre.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -29,5 +29,3 @@ setup = false
 
 set_defaults_for_text()
 last_free_space = 0
-
-global.font_main = fnM3x6

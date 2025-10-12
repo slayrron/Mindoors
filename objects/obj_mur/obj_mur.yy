@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "dev Pieces",
-    "path": "folders/Objets/dev/dev Pieces.yy",
+    "name": "Pieces",
+    "path": "folders/Objets/dev/Pieces.yy",
   },
   "parentObjectId": null,
   "persistent": false,

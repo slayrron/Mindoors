@@ -8,10 +8,13 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "dev Pieces",
-    "path": "folders/Objets/dev/dev Pieces.yy",
+    "name": "Pieces",
+    "path": "folders/Objets/dev/Pieces.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_mur",
+    "path": "objects/obj_mur/obj_mur.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

@@ -1,16 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_teleporter",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-  ],
+  "name": "obj_rayan",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Pieces",
-    "path": "folders/Objets/dev/Pieces.yy",
+    "name": "Persos",
+    "path": "folders/Objets/Persos.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -29,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_teleporter",
-    "path": "sprites/spr_teleporter/spr_teleporter.yy",
+    "name": "spr_rayan_down",
+    "path": "sprites/spr_rayan_down/spr_rayan_down.yy",
   },
   "spriteMaskId": null,
   "visible": true,

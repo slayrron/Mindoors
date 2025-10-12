@@ -17,37 +17,42 @@ else
 draw_set_valign(fa_top)
 draw_set_halign(fa_left)
 draw_set_color(c_white)
-draw_sprite_stretched(spr_battle_box, 0, 16, y+4, 256, 24)
+draw_sprite_stretched(spr_battle_box, 0, x+12, y+4, 264, 24)
 
+var x_offset = x + 24
 for (i = 0; i < menu_length; i++)
 {
 	draw_set_color(c_white)
 	if (i == menu_option_pos)
 		draw_set_color(c_yellow)
-	draw_text(32+(i*64), y+8, menu_options[i])
+	draw_text(x_offset, y+8, menu_options[i])
+	
+	// ajouter la largeur du texte + un petit espace
+    x_offset += string_width(menu_options[i]) + 16
+	
 }
 
 if (menu_level > 0) {
-	draw_sprite_stretched(spr_battle_box, 0, 16, y+30, 108, 144)
+	draw_sprite_stretched(spr_battle_box, 0, x+12, y+30, 108, 144)
 	for (i = 0; i < array_length(elements[menu_level]); i++)
 	{
 		draw_set_color(c_white)
 		if (i == elm_pos)
 			draw_set_color(c_yellow)
-		draw_text(20, y+30+(16*i), elements[menu_level][i].nom)
+		draw_text(x+20, y+30+(16*i), elements[menu_level][i].nom)
 	}
-	draw_sprite_stretched(spr_battle_box, 0, 126, y+30, 108, 144)
+	draw_sprite_stretched(spr_battle_box, 0, x+126, y+30, 108, 144)
 	draw_set_color(c_white)
-	if (menu_level == 1)
+	if (menu_level == 2)
 	{
-		draw_text(130, y+30, "PV: " + string(elements[menu_level][elm_pos].pv) + "/" + string(elements[menu_level][elm_pos].pvMax))
-		draw_text(130, y+40, "END: " + string(elements[menu_level][elm_pos].END) + "/" + string(elements[menu_level][elm_pos].ENDMax))
+		draw_text(x+130, y+30, "PV: " + string(elements[menu_level][elm_pos].pv) + "/" + string(elements[menu_level][elm_pos].pvMax))
+		draw_text(x+130, y+40, "END: " + string(elements[menu_level][elm_pos].END) + "/" + string(elements[menu_level][elm_pos].ENDMax))
 		
-		draw_text(130, y+70, "SANTE: " + string(elements[menu_level][elm_pos].sante))
-		draw_text(130, y+80, "ATTAQUE: " + string(elements[menu_level][elm_pos].att))
-		draw_text(130, y+90, "DEFENSE: " + string(elements[menu_level][elm_pos].def))
-		draw_text(130, y+100, "VITESSE: " + string(elements[menu_level][elm_pos].vit))
-		draw_text(130, y+110, "AGILITE: " + string(elements[menu_level][elm_pos].agi))
+		draw_text(x+130, y+70, "SANTE: " + string(elements[menu_level][elm_pos].sante))
+		draw_text(x+130, y+80, "ATTAQUE: " + string(elements[menu_level][elm_pos].att))
+		draw_text(x+130, y+90, "DEFENSE: " + string(elements[menu_level][elm_pos].def))
+		draw_text(x+130, y+100, "VITESSE: " + string(elements[menu_level][elm_pos].vit))
+		draw_text(x+130, y+110, "AGILITE: " + string(elements[menu_level][elm_pos].agi))
 	}
 }
 

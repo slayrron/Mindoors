@@ -5,6 +5,7 @@ enum MODE
 	VARIES = 2
 }
 
+// Type de l'action
 enum TYPE
 {
 	ATT = 0,
@@ -12,6 +13,7 @@ enum TYPE
 	OBJ = 2,
 }
 
+// Toutes les compétences du jeu
 global.skillLibrary = 
 {
 	coupDePoings:
@@ -92,6 +94,7 @@ global.skillLibrary =
 	
 }
 
+// Tous les objets consommables du jeu
 global.objetLibrary = 
 {
 	baie:
@@ -113,7 +116,10 @@ global.objetLibrary =
 		}
 	}
 }
-global.party = [
+
+// Equipe de héros
+global.party = 
+[
 	{
 		nom: "Player",
 		sante: 15,
@@ -127,7 +133,8 @@ global.party = [
 		END: 15,
 		skills : [global.skillLibrary.coupDePoings, global.skillLibrary.tranche, global.skillLibrary.rire],
 		objets : [global.objetLibrary.baie, global.objetLibrary.poisson],
-		sprites : {idle: spr_player_battle_idle, attack: spr_player_battle_idle, down: spr_equipe_battle_down}
+		sprites : {idle: spr_player_battle_idle, attack: spr_player_battle_idle, down: spr_equipe_battle_down},
+		quetes : []
 	},
 	{
 		nom: "Hubert",
@@ -142,10 +149,10 @@ global.party = [
 		END: 22,
 		skills : [global.skillLibrary.coupDePoings],
 		sprites : {idle: spr_hubert_battle_idle, attack: spr_hubert_battle_idle, down: spr_equipe_battle_down}
-	},
-	
+	},	
 ]
 
+// Tous les ennemis du jeu
 global.enemies =
 {
 	slime:
@@ -178,5 +185,18 @@ global.enemies =
 			var _target = _possible_targets[irandom(array_length(_possible_targets)-1)]
 			return [_action, _target]
 		}
+	}
+}
+
+// Toutes les quêtes du jeu
+global.quests = 
+{
+	bacheliers:
+	{
+		nom: "Bacheliers",
+		etapes : ["Trouver les feuilles des résultats", "Vérifier les résultats", "Récupérer son bac"],
+		objectif : 0,
+		EXP: 0,
+		gold: 0
 	}
 }

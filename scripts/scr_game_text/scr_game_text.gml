@@ -10,6 +10,11 @@ function scr_game_text(_text_id) {
 			create_text("Une bouche d'incendie.")
 			break
 			
+		case "porte ecole":
+			create_text("C'est fermé.")
+			create_text("Le lycée est fermé aujourd'hui...regardons autour !", "nasada-straight")
+			break
+			
 		case "livre":
 			create_text("C'est un vieux livre poussiereux. L'ouvrir ?")
 				create_option("Oui.", "ouvrons ça")
@@ -34,13 +39,17 @@ function scr_game_text(_text_id) {
 			create_text("Alors c'est aujourd'hui.. j'ai peur de voir les résultats..", "nasada-stress")
 			create_text("M'en parle pas ! Je l'avais déjà raté l'année dernière ce diplôme !..", "rayan-straight")
 			create_text("Mais aujourd’hui.. ", "rayan-happy")
-			create_text("C'est la honte, t'es nul et en plus t'es pauvre.. ridicule.", "hubert-judge")
+			create_text("C'est la honte Rayan, t'es pauvre et en plus t'es nul.", "hubert-judge")
 			create_text("AHAHAAAAA. Ce qui ne nous tue pas nous rend plus fort ! Pas vrai ?", "rayan-happy")
 			break
-			
+
 		case "ecole_start_quest":
-			create_text("Bon...par contre...c'est où ?")
-			
+			create_text("Bon...par contre...c'est où ?", "nasada-straight")
+			create_text("Aaaeeeuuuh...", "rayan-straight")
+			create_text("Ca ne devrait pas être très compliqué à trouver", "hubert-judge")
+			create_text("Allons-y alors !", "rayan-happy")
+			break
+
 		//-------------- COMBATS --------------------
 		case "cbt_slime":
 			create_text("Vous essayez de faire ami-ami avec le slime")

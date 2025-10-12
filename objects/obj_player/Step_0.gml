@@ -37,11 +37,11 @@ else
 	sprite_index = sprite[face]
 	
 	// Verifie qu'il n'y a pas de collisions avec les murs
-	if place_meeting(x + x_speed, y, obj_mur) or place_meeting(x + x_speed, y, obj_interaction) 
+	if place_meeting(x + x_speed, y, obj_mur)
 	{ 
 		x_speed = 0 
 	}
-	if place_meeting(x, y + y_speed, obj_mur) or place_meeting(x, y + y_speed, obj_interaction)
+	if place_meeting(x, y + y_speed, obj_mur)
 	{
 		y_speed = 0 
 	}

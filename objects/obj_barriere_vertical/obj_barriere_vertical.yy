@@ -9,7 +9,10 @@
     "name": "Objets",
     "path": "folders/Objets.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_mur",
+    "path": "objects/obj_mur/obj_mur.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

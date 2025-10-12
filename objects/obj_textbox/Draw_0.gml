@@ -9,7 +9,7 @@ draw_set_color(c_white)
 //setup       
 if setup == false
 { 
-	draw_set_font(global.font_custom)
+	draw_set_font(global.font_main)
 	draw_set_valign(fa_top)
 	draw_set_halign(fa_left)
 	 
