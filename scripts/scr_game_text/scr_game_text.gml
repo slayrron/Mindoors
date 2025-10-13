@@ -15,6 +15,10 @@ function scr_game_text(_text_id) {
 			create_text("Le lycée est fermé aujourd'hui...regardons autour !", "nasada-straight")
 			break
 			
+		case "barriere travaux":
+			create_text("Impossible de passé, c'est en travaux.")
+			break
+			
 		case "livre":
 			create_text("C'est un vieux livre poussiereux. L'ouvrir ?")
 				create_option("Oui.", "ouvrons ça")
@@ -28,8 +32,20 @@ function scr_game_text(_text_id) {
 			create_text("Vous avez reposer le livre, l'esprit CHIIIIILL")
 			break
 			
+			//PNJ
 		case "Maire" :
 			create_text("Oh.. C'est toi ? Pourquoi tu me regardes comme ça ?")
+			create_text("Bref.. Tu as entendu parler des jeunes qui me déteste ?")
+				create_option("oui oui", "absolument")
+				create_option("non", "Je ne crois pas")
+			break
+			
+		case "absolument" :
+			create_text("PARFAIT, demande leurs de partir.. S'il te plait. Je t'aiderai un jour.")
+			break
+		case "je ne crois pas" :
+			create_text("Ah.. Bah vas-t-en de ma mairie alors.")
+			create_text("Tu es adopté.")
 			break
 			
 		

@@ -1,15 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Obj_Maire_Hub",
+  "name": "Obj_travaux",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Persos",
-    "path": "folders/Objets/Persos.yy",
+    "name": "Objets",
+    "path": "folders/Objets.yy",
   },
   "parentObjectId": {
     "name": "obj_interaction",
@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Maire",
-    "path": "sprites/spr_Maire/spr_Maire.yy",
+    "name": "Spr_travaux",
+    "path": "sprites/Spr_travaux/Spr_travaux.yy",
   },
   "spriteMaskId": null,
   "visible": true,
