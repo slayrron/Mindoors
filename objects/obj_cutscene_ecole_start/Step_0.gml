@@ -5,7 +5,7 @@ if (current_state == cutsceneStates.Active)
 			obj_nasada.sprite_index = spr_nasada_left
 			obj_player.sprite_index = spr_player_left
 			
-			if (obj_player.x > 410)
+			if (obj_player.x > 440)
 			{
 				obj_player.x -= 1.5
 				obj_nasada.x -= 1.5
@@ -22,7 +22,7 @@ if (current_state == cutsceneStates.Active)
 			if (obj_player.y > 224)
 			{
 				obj_player.y -= 1.5
-				if (obj_nasada.x > 410) 
+				if (obj_nasada.x > 440) 
 				{
 					obj_nasada.x -= 1.5
 				}
@@ -60,7 +60,7 @@ if (current_state == cutsceneStates.Active)
 			else
 			{
 				counter = 0
-				create_textbox("ecole_intro")
+				create_textbox("bacheliers_intro")
 				current_step++
 			}
 		}
@@ -184,7 +184,7 @@ if (current_state == cutsceneStates.Active)
 			else
 			{
 				counter = 0
-				create_textbox("ecole_start_quest")
+				create_textbox("bacheliers_start")
 				current_step++
 			}
 		}

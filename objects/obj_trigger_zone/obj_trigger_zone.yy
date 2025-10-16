@@ -1,18 +1,18 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_barriere",
-  "eventList": [],
+  "name": "obj_trigger_zone",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objets déco",
-    "path": "folders/Objets/Objets déco.yy",
+    "name": "Triggers",
+    "path": "folders/Objets/dev/Cinématiques/Triggers.yy",
   },
-  "parentObjectId": {
-    "name": "obj_mur",
-    "path": "objects/obj_mur/obj_mur.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -29,9 +29,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_barriere",
-    "path": "sprites/spr_barriere/spr_barriere.yy",
+    "name": "spr_trigger",
+    "path": "sprites/spr_trigger/spr_trigger.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

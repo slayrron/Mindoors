@@ -85,9 +85,19 @@ switch (face) {
 // vérifie collision avec obj_interaction (retourne id d'instance ou noone)
 var inst = collision_rectangle(rx1, ry1, rx2, ry2, obj_interaction, true, false);
 
-if (accept_key and inst != noone and !instance_exists(obj_textbox))
+if (accept_key and inst != noone)
 {
-    create_textbox(inst.text_id);
+	if (inst.text_id != "" and !instance_exists(obj_textbox))
+		create_textbox(inst.text_id);
+		
+	if (inst.cutscene != noone and !instance_exists(obj_cutscene_parent))	
+	{
+		if (inst.quete.objectif == inst.objectif_index)
+			instance_create_depth(0,0,-9999, obj_cutscene_bac_1)
+		else
+			show_debug_message(inst.quete.objectif)
+	}
+		
 }
 
 if (keyboard_check_pressed(ord("X")) and !instance_exists(obj_ingame_menu) and global.time_remaining == 0) 

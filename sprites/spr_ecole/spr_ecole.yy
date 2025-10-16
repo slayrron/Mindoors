@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_ecole",
-  "bbox_bottom": 47,
+  "bbox_bottom": 103,
   "bbox_left": 0,
   "bbox_right": 191,
   "bbox_top": 0,
@@ -16,7 +16,7 @@
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e60074aa-f928-46cd-a26c-a30e96c9121d",},
   ],
   "gridX": 16,
-  "gridY": 16,
+  "gridY": 8,
   "height": 128,
   "HTile": false,
   "layers": [

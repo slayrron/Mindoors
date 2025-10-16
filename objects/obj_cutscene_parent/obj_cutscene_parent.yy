@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Cutscenes",
-    "path": "folders/Objets/Cutscenes.yy",
+    "name": "Cinématiques",
+    "path": "folders/Objets/dev/Cinématiques.yy",
   },
   "parentObjectId": {
     "name": "obj_pauser",
