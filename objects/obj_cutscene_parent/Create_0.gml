@@ -1,4 +1,4 @@
-current_step = 0
+action = 0
 counter = 0
 
 enum cutsceneStates {

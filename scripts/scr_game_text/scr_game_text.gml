@@ -62,7 +62,7 @@ function scr_game_text(_text_id) {
 		case "bacheliers_start":
 			create_text("Bon...par contre...c'est où ?", "nasada-straight")
 			create_text("Aaaeeeuuuh...", "rayan-straight")
-			create_text("Ca ne devrait pas être très compliqué à trouver", "hubert-judge")
+			create_text("Ca ne devrait pas être très compliqué à trouver.", "hubert-judge")
 			create_text("Allons-y alors !", "rayan-happy")
 		break
 			
@@ -72,6 +72,63 @@ function scr_game_text(_text_id) {
 			create_text("Bon on va pas y passer la journée...", "hubert-judge")
 			create_text("Allez les amis on y va ensemble !", "nasada-straight")
 		break
+		
+		case "bacheliers_obj_1_nasada":
+			create_text("OUIIII Je l'ai !!")
+		break	
+		case "bacheliers_obj_1_hubert":
+			create_text("hmpf...aucune surprise...", "hubert-judge")
+		break
+		case "bacheliers_obj_1_player":
+			create_text("Vous défilez les noms...non...toujours pas..et..et..vous voila ! Vous l'avez !")
+		break
+		
+		case "bacheliers_obj_1_bravo":
+			create_text("Félicitations !!", "nasada-straight")
+			create_text("C'était facile.", "hubert-judge")
+			create_text("C’est vrai.. j’ai stressée pour rien !", "nasada-straight")
+		break
+		
+		case "bacheliers_obj_1_?":
+			create_text("...", "nasada-straight")
+			create_text("...", "hubert-judge")
+		break
+		
+		case "bacheliers_obj_1_rayan":
+			create_text("...Rayan ?", "nasada-straight")
+			create_text("...", "rayan-straight")
+			create_text("Je ne me vois pas...", "rayan-straight")
+			create_text("Arrête...", "hubert-judge")
+			create_text("...", "rayan-straight")
+			create_text("Attends, regardons ensemble si on ne te trouve pas !", "nasada-stress")
+		break
+		
+		case "bacheliers_obj_1_ensemble":
+			create_text("Non...non...", "nasada-straight")
+			create_text("Ouais non.", "hubert-judge")
+			create_text("Vous regardez chaque nom, mais celui de Rayan n'est nul part")
+			create_text("J’ai...encore raté..", "rayan-straight")
+		break
+		
+		case "bacheliers_obj_1_reunion":
+			create_text("...", "nasada-straight")
+			create_text("T’es pathétique sérieux. On dirait que tu fais tout pour rater ton avenir..", "hubert-judge")
+			create_text("Ça va aller tu crois ? Tes parents vont..", "nasada-stress")
+			create_text("T’inquiète ! Ça va le faire !", "rayan-happy")
+			create_text("Mais...", "nasada-stress")
+			create_text("Bref. Dommage. Ça vous dit qu’on fasse une soirée pour fêter ça ? Le bac, on ne l’a qu’une fois dans notre vie.", "rayan-happy")
+		break
+		
+		case "bacheliers_obj_1_separation":
+			create_text("Ou plutôt 0 fois dans ton cas Rayan..", "hubert-judge")
+			create_text("..", "rayan-straight")
+		break
+		
+		case "bacheliers_obj_transition_1-2":
+			create_text("Hubert...", "nasada-straight")
+			create_text("Allez on doit récupérer nos bulletins nous", "hubert-judge")
+		break
+		
 
 		//-------------- COMBATS --------------------
 		case "cbt_slime":

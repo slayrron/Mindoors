@@ -58,3 +58,8 @@ function create_textbox(_text_id, _depth=-9999, _x=0, _y=144)
 		y_offset = _y
 	}
 }
+
+function no_textbox()
+{
+	return !instance_exists(obj_textbox)
+}

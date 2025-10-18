@@ -1,6 +1,6 @@
 if (current_state == cutsceneStates.Active)
 {
-	switch (current_step) {
+	switch (action) {
 		case 0:
 			obj_nasada.sprite_index = spr_nasada_left
 			obj_player.sprite_index = spr_player_left
@@ -13,7 +13,7 @@ if (current_state == cutsceneStates.Active)
 			else
 			{
 				obj_player.sprite_index = spr_player_up
-				current_step++
+				action++
 			}
 		break;
 		
@@ -30,7 +30,7 @@ if (current_state == cutsceneStates.Active)
 			else 
 			{
 				obj_player.sprite_index = spr_player_down
-				current_step++
+				action++
 			}
 		}
 		break;
@@ -46,7 +46,7 @@ if (current_state == cutsceneStates.Active)
 			{
 				counter = 0
 				obj_nasada.sprite_index = spr_nasada_up
-				current_step++
+				action++
 			}
 		}
 		break;
@@ -61,7 +61,7 @@ if (current_state == cutsceneStates.Active)
 			{
 				counter = 0
 				create_textbox("bacheliers_intro")
-				current_step++
+				action++
 			}
 		}
 		break;
@@ -76,7 +76,7 @@ if (current_state == cutsceneStates.Active)
 				else 
 				{
 					obj_nasada.sprite_index = spr_nasada_left
-					current_step++
+					action++
 				}
 			}
 		}
@@ -88,7 +88,7 @@ if (current_state == cutsceneStates.Active)
 			else
 			{
 				obj_nasada.sprite_index = spr_nasada_up
-				current_step++
+				action++
 			}
 		break;
 		
@@ -98,7 +98,7 @@ if (current_state == cutsceneStates.Active)
 			else
 			{
 				obj_nasada.sprite_index = spr_nasada_right
-				current_step++
+				action++
 			}
 		break;
 		
@@ -109,7 +109,7 @@ if (current_state == cutsceneStates.Active)
 			else
 			{
 				obj_nasada.sprite_index = spr_nasada_up
-				current_step++
+				action++
 			}
 		}
 		break;
@@ -120,7 +120,7 @@ if (current_state == cutsceneStates.Active)
 					obj_nasada.y -= 1.5
 			else 
 			{
-				current_step++
+				action++
 			}
 		}
 		break
@@ -133,7 +133,7 @@ if (current_state == cutsceneStates.Active)
 			{
 				obj_nasada.sprite_index = spr_nasada_left
 				counter = 0
-				current_step++
+				action++
 			}
 		}
 		break
@@ -146,7 +146,7 @@ if (current_state == cutsceneStates.Active)
 			{
 				obj_nasada.sprite_index = spr_nasada_right
 				counter = 0
-				current_step++
+				action++
 			}
 		}
 		break
@@ -159,7 +159,7 @@ if (current_state == cutsceneStates.Active)
 			{
 				obj_nasada.sprite_index = spr_nasada_up
 				counter = 0
-				current_step++
+				action++
 			}
 		}
 		break
@@ -172,7 +172,7 @@ if (current_state == cutsceneStates.Active)
 			{
 				obj_nasada.sprite_index = spr_nasada_down
 				counter = 0
-				current_step++
+				action++
 			}
 		}
 		break
@@ -185,7 +185,7 @@ if (current_state == cutsceneStates.Active)
 			{
 				counter = 0
 				create_textbox("bacheliers_start")
-				current_step++
+				action++
 			}
 		}
 		break
@@ -194,7 +194,7 @@ if (current_state == cutsceneStates.Active)
 		{
 			if (!instance_exists(obj_textbox))
 			{
-				current_step++
+				action++
 			}
 		}
 		

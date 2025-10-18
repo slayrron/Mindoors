@@ -1,3 +1,3 @@
 alpha = 0;        
-fade_speed = 0.035; 
+fade_speed = 0.04; 
 state = "none";   
