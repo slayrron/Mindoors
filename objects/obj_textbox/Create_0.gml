@@ -29,3 +29,6 @@ setup = false
 
 set_defaults_for_text()
 last_free_space = 0
+
+text_pause_timer = 0
+text_pause_time = 20

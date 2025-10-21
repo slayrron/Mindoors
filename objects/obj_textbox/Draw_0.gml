@@ -34,10 +34,24 @@ if setup == false
 
 // Prend chaque (indice de) caractère un à un
 // pour donner un effet "animation machine à écrire"
-if (draw_char < text_longueur[page])
+
+if (text_pause_timer <= 0)
 {
-	draw_char = draw_char + text_speed
-	draw_char = clamp(draw_char, 0, text_longueur[page])
+	if (draw_char < text_longueur[page])
+	{
+		draw_char = draw_char + text_speed
+		draw_char = clamp(draw_char, 0, text_longueur[page])
+	
+		var _check_char = string_char_at(text[page], draw_char)
+		if (_check_char == "," or _check_char == "?" or (_check_char == "!" and string_char_at(text[page], clamp(draw_char+1, 0, text_longueur[page])) != "!") or (_check_char == "." and string_char_at(text[page], clamp(draw_char+1, 0, text_longueur[page])) != "."))
+		{
+			text_pause_timer = text_pause_time
+		}
+	}
+}
+else
+{
+	text_pause_timer--
 }
 
 //--------Bascule des pages----------
