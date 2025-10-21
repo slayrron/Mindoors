@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_table_bac",
-  "bbox_bottom": 14,
+  "bbox_bottom": 16,
   "bbox_left": 0,
   "bbox_right": 23,
   "bbox_top": 4,

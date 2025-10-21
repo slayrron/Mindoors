@@ -129,6 +129,31 @@ function scr_game_text(_text_id) {
 			create_text("Allez on doit récupérer nos bulletins nous", "hubert-judge")
 		break
 		
+		case "bacheliers_obj_2":
+			if (global.quests.bacheliers.objectif < 2) {
+				create_text("Je vois que vous venez d'arriver, veuillez vérifier que vous êtes bien sur le tableau s'il vous plait")
+				create_text("(je n'ai pas envie de chercher pour rien)")
+			}
+			else if (global.quests.bacheliers.objectif == 2) {
+				create_text("J'ai eu le temps de trouver vos bulletins")
+				create_text("Hubert..Nasada..et Player.. Voilà ! Toutes mes félicitations !")
+				global.quests.bacheliers.objectif++
+			}
+			else
+			{
+				create_text("Encore bravo !")
+			}
+		break
+		
+		case "bacheliers_obj_3":
+			create_text("Ok on peut partir", "nasada-straight")
+			create_text("Ok alors ? Chaud ?", "rayan-straight")
+			create_text("On est pas obligé non plus...", "hubert-judge")
+			create_text("On pourrait faire un tour aussi...", "nasada-straight")
+			create_text("Player, tu as toujours des bonnes idées toi, on te suit !", "nasada-straight")
+			create_text("Alleeeeez", "rayan-happy")
+		break
+		
 
 		//-------------- COMBATS --------------------
 		case "cbt_slime":
