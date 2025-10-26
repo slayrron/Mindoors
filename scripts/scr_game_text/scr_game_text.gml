@@ -146,10 +146,8 @@ function scr_game_text(_text_id) {
 		break
 		
 		case "bacheliers_obj_3":
-			create_text("Ok on peut partir", "nasada-straight")
-			create_text("Ok alors ? Chaud ?", "rayan-straight")
-			create_text("On est pas obligé non plus...", "hubert-judge")
-			create_text("On pourrait faire un tour aussi...", "nasada-straight")
+			create_text("Oook... Et on l'a fait où cette soirée ?", "rayan-straight")
+			create_text("La dernière fois j’ai choisi.", "hubert-judge")
 			create_text("Player, tu as toujours des bonnes idées toi, on te suit !", "nasada-straight")
 			create_text("Alleeeeez", "rayan-happy")
 		break

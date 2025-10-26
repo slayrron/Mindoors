@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Triggers",
-    "path": "folders/Objets/dev/Cinématiques/Triggers.yy",
+    "name": "Pieces",
+    "path": "folders/Objets/dev/Pieces.yy",
   },
   "parentObjectId": null,
   "persistent": false,

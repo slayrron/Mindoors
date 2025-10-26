@@ -19,7 +19,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Combat","folderPath":"folders/Objets/Combat.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"dev","folderPath":"folders/Objets/dev.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Cinématiques","folderPath":"folders/Objets/dev/Cinématiques.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Triggers","folderPath":"folders/Objets/dev/Cinématiques/Triggers.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Pieces","folderPath":"folders/Objets/dev/Pieces.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objets déco","folderPath":"folders/Objets/Objets déco.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Persos","folderPath":"folders/Objets/Persos.yy",},
@@ -164,6 +163,7 @@
     {"id":{"name":"spr_player_left","path":"sprites/spr_player_left/spr_player_left.yy",},},
     {"id":{"name":"scr_game_data","path":"scripts/scr_game_data/scr_game_data.yy",},},
     {"id":{"name":"obj_cutscene_ecole_start","path":"objects/obj_cutscene_ecole_start/obj_cutscene_ecole_start.yy",},},
+    {"id":{"name":"rm_quartier_nasada","path":"rooms/rm_quartier_nasada/rm_quartier_nasada.yy",},},
     {"id":{"name":"TileSet4","path":"tilesets/TileSet4/TileSet4.yy",},},
     {"id":{"name":"obj_portail_lycee","path":"objects/obj_portail_lycee/obj_portail_lycee.yy",},},
     {"id":{"name":"spr_rayan_straight","path":"sprites/spr_rayan_straight/spr_rayan_straight.yy",},},
@@ -197,6 +197,7 @@
     {"roomId":{"name":"rm_MarieHub","path":"rooms/rm_MarieHub/rm_MarieHub.yy",},},
     {"roomId":{"name":"rm_ruelle_mindoors","path":"rooms/rm_ruelle_mindoors/rm_ruelle_mindoors.yy",},},
     {"roomId":{"name":"rm_ruelle1","path":"rooms/rm_ruelle1/rm_ruelle1.yy",},},
+    {"roomId":{"name":"rm_quartier_nasada","path":"rooms/rm_quartier_nasada/rm_quartier_nasada.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [

@@ -87,10 +87,13 @@ var inst = collision_rectangle(rx1, ry1, rx2, ry2, obj_interaction, true, false)
 
 if (accept_key and inst != noone)
 {
-	if (inst.text_id != "" and !instance_exists(obj_textbox))
-		create_textbox(inst.text_id);
+	if (inst.text_id != "")
+	{
+		if (!instance_exists(obj_textbox))
+			create_textbox(inst.text_id);
+	}
 		
-	if (inst.cutscene != noone and !instance_exists(obj_cutscene_parent))	
+	else if (inst.cutscene != noone and !instance_exists(obj_cutscene_parent))	
 	{
 		if (inst.quete.objectif == inst.objectif_index)
 			instance_create_depth(0,0,-9999, obj_cutscene_bac_1)
