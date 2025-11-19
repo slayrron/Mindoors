@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_maison_pnj_1",
+  "name": "obj_maison_nasada",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_maison_pnj_1",
-    "path": "sprites/spr_maison_pnj_1/spr_maison_pnj_1.yy",
+    "name": "spr_maison_nasada",
+    "path": "sprites/spr_maison_nasada/spr_maison_nasada.yy",
   },
   "spriteMaskId": null,
   "visible": true,

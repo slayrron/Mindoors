@@ -1,13 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_maison_pnj_1",
+  "name": "obj_barriere_maison",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objets",
-    "path": "folders/Objets.yy",
+    "name": "Objets déco",
+    "path": "folders/Objets/Objets déco.yy",
   },
   "parentObjectId": {
     "name": "obj_mur",
@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_maison_pnj_1",
-    "path": "sprites/spr_maison_pnj_1/spr_maison_pnj_1.yy",
+    "name": "spr_barriere_bois",
+    "path": "sprites/spr_barriere_bois/spr_barriere_bois.yy",
   },
   "spriteMaskId": null,
   "visible": true,

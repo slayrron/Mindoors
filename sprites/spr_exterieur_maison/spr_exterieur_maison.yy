@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_trottoir",
-  "bbox_bottom": 143,
+  "name": "spr_exterieur_maison",
+  "bbox_bottom": 63,
   "bbox_left": 0,
-  "bbox_right": 63,
+  "bbox_right": 49,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fc313a18-22ed-4a8c-8089-ab80a087d6c9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"db07b1fc-af12-4cbe-a368-bc22f7cd64cb",},
   ],
-  "gridX": 16,
-  "gridY": 16,
-  "height": 160,
+  "gridX": 0,
+  "gridY": 0,
+  "height": 64,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8eb8c66e-4d0e-4dcc-a0b2-b9c0c167a234","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4ffe72ca-7afa-47fb-8a1e-ddaf5cce8b1e","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_trottoir",
+    "name": "spr_exterieur_maison",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"fc313a18-22ed-4a8c-8089-ab80a087d6c9","path":"sprites/spr_trottoir/spr_trottoir.yy",},},},"Disabled":false,"id":"cc6fe893-f3ab-48a8-a9ca-f3366401276f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"db07b1fc-af12-4cbe-a368-bc22f7cd64cb","path":"sprites/spr_exterieur_maison/spr_exterieur_maison.yy",},},},"Disabled":false,"id":"26c5ba19-addb-40b9-bc90-a4f928d2095b","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
