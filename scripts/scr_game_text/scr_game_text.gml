@@ -32,6 +32,11 @@ function scr_game_text(_text_id) {
 			create_text("Vous avez reposer le livre, l'esprit CHIIIIILL")
 		break
 			
+		case "troue louche":
+			create_text("Tu peux entendre des voix hurler")
+			create_text("Tu sens que tu devrais reculer")
+		break
+		
 			//PNJ
 		case "Maire" :
 			create_text("Oh.. C'est toi ? Pourquoi tu me regardes comme ça ?")
@@ -43,9 +48,24 @@ function scr_game_text(_text_id) {
 		case "absolument" :
 			create_text("PARFAIT, demande leurs de partir.. S'il te plait. Je t'aiderai un jour.")
 		break
-		case "je ne crois pas" :
+		case "Je ne crois pas" :
 			create_text("Ah.. Bah vas-t-en de ma mairie alors.")
 			create_text("Tu es adopté.")
+		break
+		
+		case "Junkie 1" : 
+			create_text("Le jeune semble te regarder d'un oeil mauvais")
+				create_option("Vous ne devriez pas être là.", "partez")
+				create_option("Vous reculez", "Partir")
+				
+		break
+			
+			case "partez" :
+				create_text("''T'es qui toi ?''")
+				create_text("Vous reculez honteusement")
+		break
+		case "Partir" :
+			create_text("Vous reculez honteusement")
 		break
 			
 		
