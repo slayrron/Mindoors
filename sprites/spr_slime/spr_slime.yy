@@ -28,8 +28,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Personnages",
-    "path": "folders/Sprites/Personnages.yy",
+    "name": "perso de fight",
+    "path": "folders/Sprites/Personnages/perso de fight.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
