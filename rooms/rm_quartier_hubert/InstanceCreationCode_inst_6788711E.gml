@@ -1,3 +1,3 @@
 t_rm = rm_centre_ville
-t_x = 576
-t_y = 26
+t_x = 1228
+t_y = 346

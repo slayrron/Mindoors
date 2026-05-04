@@ -37,7 +37,7 @@ function scr_game_text(_text_id) {
 			create_text("Tu sens que tu devrais reculer")
 		break
 		
-			//PNJ
+		//-----------------PNJ-------------------------------
 		case "Maire" :
 			create_text("Oh.. C'est toi ? Pourquoi tu me regardes comme ça ?")
 			create_text("Bref.. Tu as entendu parler des jeunes qui me déteste ?")

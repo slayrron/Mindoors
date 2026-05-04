@@ -134,6 +134,8 @@
     {"name":"inst_7CFD75AB","path":"rooms/rm_ecole/rm_ecole.yy",},
     {"name":"inst_70A3781E","path":"rooms/rm_ecole/rm_ecole.yy",},
     {"name":"inst_16DA04C6","path":"rooms/rm_ecole/rm_ecole.yy",},
+    {"name":"inst_2FA2A6B6","path":"rooms/rm_ecole/rm_ecole.yy",},
+    {"name":"inst_E5F58C0","path":"rooms/rm_ecole/rm_ecole.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -267,8 +269,10 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7CFD75AB","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_teleporter","path":"objects/obj_teleporter/obj_teleporter.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":848.0,"y":304.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_70A3781E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_bacheliere","path":"objects/obj_bacheliere/obj_bacheliere.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":120.0,"y":40.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_16DA04C6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_travaux","path":"objects/obj_travaux/obj_travaux.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":560.0,"y":448.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2FA2A6B6","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_teleporter","path":"objects/obj_teleporter/obj_teleporter.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":304.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_E5F58C0","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_teleporter","path":"objects/obj_teleporter/obj_teleporter.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":512.0,"y":672.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_1","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":43,"SerialiseWidth":54,"TileCompressedData":[
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Ecole","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":43,"SerialiseWidth":54,"TileCompressedData":[
 1,-2147483648,-8,0,38,2,10,11,2,10,11,2,10,11,2,10,11,2,2,8,9,8,9,8,9,8,9,8,9,2,2,10,11,2,10,11,2,10,11,2,10,11,2,-5,0,-3,-2147483648,-8,0,38,2,26,27,2,
 26,27,2,26,27,2,26,27,2,2,24,25,24,25,24,25,24,25,24,25,2,2,26,27,2,26,27,2,26,27,2,26,27,2,-5,0,-3,-2147483648,8,48,49,50,48,49,50,0,0,-14,2,10,40,41,40,41,
 40,41,40,41,40,41,-14,2,-5,0,-3,-2147483648,8,64,65,66,64,65,66,0,0,-38,2,-5,0,-3,-2147483648,8,80,81,82,80,81,82,0,0,-15,2,8,6,7,2,6,7,2,6,7,-15,2,-5,0,-3,-2147483648,-8,

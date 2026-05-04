@@ -45,6 +45,10 @@ if (text_pause_timer <= 0)
 		var _check_char = string_char_at(text[page], draw_char)
 		if (_check_char == "," or _check_char == "?" or (_check_char == "!" and string_char_at(text[page], clamp(draw_char+1, 0, text_longueur[page])) != "!") or (_check_char == "." and string_char_at(text[page], clamp(draw_char+1, 0, text_longueur[page])) != "."))
 		{
+			text_pause_timer = text_long_pause_time
+		}
+		else if (_check_char != "'")
+		{
 			text_pause_timer = text_pause_time
 		}
 	}

@@ -31,4 +31,5 @@ set_defaults_for_text()
 last_free_space = 0
 
 text_pause_timer = 0
-text_pause_time = 20
+text_pause_time = 1
+text_long_pause_time = 20

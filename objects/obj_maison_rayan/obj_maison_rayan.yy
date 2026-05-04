@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_maison_hubert",
+  "name": "obj_maison_rayan",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_maison_hubert",
-    "path": "sprites/spr_maison_hubert/spr_maison_hubert.yy",
+    "name": "spr_maison_rayan",
+    "path": "sprites/spr_maison_rayan/spr_maison_rayan.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -40,6 +40,7 @@
     {"name":"inst_2BC6A933","path":"rooms/rm_quartier_hubert/rm_quartier_hubert.yy",},
     {"name":"inst_52E5149","path":"rooms/rm_quartier_hubert/rm_quartier_hubert.yy",},
     {"name":"inst_3153A25C","path":"rooms/rm_quartier_hubert/rm_quartier_hubert.yy",},
+    {"name":"inst_6788711E","path":"rooms/rm_quartier_hubert/rm_quartier_hubert.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -79,6 +80,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4932E18A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_maison_pnj_1","path":"objects/obj_maison_pnj_1/obj_maison_pnj_1.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":682.0,"y":96.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_154323C2","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_teleporter","path":"objects/obj_teleporter/obj_teleporter.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1024.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3153A25C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_maison_hubert","path":"objects/obj_maison_hubert/obj_maison_hubert.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":490.0,"y":96.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6788711E","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_teleporter","path":"objects/obj_teleporter/obj_teleporter.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":256.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"exterieur_maison","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":28,"SerialiseWidth":66,"TileCompressedData":[
 -330,-2147483648,-2,0,1,268435459,-8,268435457,-39,1,1,2,-4,0,-13,-2147483648,2,268435463,268435462,-10,-2147483648,2,4,5,-10,-2147483648,2,4,5,-10,-2147483648,2,4,5,-10,-2147483648,4,6,-2147483648,0,0,-14,-2147483648,2,268435463,268435466,-10,-2147483648,2,8,9,-10,-2147483648,2,8,9,-10,-2147483648,2,8,9,-10,-2147483648,4,10,-2147483648,
