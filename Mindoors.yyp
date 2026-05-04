@@ -41,6 +41,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Expressions","folderPath":"folders/Sprites/Personnages/Hubert/Expressions.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Nasada","folderPath":"folders/Sprites/Personnages/Nasada.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Expressions","folderPath":"folders/Sprites/Personnages/Nasada/Expressions.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"perso de fight","folderPath":"folders/Sprites/Personnages/perso de fight.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Player","folderPath":"folders/Sprites/Personnages/Player.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"PNJ","folderPath":"folders/Sprites/Personnages/PNJ.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Rayan","folderPath":"folders/Sprites/Personnages/Rayan.yy",},
@@ -48,7 +49,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Texture Sol","folderPath":"folders/Sprites/Texture Sol.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile sets","folderPath":"folders/Tile sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"centre ville HUB","folderPath":"folders/Tile sets/centre ville HUB.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"perso de fight","folderPath":"folders/Sprites/Personnages/perso de fight.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"fs-pixel-sans-unicode-regular.ttf","CopyToMask":-1,"filePath":"datafiles",},
@@ -60,6 +60,7 @@
   },
   "resources": [
     {"id":{"name":"ts_exterieur_maison","path":"tilesets/ts_exterieur_maison/ts_exterieur_maison.yy",},},
+    {"id":{"name":"spr_barriere_bois_2","path":"sprites/spr_barriere_bois_2/spr_barriere_bois_2.yy",},},
     {"id":{"name":"rm_centre_ville","path":"rooms/rm_centre_ville/rm_centre_ville.yy",},},
     {"id":{"name":"obj_nasada","path":"objects/obj_nasada/obj_nasada.yy",},},
     {"id":{"name":"Passage_pieton","path":"tilesets/Passage_pieton/Passage_pieton.yy",},},
