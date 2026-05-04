@@ -1,15 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_junkie2",
+  "name": "obj_gros_livre",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objets",
-    "path": "folders/Objets.yy",
+    "name": "Objets déco",
+    "path": "folders/Objets/Objets déco.yy",
   },
   "parentObjectId": {
     "name": "obj_interaction",
@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Sprite70",
-    "path": "sprites/Sprite70/Sprite70.yy",
+    "name": "spr_gros_livre",
+    "path": "sprites/spr_gros_livre/spr_gros_livre.yy",
   },
   "spriteMaskId": null,
   "visible": true,

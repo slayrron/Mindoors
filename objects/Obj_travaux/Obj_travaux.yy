@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Obj_travaux",
+  "name": "obj_travaux",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Spr_travaux",
-    "path": "sprites/Spr_travaux/Spr_travaux.yy",
+    "name": "spr_travaux",
+    "path": "sprites/spr_travaux/spr_travaux.yy",
   },
   "spriteMaskId": null,
   "visible": true,

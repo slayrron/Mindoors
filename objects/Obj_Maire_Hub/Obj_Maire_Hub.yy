@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Obj_Maire_Hub",
+  "name": "obj_maire_hub",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Maire",
-    "path": "sprites/spr_Maire/spr_Maire.yy",
+    "name": "spr_maire",
+    "path": "sprites/spr_maire/spr_maire.yy",
   },
   "spriteMaskId": null,
   "visible": true,

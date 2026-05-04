@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_Maire",
+  "name": "spr_maire",
   "bbox_bottom": 14,
   "bbox_left": 0,
   "bbox_right": 12,
@@ -33,7 +33,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_Maire",
+    "name": "spr_maire",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -55,8 +55,8 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"41d1ce5b-0e8b-456e-8a3e-836a90ae50fc","path":"sprites/spr_Maire/spr_Maire.yy",},},},"Disabled":false,"id":"5dac4180-6834-4e05-83d1-056560450d42","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0b615c6a-f399-47a8-aee3-39e765a07bbf","path":"sprites/spr_Maire/spr_Maire.yy",},},},"Disabled":false,"id":"2e75fe3d-fa65-44e7-b584-826a2b6885c5","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"41d1ce5b-0e8b-456e-8a3e-836a90ae50fc","path":"sprites/spr_maire/spr_maire.yy",},},},"Disabled":false,"id":"5dac4180-6834-4e05-83d1-056560450d42","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0b615c6a-f399-47a8-aee3-39e765a07bbf","path":"sprites/spr_maire/spr_maire.yy",},},},"Disabled":false,"id":"2e75fe3d-fa65-44e7-b584-826a2b6885c5","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

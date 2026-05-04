@@ -1,7 +1,7 @@
 {
   "resourceType": "GMTileSet",
   "resourceVersion": "1.0",
-  "name": "TileSet13",
+  "name": "ts_ruelle",
   "autoTileSets": [],
   "macroPageTiles": {
     "SerialiseHeight": 0,
@@ -16,8 +16,8 @@
     "path": "folders/Tile sets.yy",
   },
   "spriteId": {
-    "name": "spr_sol_mairie_hub",
-    "path": "sprites/spr_sol_mairie_hub/spr_sol_mairie_hub.yy",
+    "name": "spr_ruelle_inutile",
+    "path": "sprites/spr_ruelle_inutile/spr_ruelle_inutile.yy",
   },
   "spriteNoExport": false,
   "textureGroupId": {

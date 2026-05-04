@@ -1,7 +1,7 @@
 {
   "resourceType": "GMTileSet",
   "resourceVersion": "1.0",
-  "name": "TileSet13",
+  "name": "ts_passage_pieton",
   "autoTileSets": [],
   "macroPageTiles": {
     "SerialiseHeight": 0,
@@ -12,12 +12,12 @@
   "out_tilehborder": 2,
   "out_tilevborder": 2,
   "parent": {
-    "name": "Tile sets",
-    "path": "folders/Tile sets.yy",
+    "name": "centre ville HUB",
+    "path": "folders/Tile sets/centre ville HUB.yy",
   },
   "spriteId": {
-    "name": "spr_sol_mairie_hub",
-    "path": "sprites/spr_sol_mairie_hub/spr_sol_mairie_hub.yy",
+    "name": "Sprite26",
+    "path": "sprites/Sprite26/Sprite26.yy",
   },
   "spriteNoExport": false,
   "textureGroupId": {
