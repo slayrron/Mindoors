@@ -1,18 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_portail_mur",
+  "name": "obj_maison_hubert",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objets déco",
-    "path": "folders/Objets/Objets déco.yy",
+    "name": "Objets",
+    "path": "folders/Objets.yy",
   },
-  "parentObjectId": {
-    "name": "obj_mur",
-    "path": "objects/obj_mur/obj_mur.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -29,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_portail_mur",
-    "path": "sprites/spr_portail_mur/spr_portail_mur.yy",
+    "name": "spr_maison_hubert",
+    "path": "sprites/spr_maison_hubert/spr_maison_hubert.yy",
   },
   "spriteMaskId": null,
   "visible": true,

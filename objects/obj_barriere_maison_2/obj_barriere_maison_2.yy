@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_portail_mur",
+  "name": "obj_barriere_maison_2",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_portail_mur",
-    "path": "sprites/spr_portail_mur/spr_portail_mur.yy",
+    "name": "spr_barriere_bois_2",
+    "path": "sprites/spr_barriere_bois_2/spr_barriere_bois_2.yy",
   },
   "spriteMaskId": null,
   "visible": true,
