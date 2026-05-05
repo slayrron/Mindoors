@@ -68,6 +68,9 @@ function scr_game_text(_text_id) {
 			create_text("Vous reculez honteusement")
 		break
 			
+		case "Junkie 2" :
+			create_text("''...''")
+		break
 		
 		//-------------- CINEMATIQUES ---------------
 		

@@ -1,20 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_junkie2",
+  "name": "Obj_entre_de_ruel1",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Persos",
-    "path": "folders/Objets/Persos.yy",
+    "name": "Objets",
+    "path": "folders/Objets.yy",
   },
-  "parentObjectId": {
-    "name": "obj_interaction",
-    "path": "objects/obj_interaction/obj_interaction.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -31,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Sprite70",
-    "path": "sprites/Sprite70/Sprite70.yy",
+    "name": "spr_entre_de_ruel1",
+    "path": "sprites/spr_entre_de_ruel1/spr_entre_de_ruel1.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -1,15 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_junkie2",
+  "name": "obj_toboggan",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Persos",
-    "path": "folders/Objets/Persos.yy",
+    "name": "Objets",
+    "path": "folders/Objets.yy",
   },
   "parentObjectId": {
     "name": "obj_interaction",
@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Sprite70",
-    "path": "sprites/Sprite70/Sprite70.yy",
+    "name": "spr_tobogan",
+    "path": "sprites/spr_tobogan/spr_tobogan.yy",
   },
   "spriteMaskId": null,
   "visible": true,
