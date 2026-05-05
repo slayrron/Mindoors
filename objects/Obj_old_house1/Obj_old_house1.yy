@@ -1,13 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_maison_rayan",
-  "eventList": [],
+  "name": "Obj_old_house1",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Batiments",
-    "path": "folders/Objets/Batiments.yy",
+    "name": "Objets",
+    "path": "folders/Objets.yy",
   },
   "parentObjectId": {
     "name": "obj_mur",
@@ -29,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_maison_rayan",
-    "path": "sprites/spr_maison_rayan/spr_maison_rayan.yy",
+    "name": "spr_old_house",
+    "path": "sprites/spr_old_house/spr_old_house.yy",
   },
   "spriteMaskId": null,
   "visible": true,

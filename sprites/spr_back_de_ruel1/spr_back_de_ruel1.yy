@@ -1,11 +1,11 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_entre_de_ruel1",
-  "bbox_bottom": 32,
-  "bbox_left": 32,
-  "bbox_right": 63,
-  "bbox_top": 16,
+  "name": "spr_back_de_ruel1",
+  "bbox_bottom": 49,
+  "bbox_left": 31,
+  "bbox_right": 106,
+  "bbox_top": 11,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7f8c7b65-bd41-499b-969f-8f30c663db25",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"27514af0-318c-4f31-bf74-583d03c4b6f3",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 64,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a66fea53-3826-47a7-95ec-b5793d0e4adb","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"fcfde3e2-364e-4ab7-90c9-af42a50df6c3","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_entre_de_ruel1",
+    "name": "spr_back_de_ruel1",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7f8c7b65-bd41-499b-969f-8f30c663db25","path":"sprites/spr_entre_de_ruel1/spr_entre_de_ruel1.yy",},},},"Disabled":false,"id":"e3cd1462-fcd1-4ca9-89ce-05df0e6b323f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"27514af0-318c-4f31-bf74-583d03c4b6f3","path":"sprites/spr_back_de_ruel1/spr_back_de_ruel1.yy",},},},"Disabled":false,"id":"44d6fdcd-0ab7-41eb-9608-11764b1c2053","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 64,
+  "width": 128,
 }
