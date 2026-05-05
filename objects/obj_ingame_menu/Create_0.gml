@@ -8,3 +8,5 @@ elm_number = array_length(elements[0])
 elm_pos = 0
 
 stat_name = ["Santé", "Attaque", "Défense", "Vitesse", "Agilité"]
+
+line_sep = 12

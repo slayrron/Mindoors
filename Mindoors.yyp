@@ -201,7 +201,6 @@
     {"id":{"name":"obj_gros_livre","path":"objects/obj_gros_livre/obj_gros_livre.yy",},},
     {"id":{"name":"obj_fade","path":"objects/obj_fade/obj_fade.yy",},},
     {"id":{"name":"obj_junkie2","path":"objects/obj_junkie2/obj_junkie2.yy",},},
-    {"id":{"name":"ts_tobogan","path":"tilesets/ts_tobogan/ts_tobogan.yy",},},
     {"id":{"name":"spr_rayan_left","path":"sprites/spr_rayan_left/spr_rayan_left.yy",},},
     {"id":{"name":"obj_portail_mur","path":"objects/obj_portail_mur/obj_portail_mur.yy",},},
     {"id":{"name":"obj_rayan","path":"objects/obj_rayan/obj_rayan.yy",},},

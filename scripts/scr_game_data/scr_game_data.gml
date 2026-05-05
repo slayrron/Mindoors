@@ -195,7 +195,7 @@ global.quests =
 	{
 		nom: "Bacheliers",
 		description: "C'est le grand jour ! Avez vous le bac ? Tes amis et toi allez être fixés aujourd'hui...",
-		etapes : ["Trouver les feuilles des résultats", "Vérifier les résultats", "Récupérer son bac"],
+		etapes : ["Trouver les feuilles des résultats", "Vérifier les résultats", "Récupérer son bac", "Choisir un lieu pour la fête"],
 		objectif : 0,
 		EXP: 0,
 		gold: 0

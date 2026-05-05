@@ -143,5 +143,7 @@ if (draw_char == text_longueur[page] and page == page_number - 1)
 }
 
 // Affiche le texte
+// draw_text_ext() s'occupe de revenir automatiquement à la ligne après que la largeur line_largeur ait été dépassée
+//
 var characters = string_copy(text[page], 1, draw_char)
 draw_text_ext(textbox_x + text_x_offset[page] + border, textbox_y + border, characters, line_sep, line_largeur)
