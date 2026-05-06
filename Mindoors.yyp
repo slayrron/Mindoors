@@ -60,6 +60,8 @@
     "IDEVersion": "2023.8.1.102",
   },
   "resources": [
+    {"id":{"name":"Obj_rond_point","path":"objects/Obj_rond_point/Obj_rond_point.yy",},},
+    {"id":{"name":"Object58","path":"objects/Object58/Object58.yy",},},
     {"id":{"name":"ts_exterieur_maison","path":"tilesets/ts_exterieur_maison/ts_exterieur_maison.yy",},},
     {"id":{"name":"obj_old_creep","path":"objects/obj_old_creep/obj_old_creep.yy",},},
     {"id":{"name":"spr_barriere_bois_2","path":"sprites/spr_barriere_bois_2/spr_barriere_bois_2.yy",},},
@@ -86,6 +88,7 @@
     {"id":{"name":"spr_interaction","path":"sprites/spr_interaction/spr_interaction.yy",},},
     {"id":{"name":"spr_mur_troue","path":"sprites/spr_mur_troue/spr_mur_troue.yy",},},
     {"id":{"name":"spr_nasada_left","path":"sprites/spr_nasada_left/spr_nasada_left.yy",},},
+    {"id":{"name":"spr_habitat_pnj","path":"sprites/spr_habitat_pnj/spr_habitat_pnj.yy",},},
     {"id":{"name":"rm_quartier_hubert","path":"rooms/rm_quartier_hubert/rm_quartier_hubert.yy",},},
     {"id":{"name":"TileSet2","path":"tilesets/TileSet2/TileSet2.yy",},},
     {"id":{"name":"spr_old_creep","path":"sprites/spr_old_creep/spr_old_creep.yy",},},
