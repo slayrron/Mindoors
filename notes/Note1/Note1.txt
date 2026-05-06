@@ -1,6 +1,6 @@
 //note de trucs à faire// ((C'est RAYAN)) 
 - Creer le shop (interieur)
-- creer la ruel du mindoors world
-- creer la zone immeuble
-- renommé Rayan
-- améliorer probleme tobbogan
+- renommé Rayan (trouve un nom stp)
+- Créer zone bibliothèque
+- créer interieur de maison
+- Arranger probleme caméra (ruel)

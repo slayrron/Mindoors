@@ -72,6 +72,11 @@ function scr_game_text(_text_id) {
 			create_text("''...''")
 		break
 		
+		case "Sleepy man" :
+			create_text("Un homme apparement endormi.")
+			create_text("Vous avez le sentiment que vous ne devriez pas rester ici")
+		break
+		
 		//-------------- CINEMATIQUES ---------------
 		
 		case "bacheliers_intro":
