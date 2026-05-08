@@ -176,9 +176,104 @@ function scr_game_text(_text_id) {
 		case "bacheliers_obj_3":
 			create_text("Oook... Et on l'a fait où cette soirée ?", "rayan-straight")
 			create_text("La dernière fois j’ai choisi.", "hubert-judge")
-			create_text("Player, tu as toujours des bonnes idées toi, on te suit !", "nasada-straight")
+			create_text("Player, tu as toujours des bonnes idées toi, on te suit !", "nasada-happy")
 			create_text("Alleeeeez", "rayan-happy")
 		break
+		
+		case "bacheliers_obj_3_qrt_rayan":
+			create_text("Tiens, je crois que cet idiot de Rayan habite dans le coin...", "hubert-straight")
+			create_text("...", "rayan-angry")
+		break
+		
+		case "bacheliers_obj_3_rayan":
+			if (global.quests.bacheliers.objectif == 3) 
+			{
+				create_text("Vous êtes devant la maison de Rayan, faire la soirée ici ?")
+				create_option("Oui", "bacheliers_obj_3_rayan_oui")
+				create_option("Non", noone)
+			}
+			else 
+			{
+				create_text("La maison de Rayan.")
+			}
+		break
+		
+		case "bacheliers_obj_3_rayan_oui":
+			create_text("Quoi ? Chez moi ? Mais mes parents vont-", "rayan-stress")
+			create_text("SUPER ! On fait ça chez celui qui n’a pas eu le diplôme.", "hubert-happy")
+			create_text("Ok… super..", "rayan-straight")
+		break
+		
+		case "bacheliers_obj_3_qrt_nasada":
+			create_text("Oh Nasada habite dans cette rue !", "rayan-happy")
+			create_text("Oui !", "nasada-happy")
+		break
+		
+		case "bacheliers_obj_3_nasada":
+			if (global.quests.bacheliers.objectif == 3) {
+				create_text("Vous êtes devant la maison de Nasada, faire la soirée ici ?")
+				create_option("Oui", "bacheliers_obj_3_nasada_oui")
+				create_option("Non", noone)
+			}
+			else {
+				create_text("La maison de Nasada.")
+			}
+		break
+		
+		case "bacheliers_obj_3_nasada_oui":
+			create_text("Pourquoi chez moi ? Enfin je veux dire.. hmm..", "nasada-stress")
+			create_text("Si ça te dérange on peut..", "hubert-straight")
+			create_text("Ouais, on pourrait aller chez Player !", "rayan-straight")
+			create_text("Non.. c’est bon ! J’accepte. Je vais juste prévenir mes parents !", "nasada-straight")
+		break
+		
+		
+		case "bacheliers_obj_3_qrt_hubert":
+			create_text("On arrive vers chez moi", "hubert-straight")
+			create_text("Une soirée chez Hubert ? Tu vas nous laisser entrer même ?", "rayan-straight")
+			create_text("Ca pourrait être sympa !", "nasada-happy")
+		break
+		
+		case "bacheliers_obj_3_hubert":
+			if (global.quests.bacheliers.objectif == 3) {
+				create_text("Vous êtes devant la maison d'Hubert, faire la soirée ici ?")
+				create_option("Oui", "bacheliers_obj_3_hubert_oui")
+				create_option("Non", noone)
+			}
+			else {
+				create_text("La maison d'Hubert.")
+			}
+		break
+		
+		case "bacheliers_obj_3_hubert_oui":
+			create_text("Donc chez moi ? Pourquoi pas, mes parents iront dans notre résidence secondaire.", "hubert-straight")
+			create_text("La vie est facile pour certains..", "rayan-angry")
+			create_text("Et j’en suis fier !", "hubert-happy")
+			create_text("Pas la peine de nous chamailler !", "nasada-angry")
+		break
+		
+		case "bacheliers_obj_3_qrt_player":
+			create_text("Ah ! On est à coté de chez toi Player", "nasada-happy")
+			create_text("Je sais pas comment tu fais. Et en plus t'habite dans un immeuble.", "hubert-straight")
+		break
+		
+		case "bacheliers_obj_3_player":
+			if (global.quests.bacheliers.objectif == 3) {
+				create_text("Vous êtes devant votre immeuble, faire la soirée dans votre appartement ?")
+				create_option("Oui", "bacheliers_obj_3_player_oui")
+				create_option("Non", noone)
+			}
+			else {
+				create_text("Votre immeuble.")
+			}
+		break
+		
+		case "bacheliers_obj_3_player_oui":
+			create_text("Chez toi ?", "hubert-doubt")
+			create_text("C'est la première fois que j'y viens.", "nasada-straight")
+			create_text("Bon... pourquoi pas.", "hubert-straight")
+		break
+
 		
 
 		//-------------- COMBATS --------------------

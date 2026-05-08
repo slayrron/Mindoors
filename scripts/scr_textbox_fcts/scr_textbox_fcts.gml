@@ -18,25 +18,21 @@ function create_text(_text)
 	if (argument_count > 1) {
 		switch(argument[1])
 		{
-			case "nasada-straight":
-				speaker_sprite[page_number] = spr_nasada_straight
-			break
+			case "hubert-doubt": speaker_sprite[page_number] = spr_hubert_doubt break
+			case "hubert-happy": speaker_sprite[page_number] = spr_hubert_happy break
+			case "hubert-judge": speaker_sprite[page_number] = spr_hubert_judge break
+			case "hubert-straight": speaker_sprite[page_number] = spr_hubert_straight break
 			
-			case "nasada-stress":
-				speaker_sprite[page_number] = spr_nasada_stress
-			break
-				
-			case "rayan-straight":
-				speaker_sprite[page_number] = spr_rayan_straight
-			break
-				
-			case "rayan-happy":
-				speaker_sprite[page_number] = spr_rayan_happy
-			break
+			case "nasada-angry": speaker_sprite[page_number] = spr_nasada_angry break	
+			case "nasada-happy": speaker_sprite[page_number] = spr_nasada_happy break
+			case "nasada-straight": speaker_sprite[page_number] = spr_nasada_straight break
+			case "nasada-stress": speaker_sprite[page_number] = spr_nasada_stress break
 			
-			case "hubert-judge":
-				speaker_sprite[page_number] = spr_hubert_judge
-			break
+			case "rayan-angry": speaker_sprite[page_number] = spr_rayan_angry break
+			case "rayan-happy": speaker_sprite[page_number] = spr_rayan_happy break
+			case "rayan-straight": speaker_sprite[page_number] = spr_rayan_straight break
+			case "rayan-stress": speaker_sprite[page_number] = spr_rayan_stress break
+			
 		}
 	}
 	page_number++

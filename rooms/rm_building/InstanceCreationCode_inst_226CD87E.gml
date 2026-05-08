@@ -1,0 +1,1 @@
+text_id = "bacheliers_obj_3_player"

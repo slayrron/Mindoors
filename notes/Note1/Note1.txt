@@ -4,3 +4,8 @@
 - Créer zone bibliothèque
 - créer interieur de maison
 - Arranger probleme caméra (ruel)
+- Rendre possible une caméra désynchronisée dans les cinématiques
+- Finir le visuel des quêtes dans le menu
+- Faire le suivi des personnages de l'équipe sur le joueur
+- Mettre le nom du personnage qui parle dans les dialogues
+- Corriger l'affichage des choix

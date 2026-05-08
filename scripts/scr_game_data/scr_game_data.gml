@@ -117,6 +117,20 @@ global.objetLibrary =
 	}
 }
 
+// Toutes les quêtes du jeu
+global.quests = 
+{
+	bacheliers:
+	{
+		nom: "Bacheliers",
+		description: "C'est le grand jour ! Avez vous le bac ? Tes amis et toi allez être fixés aujourd'hui...",
+		etapes : ["Trouver les feuilles des résultats", "Vérifier les résultats", "Récupérer son bac", "Choisir un lieu pour la fête"],
+		objectif : 0,
+		EXP: 0,
+		gold: 0
+	}
+}
+
 // Equipe de héros
 global.party = 
 [
@@ -185,19 +199,5 @@ global.enemies =
 			var _target = _possible_targets[irandom(array_length(_possible_targets)-1)]
 			return [_action, _target]
 		}
-	}
-}
-
-// Toutes les quêtes du jeu
-global.quests = 
-{
-	bacheliers:
-	{
-		nom: "Bacheliers",
-		description: "C'est le grand jour ! Avez vous le bac ? Tes amis et toi allez être fixés aujourd'hui...",
-		etapes : ["Trouver les feuilles des résultats", "Vérifier les résultats", "Récupérer son bac", "Choisir un lieu pour la fête"],
-		objectif : 0,
-		EXP: 0,
-		gold: 0
 	}
 }

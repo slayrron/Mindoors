@@ -89,6 +89,9 @@
     {"name":"inst_7D215141","path":"rooms/rm_building/rm_building.yy",},
     {"name":"inst_2A20ED10","path":"rooms/rm_building/rm_building.yy",},
     {"name":"inst_5CCAB7FE","path":"rooms/rm_building/rm_building.yy",},
+    {"name":"inst_28349D18","path":"rooms/rm_building/rm_building.yy",},
+    {"name":"inst_7872E114","path":"rooms/rm_building/rm_building.yy",},
+    {"name":"inst_226CD87E","path":"rooms/rm_building/rm_building.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -175,6 +178,9 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7D215141","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_mur","path":"objects/obj_mur/obj_mur.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":272.0,"y":848.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2A20ED10","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_mur","path":"objects/obj_mur/obj_mur.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":16.0,"y":848.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5CCAB7FE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Obj_rond_point","path":"objects/Obj_rond_point/Obj_rond_point.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":592.0,"y":432.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_28349D18","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_immeuble_player","path":"objects/obj_immeuble_player/obj_immeuble_player.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":48.0,"y":256.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7872E114","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_trigger_zone","path":"objects/obj_trigger_zone/obj_trigger_zone.yy",},"properties":[],"rotation":0.0,"scaleX":26.0,"scaleY":6.0,"x":544.0,"y":320.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_226CD87E","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_interaction","path":"objects/obj_interaction/obj_interaction.yy",},"properties":[],"rotation":0.0,"scaleX":1.0625,"scaleY":1.0,"x":97.0,"y":384.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Route","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":75,"SerialiseWidth":88,"TileCompressedData":[
 -111,-2147483648,1,0,-87,-2147483648,1,0,-87,-2147483648,1,0,-11,-2147483648,8,1610612740,1073741848,12,1342177301,1073741840,1073741836,1610612760,1073741828,-68,-2147483648,1,0,-11,-2147483648,8,1610612740,1073741848,12,1073741844,1073741841,1073741837,1610612760,1073741829,-68,-2147483648,1,0,-11,-2147483648,8,1610612740,1073741848,12,13,1073741840,1073741836,1610612760,1073741828,-68,-2147483648,1,0,-11,-2147483648,8,1610612740,1073741850,1879048207,1073741842,1073741842,1073741838,1610612762,1073741829,-67,-2147483648,2,33,0,-11,-2147483648,8,1610612740,1073741851,1879048206,1073741843,1073741843,1073741839,1610612763,1073741828,-67,-2147483648,-2,0,
@@ -292,7 +298,7 @@
   "roomSettings": {
     "Height": 1200,
     "inheritRoomSettings": false,
-    "persistent": false,
+    "persistent": true,
     "Width": 1400,
   },
   "sequenceId": null,

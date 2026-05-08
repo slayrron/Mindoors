@@ -77,7 +77,7 @@ if (accept_key and draw_char > 1)
 		else 
 		{
 			
-			if (options_number > 0)
+			if (options_number > 0 and option_link_id[option_pos] != noone)
 			{ 
 				create_textbox(option_link_id[option_pos])
 			}
