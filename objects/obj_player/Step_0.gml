@@ -8,7 +8,7 @@ var accept_key = keyboard_check_pressed(ord("Z"))
 x_speed = (right - left) * move_speed 
 y_speed = (down - up) * move_speed
 
-// Vérifie qu'il n y'a pas de situation bloquante (ex dialogue)
+// Vérifie qu'il n y'a pas de situation bloquante (ex dialogue/cinématique)
 if instance_exists(obj_pauser)
 { 
 	x_speed = 0	
@@ -45,11 +45,33 @@ else
 	{
 		y_speed = 0 
 	}
+	
+	// Bouge le joueur
+	x = x + x_speed
+	y = y + y_speed
+
+	// Bouge les potentiels suiveurs s'il y a eu mouvement et update leur sprite
+	if (array_length(global.party) > 1 and (x != xprevious or y != yprevious))
+	{
+		for (i = array_size-1; i > 0; i--)
+		{
+			latest_pos[i] = latest_pos[i-1]
+			latest_sprite[i] = latest_sprite[i-1]
+		}
+		latest_pos[0] = [x,y]
+		latest_sprite[0] = face
+	
+		for (i = 1; i < array_length(global.party); i++)
+		{
+			friend = global.party[i].world_obj
+			friend.x = latest_pos[15*i][0]
+			friend.y = latest_pos[15*i][1]
+			friend.sprite_index = friend.sprite[latest_sprite[15*i]]
+		}
+	}
 }
 		
-// Bouge le joueur
-x = x + x_speed
-y = y + y_speed
+
 
 // Interactions : uniquement possible quand le joueur regarde la zone d'interaction
 var interact_dist = 6;
@@ -103,11 +125,13 @@ if (accept_key and inst != noone)
 		
 }
 
+// Menu
 if (keyboard_check_pressed(ord("X")) and !instance_exists(obj_ingame_menu) and global.time_remaining == 0) 
 {
 	instance_create_depth(camera_get_view_x(view_camera[0]),camera_get_view_y(view_camera[0]), -99999, obj_ingame_menu)
 }
 
+// TEMP
 if (keyboard_check_pressed(ord("P")) and !instance_exists(obj_cutscene_ecole_start))
 {
 	instance_create_depth(x,y, -99999, obj_cutscene_ecole_start)

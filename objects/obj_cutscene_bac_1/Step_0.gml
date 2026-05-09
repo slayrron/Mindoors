@@ -59,7 +59,7 @@ if (current_state == cutsceneStates.Active)
 		break
 		
 		case 4:
-			if (!instance_exists(obj_textbox))
+			if (no_textbox())
 			{
 				if (obj_nasada.y < 120)
 					obj_nasada.y++
@@ -84,7 +84,7 @@ if (current_state == cutsceneStates.Active)
 		break
 		
 		case 6:
-			if (!instance_exists(obj_textbox))
+			if (no_textbox())
 			{
 				if (obj_hubert.y < 120)
 					obj_hubert.y++
@@ -97,7 +97,7 @@ if (current_state == cutsceneStates.Active)
 		break
 		
 		case 7:
-			if (!instance_exists(obj_textbox))
+			if (no_textbox())
 			{
 				if (counter < 50) 
 					counter++
@@ -110,7 +110,7 @@ if (current_state == cutsceneStates.Active)
 		break
 		
 		case 8:
-			if (!instance_exists(obj_textbox)) {
+			if (no_textbox()) {
 				obj_player.sprite_index = spr_player_down
 				action++
 			}
@@ -158,7 +158,7 @@ if (current_state == cutsceneStates.Active)
 				}
 			}
 			
-			if (rayan_loop == 5 and !instance_exists(obj_textbox))
+			if (rayan_loop == 5 and no_textbox())
 			{
 				obj_nasada.sprite_index = spr_nasada_up
 				obj_player.sprite_index = spr_player_up
@@ -312,6 +312,7 @@ if (current_state == cutsceneStates.Active)
 		
 		case 23:
 			global.quests.bacheliers.objectif++
+			array_delete(global.party, 3, 1)
 			current_state = cutsceneStates.Paused
 		break
 	}

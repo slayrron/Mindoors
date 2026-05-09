@@ -16,7 +16,7 @@ if (current_state == cutsceneStates.Active)
 		break;
 		
 		case 2:
-			if (!instance_exists(obj_textbox))
+			if (no_textbox())
 				action++
 		break
 		

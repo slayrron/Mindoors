@@ -131,7 +131,58 @@ global.quests =
 	}
 }
 
-// Equipe de héros
+global.heros =  {
+	hubert:
+	{
+		nom: "Hubert",
+		sante: 10,
+		pvMax: 40,
+		pv: 40,
+		att: 8,
+		def: 0,
+		vit: 7,
+		agi: 10,
+		ENDMax: 22,
+		END: 22,
+		skills : [global.skillLibrary.coupDePoings],
+		sprites : {idle: spr_hubert_battle_idle, attack: spr_hubert_battle_idle, down: spr_equipe_battle_down},
+		world_obj : obj_hubert
+	},
+	nasada:
+	{
+		nom: "Nasada",
+		sante: 10,
+		pvMax: 40,
+		pv: 40,
+		att: 8,
+		def: 0,
+		vit: 7,
+		agi: 10,
+		ENDMax: 22,
+		END: 22,
+		skills : [global.skillLibrary.coupDePoings],
+		sprites : {idle: spr_hubert_battle_idle, attack: spr_hubert_battle_idle, down: spr_equipe_battle_down},
+		world_obj : obj_nasada
+	},
+	rayan:
+	{
+		nom: "Rayan",
+		sante: 10,
+		pvMax: 40,
+		pv: 40,
+		att: 8,
+		def: 0,
+		vit: 7,
+		agi: 10,
+		ENDMax: 22,
+		END: 22,
+		skills : [global.skillLibrary.coupDePoings],
+		sprites : {idle: spr_hubert_battle_idle, attack: spr_hubert_battle_idle, down: spr_equipe_battle_down},
+		world_obj : obj_rayan
+	}
+}
+
+// Equipe active de héros
 global.party = 
 [
 	{
@@ -150,20 +201,6 @@ global.party =
 		sprites : {idle: spr_player_battle_idle, attack: spr_player_battle_idle, down: spr_equipe_battle_down},
 		quetes : []
 	},
-	{
-		nom: "Hubert",
-		sante: 10,
-		pvMax: 40,
-		pv: 40,
-		att: 8,
-		def: 0,
-		vit: 7,
-		agi: 10,
-		ENDMax: 22,
-		END: 22,
-		skills : [global.skillLibrary.coupDePoings],
-		sprites : {idle: spr_hubert_battle_idle, attack: spr_hubert_battle_idle, down: spr_equipe_battle_down}
-	},	
 ]
 
 // Tous les ennemis du jeu

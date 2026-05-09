@@ -69,7 +69,7 @@ if (current_state == cutsceneStates.Active)
 		// Contournement du joueur : 4-7
 		case 4:
 		{
-			if (!instance_exists(obj_textbox))
+			if (no_textbox())
 			{
 				if (obj_nasada.y > obj_player.bbox_bottom + 4)
 					obj_nasada.y -= 1.5
@@ -192,7 +192,7 @@ if (current_state == cutsceneStates.Active)
 		
 		case 14:
 		{
-			if (!instance_exists(obj_textbox))
+			if (no_textbox())
 			{
 				action++
 			}
@@ -213,5 +213,6 @@ else if (current_state == cutsceneStates.Paused)
 {
 	//Debut de la quête : Bacheliers
 	array_push(global.party[0].quetes, global.quests.bacheliers)
+	array_push(global.party, global.heros.hubert, global.heros.nasada, global.heros.rayan)
 	instance_destroy(self)
 }
