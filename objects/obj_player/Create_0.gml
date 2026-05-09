@@ -12,7 +12,12 @@ face = DOWN
 
 // Tableau qui stock les dernières positions du joueur et ses sprites
 array_size = 50
-for (i = 0; i < array_size; i++) {
-	latest_pos[i] = [x,y]
-	latest_sprite[i] = face
+
+function reset_latest_pos() {
+	for (i = 0; i < array_size; i++) {
+		latest_pos[i] = [x,y]
+		latest_sprite[i] = face
+	}
 }
+
+reset_latest_pos()

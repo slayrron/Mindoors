@@ -115,10 +115,10 @@ if (accept_key and inst != noone)
 			create_textbox(inst.text_id);
 	}
 		
-	else if (inst.cutscene != noone and !instance_exists(obj_cutscene_parent))	
+	else if (inst.cutscene != noone and !instance_exists(obj_cutscene_parent)) 	
 	{
 		if (inst.quete.objectif == inst.objectif_index)
-			instance_create_depth(0,0,-9999, obj_cutscene_bac_1)
+			instance_create_depth(0,0,-9999, obj_cutscene_bac_1) //a changer
 		else
 			show_debug_message(inst.quete.objectif)
 	}
@@ -132,9 +132,9 @@ if (keyboard_check_pressed(ord("X")) and !instance_exists(obj_ingame_menu) and g
 }
 
 // TEMP
-if (keyboard_check_pressed(ord("P")) and !instance_exists(obj_cutscene_ecole_start))
+if (keyboard_check_pressed(ord("P")) and !instance_exists(obj_cutscene_bac_0_debut))
 {
-	instance_create_depth(x,y, -99999, obj_cutscene_ecole_start)
+	instance_create_depth(x,y, -99999, obj_cutscene_bac_0_debut)
 }
 
 // Profondeur
