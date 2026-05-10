@@ -96,6 +96,7 @@
     {"id":{"name":"TileSet2","path":"tilesets/TileSet2/TileSet2.yy",},},
     {"id":{"name":"spr_old_creep","path":"sprites/spr_old_creep/spr_old_creep.yy",},},
     {"id":{"name":"spr_barriere_bois","path":"sprites/spr_barriere_bois/spr_barriere_bois.yy",},},
+    {"id":{"name":"Obj_cutscene_bac_3_nasada","path":"objects/Obj_cutscene_bac_3_nasada/Obj_cutscene_bac_3_nasada.yy",},},
     {"id":{"name":"obj_maison_nasada","path":"objects/obj_maison_nasada/obj_maison_nasada.yy",},},
     {"id":{"name":"obj_trigger_zone","path":"objects/obj_trigger_zone/obj_trigger_zone.yy",},},
     {"id":{"name":"spr_sol_mairie_hub","path":"sprites/spr_sol_mairie_hub/spr_sol_mairie_hub.yy",},},

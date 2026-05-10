@@ -69,7 +69,12 @@ function scr_game_text(_text_id) {
 		break
 			
 		case "Junkie 2" :
-			create_text("''...''")
+			if global.junkie2_test == false {
+				create_text("''...''")
+				global.junkie2_test = true 
+			}
+			else
+				create_text("''Tu veux quoi ? dégages.''")
 		break
 		
 		case "Sleepy man" :

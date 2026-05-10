@@ -118,7 +118,7 @@ if (accept_key and inst != noone)
 	else if (inst.cutscene != noone and !instance_exists(obj_cutscene_parent)) 	
 	{
 		if (inst.quete.objectif == inst.objectif_index)
-			instance_create_depth(0,0,-9999, obj_cutscene_bac_1) //a changer
+			instance_create_depth(0,0,-9999, inst.cutscene) //a changer
 		else
 			show_debug_message(inst.quete.objectif)
 	}

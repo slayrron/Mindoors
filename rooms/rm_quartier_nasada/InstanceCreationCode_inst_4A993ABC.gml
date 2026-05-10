@@ -1,1 +1,3 @@
-text_id = "bacheliers_obj_3_nasada"
+cutscene = Obj_cutscene_bac_3_nasada
+quete = global.quests.bacheliers
+objectif_index = 3
