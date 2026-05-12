@@ -279,7 +279,13 @@ function scr_game_text(_text_id) {
 			create_text("Bon... pourquoi pas.", "hubert-straight")
 		break
 
+		//------------Cinématique secondaire--------//
 		
+		case "souvenirs_obj_0":
+			create_text("Une étrange sensation te monte")
+			create_text("Encore un peu plus...")
+			create_text("Aucun moyen de savoir pourquoi")
+		break
 
 		//-------------- COMBATS --------------------
 		case "cbt_slime":

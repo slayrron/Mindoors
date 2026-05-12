@@ -76,7 +76,7 @@ global.skillLibrary =
 	cris:
 	{
 		nom: "Cris",
-		description: "{0} rigole !",
+		description: "{0} Tu hurles !",
 		subMenu: -1,
 		ENDCost: 0,
 		type: TYPE.ATT,
@@ -128,9 +128,22 @@ global.quests =
 		objectif : 0,
 		EXP: 0,
 		gold: 0
+	},
+	souvenirs: 
+	{
+		nom: "Souvenirs",
+		description: "Les bribes d'un ancien traumatisme refonts surface.",
+		etapes : ["Marcher dans la ville et essayer d'oublier."],
+		objectif : 0,
+		EXP: 0,
+		gold: 0
 	}
 }
 
+
+	
+
+		
 global.heros =  {
 	hubert:
 	{
@@ -199,7 +212,7 @@ global.party =
 		skills : [global.skillLibrary.coupDePoings, global.skillLibrary.tranche, global.skillLibrary.rire],
 		objets : [global.objetLibrary.baie, global.objetLibrary.poisson],
 		sprites : {idle: spr_player_battle_idle, attack: spr_player_battle_idle, down: spr_equipe_battle_down},
-		quetes : []
+		quetes : [global.quests.souvenirs]
 	},
 ]
 
