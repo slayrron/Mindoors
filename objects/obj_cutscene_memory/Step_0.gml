@@ -3,7 +3,6 @@ if (current_state == cutsceneStates.Active){
 	switch(action) {
 		case 0: 
 		
-				camera_set_view_target(view_camera[0], noone)
 			inst = instance_create_depth(0,0,-9999, obj_fade)
 			with inst {
 				alpha = 0
@@ -35,6 +34,10 @@ if (current_state == cutsceneStates.Active){
 		case 3 : 
 			counter = 0
 					create_textbox("souvenirs_obj_0")
+		current_state = cutsceneStates.Paused
 		break
 	}
+}
+else {
+	instance_destroy(self)
 }

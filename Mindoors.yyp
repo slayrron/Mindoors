@@ -51,6 +51,9 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Texture Sol","folderPath":"folders/Sprites/Texture Sol.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile sets","folderPath":"folders/Tile sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"centre ville HUB","folderPath":"folders/Tile sets/centre ville HUB.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Maison Rayan","folderPath":"folders/Pièces/Maison Rayan.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Maison Player","folderPath":"folders/Pièces/Maison Player.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Maison du radin  (hubert)","folderPath":"folders/Pièces/Maison du radin  (hubert).yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"fs-pixel-sans-unicode-regular.ttf","CopyToMask":-1,"filePath":"datafiles",},
@@ -100,6 +103,7 @@
     {"id":{"name":"Obj_cutscene_bac_3_nasada","path":"objects/Obj_cutscene_bac_3_nasada/Obj_cutscene_bac_3_nasada.yy",},},
     {"id":{"name":"obj_maison_nasada","path":"objects/obj_maison_nasada/obj_maison_nasada.yy",},},
     {"id":{"name":"obj_trigger_zone","path":"objects/obj_trigger_zone/obj_trigger_zone.yy",},},
+    {"id":{"name":"rm_bath_rayan","path":"rooms/rm_bath_rayan/rm_bath_rayan.yy",},},
     {"id":{"name":"spr_int_rayan","path":"sprites/spr_int_rayan/spr_int_rayan.yy",},},
     {"id":{"name":"spr_sol_mairie_hub","path":"sprites/spr_sol_mairie_hub/spr_sol_mairie_hub.yy",},},
     {"id":{"name":"spr_table_bac","path":"sprites/spr_table_bac/spr_table_bac.yy",},},
@@ -237,6 +241,7 @@
     {"id":{"name":"obj_junkie2","path":"objects/obj_junkie2/obj_junkie2.yy",},},
     {"id":{"name":"spr_rayan_left","path":"sprites/spr_rayan_left/spr_rayan_left.yy",},},
     {"id":{"name":"obj_portail_mur","path":"objects/obj_portail_mur/obj_portail_mur.yy",},},
+    {"id":{"name":"spr_statuette_rayan","path":"sprites/spr_statuette_rayan/spr_statuette_rayan.yy",},},
     {"id":{"name":"spr_hubert_right","path":"sprites/spr_hubert_right/spr_hubert_right.yy",},},
     {"id":{"name":"obj_rayan","path":"objects/obj_rayan/obj_rayan.yy",},},
     {"id":{"name":"obj_battle_floating_text","path":"objects/obj_battle_floating_text/obj_battle_floating_text.yy",},},
@@ -271,6 +276,7 @@
     {"roomId":{"name":"rm_mn_entree","path":"rooms/rm_mn_entree/rm_mn_entree.yy",},},
     {"roomId":{"name":"rm_mn_vie_cuisine","path":"rooms/rm_mn_vie_cuisine/rm_mn_vie_cuisine.yy",},},
     {"roomId":{"name":"rm_entree_rayan","path":"rooms/rm_entree_rayan/rm_entree_rayan.yy",},},
+    {"roomId":{"name":"rm_bath_rayan","path":"rooms/rm_bath_rayan/rm_bath_rayan.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [

@@ -6,25 +6,29 @@
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,
-  "instanceCreationOrder": [],
+  "instanceCreationOrder": [
+    {"name":"inst_20F3D337","path":"rooms/rm_entree_rayan/rm_entree_rayan.yy",},
+  ],
   "isDnd": false,
   "layers": [
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_1","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":19,"SerialiseWidth":16,"TileCompressedData":[
--21,-2147483648,-3,4,-12,-2147483648,-2,4,-2,11,-2,4,-8,-2147483648,-2,4,
+    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_20F3D337","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_slime","path":"objects/obj_slime/obj_slime.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":128.0,},
+      ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":19,"SerialiseWidth":16,"TileCompressedData":[
+-21,-2147483648,-3,4,-12,-2147483648,-2,4,-2,1073741830,-2,4,-8,-2147483648,-2,4,
 -6,11,-2,4,-5,-2147483648,-2,4,-8,11,-3,4,-2,-2147483648,-2,4,
 -11,11,-2,4,3,-2147483648,4,6,-12,11,-3,4,1,6,-12,11,
 4,805306374,4,4,6,-12,11,4,805306374,4,4,6,-12,11,4,805306374,
 4,4,6,-12,11,4,805306374,4,4,6,-12,11,4,805306374,4,4,
 6,-12,11,4,805306374,4,4,6,-12,11,-3,4,1,6,-11,11,
 -2,4,3,-2147483648,4,4,-11,11,1,4,-3,-2147483648,-2,4,-2,11,
--2,8,6,11,8,8,11,11,4,-6,-2147483648,1,4,-3,8,1,
-12,-3,8,1,4,-8,-2147483648,-8,4,-4,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"ts_rm_int_rayan","path":"tilesets/ts_rm_int_rayan/ts_rm_int_rayan.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
+-2,8,6,805306380,8,8,11,11,4,-6,-2147483648,1,4,-3,8,1,
+1879048198,-3,8,1,4,-8,-2147483648,-8,4,-4,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"ts_rm_int_rayan","path":"tilesets/ts_rm_int_rayan/ts_rm_int_rayan.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "parent": {
-    "name": "Pièces",
-    "path": "folders/Pièces.yy",
+    "name": "Maison Rayan",
+    "path": "folders/Pièces/Maison Rayan.yy",
   },
   "parentRoom": null,
   "physicsSettings": {
