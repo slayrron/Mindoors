@@ -1,9 +1,11 @@
 //note de trucs à faire// ((C'est RAYAN)) 
-- Creer le shop (interieur)
+- Creer le shop (interieur) ((j'ai vraiment la flemme je viens de revoir ça))
 - renommé Rayan (trouve un nom stp)
-- Créer zone bibliothèque
 - créer interieur de maison
 - Arranger probleme caméra (ruel)
 - Finir le visuel des quêtes dans le menu
-- Mettre le nom du personnage qui parle dans les dialogues
+- Mettre le nom du personnage qui parle dans les dialogues (O U I)
 - Corriger l'affichage des choix
+
+- assembler l'interieur de la bibliotheque, un tittle set est en début de production et déjà disponible
+- Creer quelques objet de déco pour la map
