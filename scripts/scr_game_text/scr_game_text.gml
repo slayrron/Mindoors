@@ -79,7 +79,11 @@ function scr_game_text(_text_id) {
 		
 		case "Sleepy man" :
 			create_text("Un homme apparement endormi.")
-			create_text("Vous avez le sentiment que vous ne devriez pas rester ici")
+			create_text("Vous avez le sentiment que vous ne devriez pas rester ici.")
+		break
+		
+		case "frigo":
+			create_text("De délicieuses créations sont certainement gardées dans ce frigo.")
 		break
 		
 		//-------------- CINEMATIQUES ---------------

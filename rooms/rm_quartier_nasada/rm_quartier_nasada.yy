@@ -64,6 +64,7 @@
     {"name":"inst_E6A8EE8","path":"rooms/rm_quartier_nasada/rm_quartier_nasada.yy",},
     {"name":"inst_3CF10DC1","path":"rooms/rm_quartier_nasada/rm_quartier_nasada.yy",},
     {"name":"inst_4A993ABC","path":"rooms/rm_quartier_nasada/rm_quartier_nasada.yy",},
+    {"name":"inst_5D425A34","path":"rooms/rm_quartier_nasada/rm_quartier_nasada.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -105,6 +106,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5A3E1D49","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_barriere_maison","path":"objects/obj_barriere_maison/obj_barriere_maison.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":208.0,"y":304.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3CF10DC1","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_trigger_zone","path":"objects/obj_trigger_zone/obj_trigger_zone.yy",},"properties":[],"rotation":0.0,"scaleX":61.0,"scaleY":1.0,"x":64.0,"y":304.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4A993ABC","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_interaction","path":"objects/obj_interaction/obj_interaction.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":496.0,"y":208.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5D425A34","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_teleporter","path":"objects/obj_teleporter/obj_teleporter.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":560.0,"y":224.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Murs","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_685BB788","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_mur","path":"objects/obj_mur/obj_mur.yy",},"properties":[],"rotation":0.0,"scaleX":64.0,"scaleY":1.0,"x":0.0,"y":320.0,},

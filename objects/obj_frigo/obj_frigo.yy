@@ -1,15 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_table_bac",
+  "name": "obj_frigo",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objets déco",
-    "path": "folders/Objets/Objets déco.yy",
+    "name": "Maison Intérieur",
+    "path": "folders/Objets/Objets déco/Maison Intérieur.yy",
   },
   "parentObjectId": {
     "name": "obj_interaction",
@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_table_bac",
-    "path": "sprites/spr_table_bac/spr_table_bac.yy",
+    "name": "spr_frigo",
+    "path": "sprites/spr_frigo/spr_frigo.yy",
   },
   "spriteMaskId": null,
   "visible": true,
