@@ -8,15 +8,16 @@ function set_defaults_for_text() {
 
 /// @param text
 /// @param [character]
-function create_text(_text) 
+function create_text(_text, _character="", _skip=false) 
 {
 	set_defaults_for_text()
 	
 	text[page_number] = _text
+	skip[page_number] = _skip
 	
 	//get character
-	if (argument_count > 1) {
-		switch(argument[1])
+	if (_character != "") {
+		switch(_character)
 		{
 			case "hubert-doubt": speaker_sprite[page_number] = spr_hubert_doubt break
 			case "hubert-happy": speaker_sprite[page_number] = spr_hubert_happy break
@@ -38,11 +39,14 @@ function create_text(_text)
 	page_number++
 }
 
-function create_option(_option, _link_id)
+function create_option(_option, _link_id, _cutscene=noone)
 { 
 	options[options_number] = _option
 	option_link_id[options_number] = _link_id
+	cutscenes[options_number] = _cutscene
 	options_number++
+	show_debug_message(_cutscene == noone)
+		
 }
 
 function create_textbox(_text_id, _depth=-9999, _x=0, _y=144)

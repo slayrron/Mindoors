@@ -2,8 +2,8 @@ if (current_state == cutsceneStates.Active)
 {
 	switch (action) {
 		case 0:
-			inst = instance_create_depth(0,0,-9999, obj_fade)
-			with inst {
+			fade = instance_create_depth(0,0,-9999, obj_fade)
+			with fade {
 				alpha = 0
 				state = "in"
 			}
@@ -11,7 +11,7 @@ if (current_state == cutsceneStates.Active)
 		break
 		
 		case 1:
-			if (inst.alpha == 1) {
+			if (fade.alpha == 1) {
 				obj_nasada.x = 20
 				obj_nasada.y = 68
 				obj_nasada.sprite_index = spr_nasada_up
@@ -38,7 +38,7 @@ if (current_state == cutsceneStates.Active)
 			else
 			{
 				counter = 0
-				inst.state = "out"
+				fade.state = "out"
 				action++
 			}
 		break

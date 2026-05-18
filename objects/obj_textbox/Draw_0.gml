@@ -73,15 +73,18 @@ if (accept_key and draw_char > 1)
 			page++ 
 			draw_char = 0
 		}
-		// Si c'était la dernière, on regarde si on doit gérér des choix
+		// Si c'était la dernière, on regarde si on doit gérer des choix
 		else 
-		{
-			
-			if (options_number > 0 and option_link_id[option_pos] != noone)
+		{	
+			if (options_number > 0)
 			{ 
-				create_textbox(option_link_id[option_pos])
-			}
+				if (option_link_id[option_pos] != noone)
+					create_textbox(option_link_id[option_pos])
+					
+				else if (cutscenes[option_pos] != noone) 
+					instance_create_depth(x,y, -99999, cutscenes[option_pos])
 			
+			}
 			instance_destroy()
 		}
 	}
@@ -108,6 +111,7 @@ if (speaker_sprite[page] != noone)
 	draw_sprite_ext(sprite_index, image_index, _speaker_x, textbox_y, 1, 1, 0, c_white, 1)
 }
 draw_sprite_ext(textbox_spr, textbox_img, textbox_x + text_x_offset[page], textbox_y, textbox_largeur/textbox_spr_l, textbox_hauteur/textbox_spr_h, 0, c_white, 1)
+
 
 //---------- Gestion des choix -----------
 //
@@ -138,7 +142,7 @@ if (draw_char == text_longueur[page] and page == page_number - 1)
 			draw_sprite(spr_fleche, 0, txtb_x, txtb_y - option_space * options_number + option_space * option)
 		}
 		// Dessine le texte du choix
-		draw_text(txtb_x + 16 + option_border, txtb_y - option_space * options_number+ option_space * option + 2, options[option])
+		draw_text(txtb_x + 16 + option_border, txtb_y - option_space * options_number + option_space * option - 2, options[option])
 	}
 }
 
@@ -147,3 +151,23 @@ if (draw_char == text_longueur[page] and page == page_number - 1)
 //
 var characters = string_copy(text[page], 1, draw_char)
 draw_text_ext(textbox_x + text_x_offset[page] + border, textbox_y + border, characters, line_sep, line_largeur)
+
+
+// Coupe l'orateur actuel et passe au texte suivant automatiquement
+if (skip[page])
+{
+	// Si toute la page actuelle est déjà affichée
+	if (draw_char == text_longueur[page])
+	{
+		// On attend quelques frames avant de passer
+		if (text_pause_timer < -5) {
+			text_pause_timer = 0
+			page++ 
+			draw_char = 0
+		}
+		else
+		{
+			text_pause_timer--
+		}
+	}
+}

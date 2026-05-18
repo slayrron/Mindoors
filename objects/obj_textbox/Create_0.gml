@@ -16,13 +16,15 @@ page_number = 0
 text[0] = "Placeholder"
 text_longueur[0] = string_length(text[0])
 draw_char = 0
-text_speed = 1 
+text_speed = 1
+skip[0] = false
 
 //Les options
 options[0] = ""
 option_link_id[0] = -1
 option_pos = 0 
-options_number = 0 
+options_number = 0
+cutscenes[0] = noone
 
 
 setup = false

@@ -219,12 +219,14 @@ function scr_game_text(_text_id) {
 		break
 		
 		case "bacheliers_obj_3_nasada":
-			if (global.quests.bacheliers.objectif == 3) {
+			if (global.quests.bacheliers.objectif == 3)
+			{
 				create_text("Vous êtes devant la maison de Nasada, faire la soirée ici ?")
-				create_option("Oui", "bacheliers_obj_3_nasada_oui")
+				create_option("Oui", noone, obj_cutscene_bac_3_nasada)
 				create_option("Non", noone)
 			}
-			else {
+			else
+			{
 				create_text("La maison de Nasada.")
 			}
 		break
@@ -244,12 +246,14 @@ function scr_game_text(_text_id) {
 		break
 		
 		case "bacheliers_obj_3_hubert":
-			if (global.quests.bacheliers.objectif == 3) {
+			if (global.quests.bacheliers.objectif == 3)
+			{
 				create_text("Vous êtes devant la maison d'Hubert, faire la soirée ici ?")
 				create_option("Oui", "bacheliers_obj_3_hubert_oui")
 				create_option("Non", noone)
 			}
-			else {
+			else
+			{
 				create_text("La maison d'Hubert.")
 			}
 		break
@@ -267,12 +271,14 @@ function scr_game_text(_text_id) {
 		break
 		
 		case "bacheliers_obj_3_player":
-			if (global.quests.bacheliers.objectif == 3) {
+			if (global.quests.bacheliers.objectif == 3)
+			{
 				create_text("Vous êtes devant votre immeuble, faire la soirée dans votre appartement ?")
 				create_option("Oui", "bacheliers_obj_3_player_oui")
 				create_option("Non", noone)
 			}
-			else {
+			else
+			{
 				create_text("Votre immeuble.")
 			}
 		break
@@ -282,6 +288,25 @@ function scr_game_text(_text_id) {
 			create_text("C'est la première fois que j'y viens.", "nasada-straight")
 			create_text("Bon... pourquoi pas.", "hubert-straight")
 		break
+		
+		case "bacheliers_obj_3_fin":
+			create_text("Enfin bon. On fait comment ?", "nasada-straight")
+			create_text("On se dit rendez-vous ici dans trois heures ?", "hubert-straight")
+			create_text("J’aimerai avoir mon mot à dire aussi !", "rayan-straight")
+			create_text("Ceux qui ont échoué n’ont aucun mot à dire, seuls les vainqueurs écrivent l’histoire. J’AI eu le mention très bien, tu n’as même pas le diplôme.", "hubert-happy")
+			create_text("Je…", "rayan-stress")
+			create_text("...", "rayan-straight")
+			create_text("Al-", "hubert-straight", true)
+			create_text("STOP. Il vous arrive quoi à tous les deux depuis une semaine ?", "nasada-stress")
+			create_text("...", "hubert-straight")
+			create_text("Bref.", "hubert-straight")
+			create_text("On se rejoint plus tard.", "rayan-straight")
+		break
+		
+		case "bacheliers_obj_4_debut":
+			create_text("On devrait y aller nous aussi")
+		break
+		
 
 		//------------Cinématique secondaire--------//
 		
