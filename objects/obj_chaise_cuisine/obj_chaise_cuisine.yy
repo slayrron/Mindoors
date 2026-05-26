@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_plandetravail",
+  "name": "obj_chaise_cuisine",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_plandetravail",
-    "path": "sprites/spr_plandetravail/spr_plandetravail.yy",
+    "name": "spr_chaise_cuisine",
+    "path": "sprites/spr_chaise_cuisine/spr_chaise_cuisine.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -198,7 +198,7 @@ function scr_game_text(_text_id) {
 			if (global.quests.bacheliers.objectif == 3) 
 			{
 				create_text("Vous êtes devant la maison de Rayan, faire la soirée ici ?")
-				create_option("Oui", "bacheliers_obj_3_rayan_oui")
+				create_option("Oui", obj_cutscene_bac_3_rayan)
 				create_option("Non", noone)
 			}
 			else 
@@ -222,7 +222,7 @@ function scr_game_text(_text_id) {
 			if (global.quests.bacheliers.objectif == 3)
 			{
 				create_text("Vous êtes devant la maison de Nasada, faire la soirée ici ?")
-				create_option("Oui", noone, obj_cutscene_bac_3_nasada)
+				create_option("Oui", obj_cutscene_bac_3_nasada)
 				create_option("Non", noone)
 			}
 			else
@@ -249,7 +249,7 @@ function scr_game_text(_text_id) {
 			if (global.quests.bacheliers.objectif == 3)
 			{
 				create_text("Vous êtes devant la maison d'Hubert, faire la soirée ici ?")
-				create_option("Oui", "bacheliers_obj_3_hubert_oui")
+				create_option("Oui", obj_cutscene_bac_3_hubert)
 				create_option("Non", noone)
 			}
 			else
@@ -274,7 +274,7 @@ function scr_game_text(_text_id) {
 			if (global.quests.bacheliers.objectif == 3)
 			{
 				create_text("Vous êtes devant votre immeuble, faire la soirée dans votre appartement ?")
-				create_option("Oui", "bacheliers_obj_3_player_oui")
+				create_option("Oui", obj_cutscene_bac_3_player)
 				create_option("Non", noone)
 			}
 			else

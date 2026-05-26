@@ -313,7 +313,7 @@ if (current_state == cutsceneStates.Active)
 		case 23:
 			global.quests.bacheliers.objectif++
 			array_delete(global.party, 3, 1)
-			current_state = cutsceneStates.Paused
+			current_state = cutsceneStates.Stopped
 		break
 	}
 }

@@ -200,7 +200,7 @@ if (current_state == cutsceneStates.Active)
 		
 		case 15:
 		{
-			current_state = cutsceneStates.Paused
+			current_state = cutsceneStates.Stopped
 		}
 		break;
 		
@@ -209,7 +209,7 @@ if (current_state == cutsceneStates.Active)
 		break
 	}
 }
-else if (current_state == cutsceneStates.Paused)
+else if (current_state == cutsceneStates.Stopped)
 {
 	//Debut de la quête : Bacheliers
 	array_push(global.party[0].quetes, global.quests.bacheliers)

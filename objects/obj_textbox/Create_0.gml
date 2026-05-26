@@ -24,7 +24,6 @@ options[0] = ""
 option_link_id[0] = -1
 option_pos = 0 
 options_number = 0
-cutscenes[0] = noone
 
 
 setup = false

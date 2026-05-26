@@ -87,7 +87,7 @@ if (current_state == cutsceneStates.Active)
 			camera_set_view_target(view_camera[0], obj_player)
 			obj_player.face = UP
 			obj_player.reset_latest_pos()
-			current_state = cutsceneStates.Paused
+			current_state = cutsceneStates.Stopped
 		break
 	}
 }

@@ -39,14 +39,11 @@ function create_text(_text, _character="", _skip=false)
 	page_number++
 }
 
-function create_option(_option, _link_id, _cutscene=noone)
+function create_option(_option, _link_id)
 { 
 	options[options_number] = _option
 	option_link_id[options_number] = _link_id
-	cutscenes[options_number] = _cutscene
 	options_number++
-	show_debug_message(_cutscene == noone)
-		
 }
 
 function create_textbox(_text_id, _depth=-9999, _x=0, _y=144)

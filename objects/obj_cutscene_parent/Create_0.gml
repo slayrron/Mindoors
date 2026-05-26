@@ -4,7 +4,7 @@ fade = noone
 
 enum cutsceneStates {
 	Active,
-	Paused
+	Stopped
 }
 
 current_state = cutsceneStates.Active

@@ -13,7 +13,7 @@ if (current_state == cutsceneStates.Active)
 		
 		case 2:
 		array_push(global.party, global.heros.rayan)
-			current_state = cutsceneStates.Paused
+			current_state = cutsceneStates.Stopped
 		break
 	}
 }

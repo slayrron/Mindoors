@@ -34,7 +34,7 @@ if (current_state == cutsceneStates.Active){
 		case 3 : 
 			counter = 0
 					create_textbox("souvenirs_obj_0")
-		current_state = cutsceneStates.Paused
+		current_state = cutsceneStates.Stopped
 		break
 	}
 }
