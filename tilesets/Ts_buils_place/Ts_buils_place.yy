@@ -16,8 +16,8 @@
     "path": "folders/Tile sets.yy",
   },
   "spriteId": {
-    "name": "Spr_building_place",
-    "path": "sprites/Spr_building_place/Spr_building_place.yy",
+    "name": "spr_building_place",
+    "path": "sprites/spr_building_place/spr_building_place.yy",
   },
   "spriteNoExport": false,
   "textureGroupId": {

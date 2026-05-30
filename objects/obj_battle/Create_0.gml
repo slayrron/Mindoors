@@ -137,6 +137,8 @@ function BattleStateSelectAction()
 function ScrollActions(_team_actions)
 {
 	t_actions = _team_actions
+	
+	//Si on a vu tout le monde dans l'équipe active on change d'équipe
 	if (unit_pos >= array_length(_team_actions)) {
 		unit_pos = 0
 		battle_state = BattleStateTurnProgression
@@ -167,6 +169,7 @@ function BeginAction(unit_action)
 	
 	if (current_action.type == TYPE.OBJ)
 	{
+		// Fonction outil qui permet de trouver un objet grâce à son nom
 		var find_object = function(_obj, _index)
 		{
 			return (_obj.nom == current_action.nom)
@@ -213,7 +216,8 @@ function BattleStatePerformAction()
 					image_index = 0;
 					acting = false;
 				}
-			
+				
+				// Indicateur d'impact
 				if (variable_struct_exists(current_action, "effectSprite"))
 				{
 					if (current_action.effectOnTarget == MODE.ALWAYS or ((current_action.effetOnTarget == MODE.VARIES) and (array_length(current_targets) <= 1)))
@@ -231,6 +235,7 @@ function BattleStatePerformAction()
 						instance_create_depth(x,y,depth-100, obj_battle_effect,{sprite_index: _effet_sprite})
 					}
 				}
+				// Applique la fonction associée à l'action
 				current_action.func(current_user, current_targets)
 			}
 		}

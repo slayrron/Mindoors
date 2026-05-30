@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Obj_rond_point",
+  "name": "obj_rond_point",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],

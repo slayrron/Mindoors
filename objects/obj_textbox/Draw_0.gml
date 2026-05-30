@@ -78,6 +78,13 @@ if (accept_key and draw_char > 1)
 		{	
 			if (options_number > 0)
 			{ 
+				// Vérifie s'il n'y a pas une fonction à executer
+				if (array_length(functions[option_pos]) > 0)
+				{
+					func = functions[option_pos]
+					func[0](func[1], func[2])
+				}
+				
 				// Si on a du texte, c'est une nouvelle textbox à afficher
 				if (typeof(option_link_id[option_pos]) == "string")
 					create_textbox(option_link_id[option_pos])
@@ -85,9 +92,9 @@ if (accept_key and draw_char > 1)
 				// Si on a passé une cinématique, on la crée
 				else if (object_exists(option_link_id[option_pos]) and object_is_ancestor(option_link_id[option_pos], obj_cutscene_parent))
 					instance_create_depth(x,y, -99999, option_link_id[option_pos])
-					
+				
 				// Sinon (noone), on arrête là
-			
+				
 			}
 			instance_destroy()
 		}

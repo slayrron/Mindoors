@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Persos",
-    "path": "folders/Objets/Persos.yy",
+    "name": "PNJ",
+    "path": "folders/Objets/Persos/PNJ.yy",
   },
   "parentObjectId": {
     "name": "obj_interaction",
@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Spr_pnj_sleep",
-    "path": "sprites/Spr_pnj_sleep/Spr_pnj_sleep.yy",
+    "name": "spr_pnj_sleep",
+    "path": "sprites/spr_pnj_sleep/spr_pnj_sleep.yy",
   },
   "spriteMaskId": null,
   "visible": true,

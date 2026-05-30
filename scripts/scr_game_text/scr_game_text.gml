@@ -57,7 +57,6 @@ function scr_game_text(_text_id) {
 			create_text("Le jeune semble te regarder d'un oeil mauvais")
 				create_option("Vous ne devriez pas être là.", "partez")
 				create_option("Vous reculez", "Partir")
-				
 		break
 			
 			case "partez" :
@@ -92,7 +91,7 @@ function scr_game_text(_text_id) {
 			create_text("Alors c'est aujourd'hui.. j'ai peur de voir les résultats..", "nasada-stress")
 			create_text("M'en parle pas ! Je l'avais déjà raté l'année dernière ce diplôme !..", "rayan-straight")
 			create_text("Mais aujourd’hui.. ", "rayan-happy")
-			create_text("C'est la honte Rayan, t'es pauvre et en plus t'es nul.", "hubert-judge")
+			create_text("C'est la honte rayan, t'es pauvre et en plus t'es nul.", "hubert-judge")
 			create_text("AHAHAAAAA. Ce qui ne nous tue pas nous rend plus fort ! Pas vrai ?", "rayan-happy")
 		break
 
@@ -132,7 +131,7 @@ function scr_game_text(_text_id) {
 		break
 		
 		case "bacheliers_obj_1_rayan":
-			create_text("...Rayan ?", "nasada-straight")
+			create_text("...rayan ?", "nasada-straight")
 			create_text("...", "rayan-straight")
 			create_text("Je ne me vois pas...", "rayan-straight")
 			create_text("Arrête...", "hubert-judge")
@@ -143,7 +142,7 @@ function scr_game_text(_text_id) {
 		case "bacheliers_obj_1_ensemble":
 			create_text("Non...non...", "nasada-straight")
 			create_text("Ouais non.", "hubert-judge")
-			create_text("Vous regardez chaque nom, mais celui de Rayan n'est nul part")
+			create_text("Vous regardez chaque nom, mais celui de rayan n'est nul part")
 			create_text("J’ai...encore raté..", "rayan-straight")
 		break
 		
@@ -157,7 +156,7 @@ function scr_game_text(_text_id) {
 		break
 		
 		case "bacheliers_obj_1_separation":
-			create_text("Ou plutôt 0 fois dans ton cas Rayan..", "hubert-judge")
+			create_text("Ou plutôt 0 fois dans ton cas rayan..", "hubert-judge")
 			create_text("..", "rayan-straight")
 		break
 		
@@ -190,20 +189,26 @@ function scr_game_text(_text_id) {
 		break
 		
 		case "bacheliers_obj_3_qrt_rayan":
-			create_text("Tiens, je crois que cet idiot de Rayan habite dans le coin...", "hubert-straight")
+			create_text("Tiens, je crois que cet idiot de rayan habite dans le coin...", "hubert-straight")
 			create_text("...", "rayan-angry")
 		break
 		
-		case "bacheliers_obj_3_rayan":
+		case "bacheliers_maison_rayan":
 			if (global.quests.bacheliers.objectif == 3) 
 			{
-				create_text("Vous êtes devant la maison de Rayan, faire la soirée ici ?")
+				create_text("Vous êtes devant la maison de rayan, faire la soirée ici ?")
 				create_option("Oui", obj_cutscene_bac_3_rayan)
 				create_option("Non", noone)
 			}
+			else if (global.quests.bacheliers.objectif == 4)
+			{
+				create_text("Etes vous prêt à passer la soirée ?")
+				create_option("Oui", obj_cutscene_bac_4_rayan)
+				create_option("Pas encore", noone)
+			}
 			else 
 			{
-				create_text("La maison de Rayan.")
+				create_text("La maison de rayan.")
 			}
 		break
 		
@@ -307,6 +312,33 @@ function scr_game_text(_text_id) {
 			create_text("On devrait y aller nous aussi")
 		break
 		
+		case "bacheliers_obj_4_rayan_0":
+			create_text("...", "nasada-straight")
+			create_text("Quel idiot, il est en retard alors que c’est devant chez lui ?", "hubert-angry")
+			create_option("Il est débile", "bacheliers_obj_4_rayan_1", [update_love, global.heros.hubert, 10])
+			create_option("Il est sûrement en confrontation avec ses parents", "bacheliers_obj_4_rayan_1")
+		break
+		
+		case "bacheliers_obj_4_rayan_1":
+			create_text("Quoi qu’il en soit, j'espère qu’il va bien.", "nasada-stress")
+			create_text("Il va sûrement très bien.", "hubert-straight")
+		break
+		
+		case "bacheliers_obj_4_rayan_2":
+			create_text("Vous faites quoi ici vous ?!")
+		break
+		
+		case "bacheliers_obj_4_rayan_3":
+			create_text("PaRdOn..", "nasada-stress")
+		break
+		
+		case "bacheliers_obj_4_rayan_4":
+			create_text("Je vois donc… Vous dormez ici..?")
+			create_text("Bien, en revanche, Rayan est puni, il n’a pas eu son bac, donc n’interagissez pas avec lui.")
+			create_text("La honte", "hubert-happy")
+			create_text("...")
+			
+		break
 
 		//------------Cinématique secondaire--------//
 		

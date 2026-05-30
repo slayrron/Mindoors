@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "dev",
-    "path": "folders/Objets/dev.yy",
+    "name": "Interaction",
+    "path": "folders/Objets/dev/Interaction.yy",
   },
   "parentObjectId": {
     "name": "obj_pauser",

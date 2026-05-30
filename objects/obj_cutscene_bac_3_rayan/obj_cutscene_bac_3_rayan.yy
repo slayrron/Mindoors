@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Cinématiques",
-    "path": "folders/Objets/dev/Cinématiques.yy",
+    "name": "Principales",
+    "path": "folders/Objets/dev/Cinématiques/Principales.yy",
   },
   "parentObjectId": {
     "name": "obj_cutscene_parent",

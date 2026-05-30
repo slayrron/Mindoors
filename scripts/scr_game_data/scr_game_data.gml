@@ -124,8 +124,8 @@ global.quests =
 	{
 		nom: "Bacheliers",
 		description: "C'est le grand jour ! Avez vous le bac ? Tes amis et toi allez être fixés aujourd'hui...",
-		etapes : ["Trouver les feuilles des résultats", "Vérifier les résultats", "Récupérer son bac", "Choisir un lieu pour la fête"],
-		objectif : 0,
+		etapes : ["Trouver les feuilles des résultats", "Vérifier les résultats", "Récupérer son bac", "Choisir un lieu pour la fête", "Commencer la soirée"],
+		objectif : 4,
 		EXP: 0,
 		gold: 0
 	},
@@ -159,7 +159,8 @@ global.heros =  {
 		END: 22,
 		skills : [global.skillLibrary.coupDePoings],
 		sprites : {idle: spr_hubert_battle_idle, attack: spr_hubert_battle_idle, down: spr_equipe_battle_down},
-		world_obj : obj_hubert
+		world_obj : obj_hubert,
+		love: 0
 	},
 	nasada:
 	{
@@ -175,11 +176,12 @@ global.heros =  {
 		END: 22,
 		skills : [global.skillLibrary.coupDePoings],
 		sprites : {idle: spr_hubert_battle_idle, attack: spr_hubert_battle_idle, down: spr_equipe_battle_down},
-		world_obj : obj_nasada
+		world_obj : obj_nasada,
+		love: 0
 	},
 	rayan:
 	{
-		nom: "Rayan",
+		nom: "rayan",
 		sante: 10,
 		pvMax: 40,
 		pv: 40,
@@ -191,7 +193,8 @@ global.heros =  {
 		END: 22,
 		skills : [global.skillLibrary.coupDePoings],
 		sprites : {idle: spr_hubert_battle_idle, attack: spr_hubert_battle_idle, down: spr_equipe_battle_down},
-		world_obj : obj_rayan
+		world_obj : obj_rayan,
+		love: 0
 	}
 }
 
@@ -212,7 +215,7 @@ global.party =
 		skills : [global.skillLibrary.coupDePoings, global.skillLibrary.tranche, global.skillLibrary.rire],
 		objets : [global.objetLibrary.baie, global.objetLibrary.poisson],
 		sprites : {idle: spr_player_battle_idle, attack: spr_player_battle_idle, down: spr_equipe_battle_down},
-		quetes : [global.quests.souvenirs]
+		quetes : [global.quests.bacheliers, global.quests.souvenirs]
 	},
 ]
 

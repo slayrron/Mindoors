@@ -19,6 +19,7 @@ function create_text(_text, _character="", _skip=false)
 	if (_character != "") {
 		switch(_character)
 		{
+			case "hubert-angry": speaker_sprite[page_number] = spr_hubert_angry break
 			case "hubert-doubt": speaker_sprite[page_number] = spr_hubert_doubt break
 			case "hubert-happy": speaker_sprite[page_number] = spr_hubert_happy break
 			case "hubert-judge": speaker_sprite[page_number] = spr_hubert_judge break
@@ -33,16 +34,16 @@ function create_text(_text, _character="", _skip=false)
 			case "rayan-happy": speaker_sprite[page_number] = spr_rayan_happy break
 			case "rayan-straight": speaker_sprite[page_number] = spr_rayan_straight break
 			case "rayan-stress": speaker_sprite[page_number] = spr_rayan_stress break
-			
 		}
 	}
 	page_number++
 }
 
-function create_option(_option, _link_id)
+function create_option(_option, _link_id, _function=[])
 { 
 	options[options_number] = _option
 	option_link_id[options_number] = _link_id
+	functions[options_number] = _function
 	options_number++
 }
 
@@ -59,4 +60,9 @@ function create_textbox(_text_id, _depth=-9999, _x=0, _y=144)
 function no_textbox()
 {
 	return !instance_exists(obj_textbox)
+}
+
+function update_love(target, number)
+{
+	target.love += number
 }

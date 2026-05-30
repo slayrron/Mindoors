@@ -1,13 +1,13 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "Spr_pnj_sleep",
-  "bbox_bottom": 48,
-  "bbox_left": -4,
-  "bbox_right": 50,
-  "bbox_top": 35,
+  "name": "spr_pnj_sleep",
+  "bbox_bottom": 32,
+  "bbox_left": 12,
+  "bbox_right": 45,
+  "bbox_top": 19,
   "bboxMode": 2,
-  "collisionKind": 2,
+  "collisionKind": 1,
   "collisionTolerance": 0,
   "DynamicTexturePage": false,
   "edgeFiltering": false,
@@ -17,7 +17,7 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 48,
+  "height": 33,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1210bae0-5aeb-4e6c-a555-9c40d00d6e00","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -25,14 +25,14 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Personnages",
-    "path": "folders/Sprites/Personnages.yy",
+    "name": "PNJ",
+    "path": "folders/Sprites/Personnages/PNJ.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "Spr_pnj_sleep",
+    "name": "spr_pnj_sleep",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"647f5f2e-dde3-4a74-b1c2-9955cccd1779","path":"sprites/Spr_pnj_sleep/Spr_pnj_sleep.yy",},},},"Disabled":false,"id":"0db1d1a3-6968-47e4-93a1-688cde068f00","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"647f5f2e-dde3-4a74-b1c2-9955cccd1779","path":"sprites/spr_pnj_sleep/spr_pnj_sleep.yy",},},},"Disabled":false,"id":"0db1d1a3-6968-47e4-93a1-688cde068f00","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 48,
+  "width": 47,
 }

@@ -1,15 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Obj_entre_de_ruel1",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-  ],
+  "name": "obj_rayan_mom",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objets déco",
-    "path": "folders/Objets/Objets déco.yy",
+    "name": "PNJ",
+    "path": "folders/Objets/Persos/PNJ.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -28,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_entre_de_ruel1",
-    "path": "sprites/spr_entre_de_ruel1/spr_entre_de_ruel1.yy",
+    "name": "spr_rayan_mom",
+    "path": "sprites/spr_rayan_mom/spr_rayan_mom.yy",
   },
   "spriteMaskId": null,
   "visible": true,

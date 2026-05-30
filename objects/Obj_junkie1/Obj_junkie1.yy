@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Persos",
-    "path": "folders/Objets/Persos.yy",
+    "name": "PNJ",
+    "path": "folders/Objets/Persos/PNJ.yy",
   },
   "parentObjectId": {
     "name": "obj_interaction",
@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Spr_junkie1",
-    "path": "sprites/Spr_junkie1/Spr_junkie1.yy",
+    "name": "spr_junkie1",
+    "path": "sprites/spr_junkie1/spr_junkie1.yy",
   },
   "spriteMaskId": null,
   "visible": true,
