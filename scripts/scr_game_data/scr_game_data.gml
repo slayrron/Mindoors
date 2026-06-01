@@ -215,7 +215,7 @@ global.party =
 		skills : [global.skillLibrary.coupDePoings, global.skillLibrary.tranche, global.skillLibrary.rire],
 		objets : [global.objetLibrary.baie, global.objetLibrary.poisson],
 		sprites : {idle: spr_player_battle_idle, attack: spr_player_battle_idle, down: spr_equipe_battle_down},
-		quetes : [global.quests.bacheliers, global.quests.souvenirs]
+		quetes : [global.quests.souvenirs]
 	},
 ]
 
