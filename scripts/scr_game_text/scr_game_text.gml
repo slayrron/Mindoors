@@ -12,7 +12,7 @@ function scr_game_text(_text_id) {
 			
 		case "porte ecole":
 			create_text("C'est fermé.")
-			create_text("Le lycée est fermé aujourd'hui...regardons autour !", "nasada-straight")
+			create_text("Le lycée est fermé aujourd'hui...regardons autour !", obj_nasada, NEUTRAL)
 		break
 			
 		case "barriere travaux":
@@ -88,81 +88,81 @@ function scr_game_text(_text_id) {
 		//-------------- CINEMATIQUES ---------------
 		
 		case "bacheliers_intro":
-			create_text("Alors c'est aujourd'hui.. j'ai peur de voir les résultats..", "nasada-stress")
-			create_text("M'en parle pas ! Je l'avais déjà raté l'année dernière ce diplôme !..", "rayan-straight")
-			create_text("Mais aujourd’hui.. ", "rayan-happy")
-			create_text("C'est la honte rayan, t'es pauvre et en plus t'es nul.", "hubert-judge")
-			create_text("AHAHAAAAA. Ce qui ne nous tue pas nous rend plus fort ! Pas vrai ?", "rayan-happy")
+			create_text("Alors c'est aujourd'hui.. j'ai peur de voir les résultats..", obj_nasada, STRESS)
+			create_text("M'en parle pas ! Je l'avais déjà raté l'année dernière ce diplôme !..", obj_rayan, NEUTRAL)
+			create_text("Mais aujourd’hui.. ", obj_rayan, HAPPY)
+			create_text("C'est la honte Rayan, t'es pauvre et en plus t'es nul.", obj_hubert, JUDGE)
+			create_text("AHAHAAAAA. Ce qui ne nous tue pas nous rend plus fort ! Pas vrai ?", obj_rayan, HAPPY)
 		break
 
 		case "bacheliers_start":
-			create_text("Bon...par contre...c'est où ?", "nasada-straight")
-			create_text("Aaaeeeuuuh...", "rayan-straight")
-			create_text("Ca ne devrait pas être très compliqué à trouver.", "hubert-judge")
-			create_text("Allons-y alors !", "rayan-happy")
+			create_text("Bon...par contre...c'est où ?", obj_nasada, NEUTRAL)
+			create_text("Aaaeeeuuuh...", obj_rayan, NEUTRAL)
+			create_text("Ca ne devrait pas être très compliqué à trouver.", obj_hubert, JUDGE)
+			create_text("Allons-y alors !", obj_rayan, HAPPY)
 		break
 			
 		case "bacheliers_obj_0":
-			create_text("C'est là !", "rayan-happy")
-			create_text("Le moment de vérité...", "nasada-stress")
-			create_text("Bon on va pas y passer la journée...", "hubert-judge")
-			create_text("Allez les amis on y va ensemble !", "nasada-straight")
+			create_text("C'est là !", obj_rayan, HAPPY)
+			create_text("Le moment de vérité...", obj_nasada, STRESS)
+			create_text("Bon on va pas y passer la journée...", obj_hubert, JUDGE)
+			create_text("Allez les amis on y va ensemble !", obj_nasada, NEUTRAL)
 		break
 		
 		case "bacheliers_obj_1_nasada":
-			create_text("OUIIII Je l'ai !!")
+			create_text("OUIIII Je l'ai !!", obj_nasada, HAPPY)
 		break	
 		case "bacheliers_obj_1_hubert":
-			create_text("hmpf...aucune surprise...", "hubert-judge")
+			create_text("hmpf...aucune surprise...", obj_hubert, JUDGE)
 		break
 		case "bacheliers_obj_1_player":
 			create_text("Vous défilez les noms...non...toujours pas..et..et..vous voila ! Vous l'avez !")
 		break
 		
 		case "bacheliers_obj_1_bravo":
-			create_text("Félicitations !!", "nasada-straight")
-			create_text("C'était facile.", "hubert-judge")
-			create_text("C’est vrai.. j’ai stressée pour rien !", "nasada-straight")
+			create_text("Félicitations !!", obj_nasada, HAPPY)
+			create_text("C'était facile.", obj_hubert, JUDGE)
+			create_text("C’est vrai.. j’ai stressée pour rien !", obj_nasada, HAPPY)
 		break
 		
 		case "bacheliers_obj_1_?":
-			create_text("...", "nasada-straight")
-			create_text("...", "hubert-judge")
+			create_text("...", obj_nasada, NEUTRAL)
+			create_text("...", obj_hubert, JUDGE)
 		break
 		
 		case "bacheliers_obj_1_rayan":
-			create_text("...rayan ?", "nasada-straight")
-			create_text("...", "rayan-straight")
-			create_text("Je ne me vois pas...", "rayan-straight")
-			create_text("Arrête...", "hubert-judge")
-			create_text("...", "rayan-straight")
-			create_text("Attends, regardons ensemble si on ne te trouve pas !", "nasada-stress")
+			create_text("...Rayan ?", obj_nasada, NEUTRAL)
+			create_text("...", obj_rayan, NEUTRAL)
+			create_text("Je ne me vois pas...", obj_rayan, NEUTRAL)
+			create_text("Arrête...", obj_hubert, JUDGE)
+			create_text("...", obj_rayan, NEUTRAL)
+			create_text("Attends, regardons ensemble si on ne te trouve pas !", obj_nasada, STRESS)
 		break
 		
 		case "bacheliers_obj_1_ensemble":
-			create_text("Non...non...", "nasada-straight")
-			create_text("Ouais non.", "hubert-judge")
+			create_text("Non...non...", obj_nasada, NEUTRAL)
+			create_text("Ouais non.", obj_hubert, JUDGE)
 			create_text("Vous regardez chaque nom, mais celui de rayan n'est nul part")
-			create_text("J’ai...encore raté..", "rayan-straight")
+			create_text("J’ai...encore raté..", obj_rayan, NEUTRAL)
 		break
 		
 		case "bacheliers_obj_1_reunion":
-			create_text("...", "nasada-straight")
-			create_text("T’es pathétique sérieux. On dirait que tu fais tout pour rater ton avenir..", "hubert-judge")
-			create_text("Ça va aller tu crois ? Tes parents vont..", "nasada-stress")
-			create_text("T’inquiète ! Ça va le faire !", "rayan-happy")
-			create_text("Mais...", "nasada-stress")
-			create_text("Bref. Dommage. Ça vous dit qu’on fasse une soirée pour fêter ça ? Le bac, on ne l’a qu’une fois dans notre vie.", "rayan-happy")
+			create_text("...", obj_nasada, NEUTRAL)
+			create_text("T’es pathétique sérieux. On dirait que tu fais tout pour rater ton avenir..", obj_hubert, JUDGE)
+			create_text("Ça va aller tu crois ? Tes parents vont..", obj_nasada, STRESS)
+			create_text("T’inquiète ! Ça va le faire !", obj_rayan, HAPPY)
+			create_text("Mais...", obj_nasada, STRESS)
+			create_text("Bref. Dommage. Ça vous dit qu’on fasse une soirée pour fêter ça ? Le bac, on ne l’a qu’une fois dans notre vie.", obj_rayan, HAPPY)
 		break
 		
 		case "bacheliers_obj_1_separation":
-			create_text("Ou plutôt 0 fois dans ton cas rayan..", "hubert-judge")
-			create_text("..", "rayan-straight")
+			create_text("Ou plutôt 0 fois dans ton cas Rayan..", obj_hubert, JUDGE)
+			create_text("..", obj_rayan, NEUTRAL)
 		break
 		
 		case "bacheliers_obj_transition_1-2":
-			create_text("Hubert...", "nasada-straight")
-			create_text("Allez on doit récupérer nos bulletins nous", "hubert-judge")
+			create_text("Hubert...", obj_nasada, NEUTRAL)
+			create_text("Allez on doit récupérer nos bulletins nous", obj_hubert, JUDGE)
 		break
 		
 		case "bacheliers_obj_2":
@@ -182,15 +182,15 @@ function scr_game_text(_text_id) {
 		break
 		
 		case "bacheliers_obj_3":
-			create_text("Oook... Et on l'a fait où cette soirée ?", "rayan-straight")
-			create_text("La dernière fois j’ai choisi.", "hubert-judge")
-			create_text("Player, tu as toujours des bonnes idées toi, on te suit !", "nasada-happy")
-			create_text("Alleeeeez", "rayan-happy")
+			create_text("Oook... Et on l'a fait où cette soirée ?", obj_rayan, NEUTRAL)
+			create_text("La dernière fois j’ai choisi.", obj_hubert, JUDGE)
+			create_text("Player, tu as toujours des bonnes idées toi, on te suit !", obj_nasada, HAPPY)
+			create_text("Alleeeeez", obj_rayan, HAPPY)
 		break
 		
 		case "bacheliers_obj_3_qrt_rayan":
-			create_text("Tiens, je crois que cet idiot de rayan habite dans le coin...", "hubert-straight")
-			create_text("...", "rayan-angry")
+			create_text("Tiens, je crois que cet idiot de rayan habite dans le coin...", obj_hubert, NEUTRAL)
+			create_text("...", obj_rayan, ANGRY)
 		break
 		
 		case "bacheliers_maison_rayan":
@@ -213,14 +213,14 @@ function scr_game_text(_text_id) {
 		break
 		
 		case "bacheliers_obj_3_rayan_oui":
-			create_text("Quoi ? Chez moi ? Mais mes parents vont-", "rayan-stress")
-			create_text("SUPER ! On fait ça chez celui qui n’a pas eu le diplôme.", "hubert-happy")
-			create_text("Ok… super..", "rayan-straight")
+			create_text("Quoi ? Chez moi ? Mais mes parents vont-", obj_rayan, STRESS)
+			create_text("SUPER ! On fait ça chez celui qui n’a pas eu le diplôme.", obj_hubert, HAPPY)
+			create_text("Ok… super..", obj_rayan, NEUTRAL)
 		break
 		
 		case "bacheliers_obj_3_qrt_nasada":
-			create_text("Oh Nasada habite dans cette rue !", "rayan-happy")
-			create_text("Oui !", "nasada-happy")
+			create_text("Oh Nasada habite dans cette rue !", obj_rayan, HAPPY)
+			create_text("Oui !", obj_nasada, HAPPY)
 		break
 		
 		case "bacheliers_obj_3_nasada":
@@ -237,17 +237,17 @@ function scr_game_text(_text_id) {
 		break
 		
 		case "bacheliers_obj_3_nasada_oui":
-			create_text("Pourquoi chez moi ? Enfin je veux dire.. hmm..", "nasada-stress")
-			create_text("Si ça te dérange on peut..", "hubert-straight")
-			create_text("Ouais, on pourrait aller chez Player !", "rayan-straight")
-			create_text("Non.. c’est bon ! J’accepte. Je vais juste prévenir mes parents !", "nasada-straight")
+			create_text("Pourquoi chez moi ? Enfin je veux dire.. hmm..", obj_nasada, "nasada-stress")
+			create_text("Si ça te dérange on peut..", obj_hubert, NEUTRAL)
+			create_text("Ouais, on pourrait aller chez Player !", obj_rayan, NEUTRAL)
+			create_text("Non.. c’est bon ! J’accepte. Je vais juste prévenir mes parents !", obj_nasada, NEUTRAL)
 		break
 		
 		
 		case "bacheliers_obj_3_qrt_hubert":
-			create_text("On arrive vers chez moi", "hubert-straight")
-			create_text("Une soirée chez Hubert ? Tu vas nous laisser entrer même ?", "rayan-straight")
-			create_text("Ca pourrait être sympa !", "nasada-happy")
+			create_text("On arrive vers chez moi", obj_hubert, NEUTRAL)
+			create_text("Une soirée chez Hubert ? Tu vas nous laisser entrer même ?", obj_rayan, NEUTRAL)
+			create_text("Ca pourrait être sympa !", obj_nasada, HAPPY)
 		break
 		
 		case "bacheliers_obj_3_hubert":
@@ -264,15 +264,15 @@ function scr_game_text(_text_id) {
 		break
 		
 		case "bacheliers_obj_3_hubert_oui":
-			create_text("Donc chez moi ? Pourquoi pas, mes parents iront dans notre résidence secondaire.", "hubert-straight")
-			create_text("La vie est facile pour certains..", "rayan-angry")
-			create_text("Et j’en suis fier !", "hubert-happy")
-			create_text("Pas la peine de nous chamailler !", "nasada-angry")
+			create_text("Donc chez moi ? Pourquoi pas, mes parents iront dans notre résidence secondaire.", obj_hubert, NEUTRAL)
+			create_text("La vie est facile pour certains..", obj_rayan, ANGRY)
+			create_text("Et j’en suis fier !", obj_hubert, HAPPY)
+			create_text("Pas la peine de nous chamailler !", obj_nasada, ANGRY)
 		break
 		
 		case "bacheliers_obj_3_qrt_player":
-			create_text("Ah ! On est à coté de chez toi Player", "nasada-happy")
-			create_text("Je sais pas comment tu fais. Et en plus t'habite dans un immeuble.", "hubert-straight")
+			create_text("Ah ! On est à coté de chez toi Player", obj_nasada, HAPPY)
+			create_text("Je sais pas comment tu fais. Et en plus t'habite dans un immeuble.", obj_hubert, NEUTRAL)
 		break
 		
 		case "bacheliers_obj_3_player":
@@ -289,39 +289,39 @@ function scr_game_text(_text_id) {
 		break
 		
 		case "bacheliers_obj_3_player_oui":
-			create_text("Chez toi ?", "hubert-doubt")
-			create_text("C'est la première fois que j'y viens.", "nasada-straight")
-			create_text("Bon... pourquoi pas.", "hubert-straight")
+			create_text("Chez toi ?", obj_hubert, DOUBT)
+			create_text("C'est la première fois que j'y viens.", obj_nasada, NEUTRAL)
+			create_text("Bon... pourquoi pas.", obj_hubert, NEUTRAL)
 		break
 		
 		case "bacheliers_obj_3_fin":
-			create_text("Enfin bon. On fait comment ?", "nasada-straight")
-			create_text("On se dit rendez-vous ici dans trois heures ?", "hubert-straight")
-			create_text("J’aimerai avoir mon mot à dire aussi !", "rayan-straight")
-			create_text("Ceux qui ont échoué n’ont aucun mot à dire, seuls les vainqueurs écrivent l’histoire. J’AI eu le mention très bien, tu n’as même pas le diplôme.", "hubert-happy")
-			create_text("Je…", "rayan-stress")
-			create_text("...", "rayan-straight")
-			create_text("Al-", "hubert-straight", true)
-			create_text("STOP. Il vous arrive quoi à tous les deux depuis une semaine ?", "nasada-stress")
-			create_text("...", "hubert-straight")
-			create_text("Bref.", "hubert-straight")
-			create_text("On se rejoint plus tard.", "rayan-straight")
+			create_text("Enfin bon. On fait comment ?", obj_nasada, NEUTRAL)
+			create_text("On se dit rendez-vous ici dans trois heures ?", obj_hubert, NEUTRAL)
+			create_text("J’aimerai avoir mon mot à dire aussi !", obj_rayan, NEUTRAL)
+			create_text("Ceux qui ont échoué n’ont aucun mot à dire, seuls les vainqueurs écrivent l’histoire. J’AI eu le mention très bien, tu n’as même pas le diplôme.", obj_hubert, HAPPY)
+			create_text("Je…", obj_rayan, "rayan-stress")
+			create_text("...", obj_rayan, NEUTRAL)
+			create_text("Al-", obj_hubert, NEUTRAL, true)
+			create_text("STOP. Il vous arrive quoi à tous les deux depuis une semaine ?", obj_nasada, STRESS)
+			create_text("...", obj_hubert, NEUTRAL)
+			create_text("Bref.", obj_hubert, NEUTRAL)
+			create_text("On se rejoint plus tard.", obj_rayan, NEUTRAL)
 		break
 		
 		case "bacheliers_obj_4_debut":
-			create_text("On devrait y aller nous aussi")
+			create_text("On devrait y aller nous aussi", obj_nasada, NEUTRAL)
 		break
 		
 		case "bacheliers_obj_4_rayan_0":
-			create_text("...", "nasada-straight")
-			create_text("Quel idiot, il est en retard alors que c’est devant chez lui ?", "hubert-angry")
+			create_text("...", obj_nasada, NEUTRAL)
+			create_text("Quel idiot, il est en retard alors que c’est devant chez lui ?", obj_hubert, ANGRY)
 			create_option("Il est débile", "bacheliers_obj_4_rayan_1", [update_love, global.heros.hubert, 10])
 			create_option("Il est sûrement en confrontation avec ses parents", "bacheliers_obj_4_rayan_1")
 		break
 		
 		case "bacheliers_obj_4_rayan_1":
-			create_text("Quoi qu’il en soit, j'espère qu’il va bien.", "nasada-stress")
-			create_text("Il va sûrement très bien.", "hubert-straight")
+			create_text("Quoi qu’il en soit, j'espère qu’il va bien.", obj_nasada, STRESS)
+			create_text("Il va sûrement très bien.", obj_hubert, NEUTRAL)
 		break
 		
 		case "bacheliers_obj_4_rayan_2":
@@ -329,13 +329,13 @@ function scr_game_text(_text_id) {
 		break
 		
 		case "bacheliers_obj_4_rayan_3":
-			create_text("PaRdOn..", "nasada-stress")
+			create_text("PaRdOn..", obj_nasada, STRESS)
 		break
 		
 		case "bacheliers_obj_4_rayan_4":
 			create_text("Je vois donc… Vous dormez ici..?")
 			create_text("Bien, en revanche, Rayan est puni, il n’a pas eu son bac, donc n’interagissez pas avec lui.")
-			create_text("La honte", "hubert-happy")
+			create_text("La honte", obj_hubert, HAPPY)
 			create_text("...")
 			
 		break

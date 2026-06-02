@@ -1,3 +1,15 @@
+#macro RIGHT 0 
+#macro UP 1
+#macro LEFT 2
+#macro DOWN 3
+
+#macro NEUTRAL 0
+#macro HAPPY 1
+#macro ANGRY 2
+#macro STRESS 3
+#macro JUDGE 4
+#macro DOUBT 5
+
 global.time_remaining = 0
 global.font_main = font_add("fs-pixel-sans-unicode-regular.ttf", 11, false, false, 32, 255);
 

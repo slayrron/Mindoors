@@ -2,7 +2,7 @@
 textbox_largeur = 200
 textbox_hauteur = 64
 x_offset = 0
-y_offset = 144
+y_offset = 148
 border = 8
 line_sep = 12
 line_largeur = textbox_largeur - border * 2

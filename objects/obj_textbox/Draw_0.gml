@@ -107,13 +107,22 @@ if (accept_key and draw_char > 1)
 	}
 }
 
-//---------- Dessine la textbox 
+//---------- Dessine la textbox ---------------
 var txtb_x = textbox_x + text_x_offset[page]
 var txtb_y = textbox_y
 textbox_spr_l = sprite_get_width(textbox_spr)
 textbox_spr_h = sprite_get_height(textbox_spr)
 
-//Dessine l'orateur
+draw_sprite_ext(textbox_spr, textbox_img, textbox_x + text_x_offset[page], textbox_y, textbox_largeur/textbox_spr_l, textbox_hauteur/textbox_spr_h, 0, c_white, 1)
+
+//Affichage du nom si c'est un pnj qui parle
+if (speaker_name[page] != noone)
+{
+	draw_sprite_stretched(textbox_spr, textbox_img, textbox_x + text_x_offset[page], textbox_y - 14, 72, 19)
+	draw_text(textbox_x + text_x_offset[page] + 6,  textbox_y - 14, speaker_name[page])
+}
+
+//Dessine l'orateur si c'est un heros qui parle
 if (speaker_sprite[page] != noone)
 {
 	sprite_index = speaker_sprite[page]
@@ -121,8 +130,6 @@ if (speaker_sprite[page] != noone)
 	draw_sprite_ext(textbox_spr, textbox_img, textbox_x + portrait_x_offset[page], textbox_y, 64/textbox_spr_l, 64/textbox_spr_h, 0, c_white, 1)
 	draw_sprite_ext(sprite_index, image_index, _speaker_x, textbox_y, 1, 1, 0, c_white, 1)
 }
-draw_sprite_ext(textbox_spr, textbox_img, textbox_x + text_x_offset[page], textbox_y, textbox_largeur/textbox_spr_l, textbox_hauteur/textbox_spr_h, 0, c_white, 1)
-
 
 //---------- Gestion des choix -----------
 //
