@@ -5,10 +5,6 @@ if (current_state == cutsceneStates.Active)
 		case 0:
 			camera_set_view_target(view_camera[0], noone)
 			inst = instance_create_depth(0,0,-9999, obj_fade)
-			with inst {
-				alpha = 0
-				state = "in"
-			}
 			action++
 		break;
 		

@@ -3,10 +3,6 @@ if (current_state == cutsceneStates.Active)
 	switch (action) {
 		case 0:
 			fade = instance_create_depth(0,0,-9999, obj_fade)
-			with fade {
-				alpha = 0
-				state = "in"
-			}
 			action++
 		break
 		

@@ -36,7 +36,7 @@ function create_option(_option, _link_id, _function=[])
 	options_number++
 }
 
-function create_textbox(_text_id, _depth=-9999, _x=0, _y=148)
+function create_textbox(_text_id, _depth=-9999, _x=64, _y=444)
 {
 	with (instance_create_depth(0, 0, _depth, obj_textbox))
 	{

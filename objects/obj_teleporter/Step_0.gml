@@ -1,4 +1,4 @@
-if place_meeting(x, y, obj_player) == true 
+if (place_meeting(x, y, obj_player) and !instance_exists(obj_transition)) == true 
 {
 	var new_transition = instance_create_depth(0,0,-9999, obj_transition)
 	

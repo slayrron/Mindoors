@@ -1,10 +1,10 @@
 //Les parametres
-textbox_largeur = 200
-textbox_hauteur = 64
-x_offset = 0
+textbox_largeur = 648
+textbox_hauteur = 192
+x_offset = 64
 y_offset = 148
-border = 8
-line_sep = 12
+border = 16
+line_sep = 32
 line_largeur = textbox_largeur - border * 2
 textbox_spr = spr_battle_box
 textbox_img = 0 

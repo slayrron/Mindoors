@@ -4,7 +4,6 @@
 - créer interieur de maison
 - Arranger probleme caméra (ruel)
 - Finir le visuel des quêtes dans le menu
-- Faire une transition de room
 
 - assembler l'interieur de la bibliotheque, un tile set est en début de production et déjà disponible
 - Creer quelques objet de déco pour la map

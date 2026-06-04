@@ -1,4 +1,4 @@
-alpha = 0;        
-fade_speed = 0.04; 
-state = "none";
+alpha = 0
+fade_speed = 0.04
+state = "in"
 simple = false

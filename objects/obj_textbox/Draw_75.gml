@@ -1,8 +1,8 @@
 var accept_key = keyboard_check_pressed(ord("Z"))
 
 
-var textbox_x = camera_get_view_x(view_camera[0]) + x_offset
-var textbox_y = camera_get_view_y(view_camera[0]) + y_offset
+var textbox_x = x_offset
+var textbox_y = y_offset
 
 draw_set_color(c_white)
 
@@ -19,16 +19,13 @@ if setup == false
 		// trouve combien de caracteres sont sur chaque page et garde ce nombre
 		text_longueur[p] = string_length(text[p])
 		
-		// Perso à gauche
-		text_x_offset[p] = 80
-		portrait_x_offset[p] = 8
+		text_x_offset[p] = 128
 		
-		// position x pour la textbox pas de perso
+		// position x pour la textbox si pas de perso
 		if (speaker_sprite[p] == noone)
 		{
-			text_x_offset[p] = 44
+			text_x_offset[p] = 42
 		}
-		
 	}
 }
 
@@ -118,17 +115,17 @@ draw_sprite_ext(textbox_spr, textbox_img, textbox_x + text_x_offset[page], textb
 //Affichage du nom si c'est un pnj qui parle
 if (speaker_name[page] != noone)
 {
-	draw_sprite_stretched(textbox_spr, textbox_img, textbox_x + text_x_offset[page], textbox_y - 14, 72, 19)
-	draw_text(textbox_x + text_x_offset[page] + 6,  textbox_y - 14, speaker_name[page])
+	draw_sprite_stretched(textbox_spr, textbox_img, textbox_x + text_x_offset[page], textbox_y - 28, 200, 42)
+	draw_text(textbox_x + text_x_offset[page] + border,  textbox_y - 32, speaker_name[page])
 }
 
 //Dessine l'orateur si c'est un heros qui parle
 if (speaker_sprite[page] != noone)
 {
 	sprite_index = speaker_sprite[page]
-	var _speaker_x = textbox_x + portrait_x_offset[page]
-	draw_sprite_ext(textbox_spr, textbox_img, textbox_x + portrait_x_offset[page], textbox_y, 64/textbox_spr_l, 64/textbox_spr_h, 0, c_white, 1)
-	draw_sprite_ext(sprite_index, image_index, _speaker_x, textbox_y, 1, 1, 0, c_white, 1)
+	var _speaker_x = 4
+	draw_sprite_ext(textbox_spr, textbox_img, 12, textbox_y, 11, textbox_hauteur/textbox_spr_h, 0, c_white, 1)
+	draw_sprite_ext(sprite_index, image_index, _speaker_x, textbox_y, 3, 3, 0, c_white, 1)
 }
 
 //---------- Gestion des choix -----------
