@@ -113,12 +113,6 @@ if (current_state == cutsceneStates.Active){
 				instance_destroy(obj_nasada)
 				instance_destroy(obj_hubert)
 				fade = instance_create_depth(0,0,-9999, obj_fade)
-				with fade 
-				{
-					alpha = 0
-					state = "in"
-					simple = true
-				}
 				action++
 			}
 			else 
@@ -128,11 +122,22 @@ if (current_state == cutsceneStates.Active){
 			}
 		break
 		
-		
 		case 8:
+			if (fade.alpha == 1)
+			{
+				instance_destroy(obj_rayan)
+				fade.state = "out"
+				action++
+			}
+		break
+		
+		
+		
+		case 9:
 			if (!instance_exists(obj_fade)) 
 			{
 				array_delete(global.party,1,3)
+				global.quests.bacheliers.objectif++
 				current_state = cutsceneStates.Stopped
 			}
 		break

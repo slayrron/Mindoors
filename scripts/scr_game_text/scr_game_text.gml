@@ -167,12 +167,12 @@ function scr_game_text(_text_id) {
 		
 		case "bacheliers_obj_2":
 			if (global.quests.bacheliers.objectif < 2) {
-				create_text("Je vois que vous venez d'arriver, veuillez vérifier que vous êtes bien sur le tableau s'il vous plait")
-				create_text("(je n'ai pas envie de chercher pour rien)")
+				create_text("Je vois que vous venez d'arriver, veuillez vérifier que vous êtes bien sur le tableau s'il vous plait", obj_surveillante)
+				create_text("(je n'ai pas envie de chercher pour rien)", obj_surveillante)
 			}
 			else if (global.quests.bacheliers.objectif == 2) {
-				create_text("J'ai eu le temps de trouver vos bulletins")
-				create_text("Hubert..Nasada..et Player.. Voilà ! Toutes mes félicitations !")
+				create_text("J'ai eu le temps de trouver vos bulletins", obj_surveillante)
+				create_text("Hubert..Nasada..et Player.. Voilà ! Toutes mes félicitations !", obj_surveillante)
 				global.quests.bacheliers.objectif++
 			}
 			else
@@ -189,14 +189,14 @@ function scr_game_text(_text_id) {
 		break
 		
 		case "bacheliers_obj_3_qrt_rayan":
-			create_text("Tiens, je crois que cet idiot de rayan habite dans le coin...", obj_hubert, NEUTRAL)
+			create_text("Tiens, je crois que cet idiot de Rayan habite dans le coin...", obj_hubert, NEUTRAL)
 			create_text("...", obj_rayan, ANGRY)
 		break
 		
 		case "bacheliers_maison_rayan":
 			if (global.quests.bacheliers.objectif == 3) 
 			{
-				create_text("Vous êtes devant la maison de rayan, faire la soirée ici ?")
+				create_text("Vous êtes devant la maison de Rayan, faire la soirée ici ?")
 				create_option("Oui", obj_cutscene_bac_3_rayan)
 				create_option("Non", noone)
 			}
@@ -299,7 +299,7 @@ function scr_game_text(_text_id) {
 			create_text("On se dit rendez-vous ici dans trois heures ?", obj_hubert, NEUTRAL)
 			create_text("J’aimerai avoir mon mot à dire aussi !", obj_rayan, NEUTRAL)
 			create_text("Ceux qui ont échoué n’ont aucun mot à dire, seuls les vainqueurs écrivent l’histoire. J’AI eu le mention très bien, tu n’as même pas le diplôme.", obj_hubert, HAPPY)
-			create_text("Je…", obj_rayan, "rayan-stress")
+			create_text("Je…", obj_rayan, STRESS)
 			create_text("...", obj_rayan, NEUTRAL)
 			create_text("Al-", obj_hubert, NEUTRAL, true)
 			create_text("STOP. Il vous arrive quoi à tous les deux depuis une semaine ?", obj_nasada, STRESS)
@@ -325,7 +325,7 @@ function scr_game_text(_text_id) {
 		break
 		
 		case "bacheliers_obj_4_rayan_2":
-			create_text("Vous faites quoi ici vous ?!")
+			create_text("Vous faites quoi ici vous ?!", obj_rayan_mom)
 		break
 		
 		case "bacheliers_obj_4_rayan_3":
@@ -333,10 +333,10 @@ function scr_game_text(_text_id) {
 		break
 		
 		case "bacheliers_obj_4_rayan_4":
-			create_text("Je vois donc… Vous dormez ici..?")
-			create_text("Bien, en revanche, Rayan est puni, il n’a pas eu son bac, donc n’interagissez pas avec lui.")
+			create_text("Je vois donc… Vous dormez ici..?", obj_rayan_mom)
+			create_text("Bien, en revanche, Rayan est puni, il n’a pas eu son bac, donc n’interagissez pas avec lui.", obj_rayan_mom)
 			create_text("La honte", obj_hubert, HAPPY)
-			create_text("...")
+			create_text("...", obj_rayan_mom)
 			
 		break
 

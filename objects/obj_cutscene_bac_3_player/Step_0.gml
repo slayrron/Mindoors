@@ -97,6 +97,7 @@ if (current_state == cutsceneStates.Active){
 			if (!instance_exists(obj_fade)) 
 			{
 				array_delete(global.party,1,3)
+				global.quests.bacheliers.objectif++
 				current_state = cutsceneStates.Stopped
 			}
 		break

@@ -122,10 +122,8 @@ if (speaker_name[page] != noone)
 //Dessine l'orateur si c'est un heros qui parle
 if (speaker_sprite[page] != noone)
 {
-	sprite_index = speaker_sprite[page]
-	var _speaker_x = 4
 	draw_sprite_ext(textbox_spr, textbox_img, 12, textbox_y, 11, textbox_hauteur/textbox_spr_h, 0, c_white, 1)
-	draw_sprite_ext(sprite_index, image_index, _speaker_x, textbox_y, 3, 3, 0, c_white, 1)
+	draw_sprite_ext(speaker_sprite[page], 0, 4, textbox_y, 3, 3, 0, c_white, 1)
 }
 
 //---------- Gestion des choix -----------
@@ -135,8 +133,8 @@ if (speaker_sprite[page] != noone)
 // Si on est arrivé à la fin de la dernière page
 if (draw_char == text_longueur[page] and page == page_number - 1)
 { 
-	var option_space = 15 
-	var option_border = 4
+	var option_space = 45
+	var option_border = 12
 	
 	
 	// Sélection de la réponse (son indice) avec les flêches haut et bas
@@ -149,15 +147,15 @@ if (draw_char == text_longueur[page] and page == page_number - 1)
 	{
 		// Dessine la textbox associée 
 		var option_largeur = string_width(options[option]) + option_border * 2 
-		draw_sprite_ext(textbox_spr, textbox_img, txtb_x + 16, txtb_y - option_space*options_number + option_space*option, option_largeur / textbox_spr_l, (option_space - 1) / textbox_spr_h, 0, c_red, 1)
+		draw_sprite_ext(textbox_spr, textbox_img, txtb_x, txtb_y - option_space*options_number + option_space*option, option_largeur / textbox_spr_l, (option_space - 1) / textbox_spr_h, 0, c_red, 1)
 		
 		// Dessine la flèche de sélection si on est sur le choix pointé
 		if (option_pos == option)
 		{
-			draw_sprite(spr_fleche, 0, txtb_x, txtb_y - option_space * options_number + option_space * option)
+			draw_sprite_ext(spr_fleche, 0, txtb_x - 48, txtb_y - option_space * options_number + option_space * option, 3, 3, 0, c_white, 1)
 		}
 		// Dessine le texte du choix
-		draw_text(txtb_x + 16 + option_border, txtb_y - option_space * options_number + option_space * option - 2, options[option])
+		draw_text(txtb_x + option_border, txtb_y - option_space * options_number + option_space * option - 2, options[option])
 	}
 }
 

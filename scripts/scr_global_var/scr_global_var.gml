@@ -12,6 +12,7 @@
 
 global.time_remaining = 0
 global.font_main = font_add("fs-pixel-sans-unicode-regular.ttf", 32, false, false, 32, 255);
+global.font_secondary = font_add("fs-pixel-sans-unicode-regular.ttf", 14, false, false, 32, 255);
 
 //condition//
 

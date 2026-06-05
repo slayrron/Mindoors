@@ -178,7 +178,7 @@
     {"id":{"name":"spr_hubert_happy","path":"sprites/spr_hubert_happy/spr_hubert_happy.yy",},},
     {"id":{"name":"obj_barriere","path":"objects/obj_barriere/obj_barriere.yy",},},
     {"id":{"name":"Ts_buils_place","path":"tilesets/Ts_buils_place/Ts_buils_place.yy",},},
-    {"id":{"name":"obj_bacheliere","path":"objects/obj_bacheliere/obj_bacheliere.yy",},},
+    {"id":{"name":"obj_surveillante","path":"objects/obj_surveillante/obj_surveillante.yy",},},
     {"id":{"name":"obj_battle_unit_enemies","path":"objects/obj_battle_unit_enemies/obj_battle_unit_enemies.yy",},},
     {"id":{"name":"spr_nasada_right","path":"sprites/spr_nasada_right/spr_nasada_right.yy",},},
     {"id":{"name":"obj_maison_pnj_1","path":"objects/obj_maison_pnj_1/obj_maison_pnj_1.yy",},},

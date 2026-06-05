@@ -126,7 +126,7 @@ if (accept_key and inst != noone)
 // Menu
 if (keyboard_check_pressed(ord("X")) and !instance_exists(obj_ingame_menu) and global.time_remaining == 0) 
 {
-	instance_create_depth(camera_get_view_x(view_camera[0]),camera_get_view_y(view_camera[0]), -99999, obj_ingame_menu)
+	instance_create_depth(0,0, -9999, obj_ingame_menu)
 }
 
 // TEMP

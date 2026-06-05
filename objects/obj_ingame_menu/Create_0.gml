@@ -10,3 +10,7 @@ elm_pos = 0
 stat_name = ["Santé", "Attaque", "Défense", "Vitesse", "Agilité"]
 
 line_sep = 12
+border = 32
+detail_box_y = 92
+detail_box_w = 324
+detail_box_h = 432
